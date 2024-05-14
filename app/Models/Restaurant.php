@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Restaurant extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['name', 'image', 'address', 'vat', 'user_id'];
     public function types()
     {
         return $this->belongsToMany(Type::class);
