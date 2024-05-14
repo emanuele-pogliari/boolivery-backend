@@ -30,8 +30,8 @@ return [
 
         [
             'name' => 'Giuseppe',
-            'surname' => '',
-            'email' => 'giusepperossi@example.com',
+            'surname' => 'Cassone',
+            'email' => 'cassone@example.com',
             'password' =>  'password123',
         ]
 
