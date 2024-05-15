@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <form action="{{route('admin.dishes.update', $project->id)}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('admin.dishes.update', $dish->id)}}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
@@ -64,7 +64,7 @@
        
         <div class="d-flex gap-3">
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="{{route('projects.index')}}" class="btn btn-secondary">Back</a>
+            <a href="{{route('admin.dishes.index')}}" class="btn btn-secondary">Back</a>
         </div>
     </form>
 @endsection
