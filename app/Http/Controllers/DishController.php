@@ -6,6 +6,7 @@ use App\Http\Requests\StoreDishRequest;
 use App\Http\Requests\UpdateDishRequest;
 use App\Models\Dish;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class DishController extends Controller
 {
@@ -36,6 +37,13 @@ class DishController extends Controller
         $newDish->fill($request->all());
         $newDish->restaurant_id = Auth::user()->id;
         // da controllare se funzionante
+
+        if ($request->hasFile('image')) {
+            // we save the path of the image in a variable
+            $path = Storage::disk('public')->put('dish_images', $request->file('image'));
+            // we save the path of the image in the database
+            $newDish->image = $path;
+        }
 
         $newDish->save();
 
