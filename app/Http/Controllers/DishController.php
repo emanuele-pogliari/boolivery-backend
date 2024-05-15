@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreDishRequest;
 use App\Http\Requests\UpdateDishRequest;
 use App\Models\Dish;
+use Illuminate\Support\Facades\Auth;
 
 class DishController extends Controller
 {
@@ -29,7 +30,16 @@ class DishController extends Controller
      */
     public function store(StoreDishRequest $request)
     {
-        //
+        $request->validated();
+        $newDish = new Dish();
+
+        $newDish->fill($request->all());
+        $newDish->restaurant_id = Auth::user()->id;
+        // da controllare se funzionante
+
+        $newDish->save();
+
+        return redirect()->route('dishes.index');
     }
 
     /**

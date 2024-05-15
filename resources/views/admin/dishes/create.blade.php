@@ -6,7 +6,7 @@
 
     <h1>Aggiungi un piatto</h1>
 
-    <form action="{{route('dishes.store')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('admin.dishes.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
 
         <div class="mb-3">
@@ -21,7 +21,7 @@
 
         <div class="mb-3">
             <label for="image" class="form-label">Immagine</label>
-            <input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image" value="{{old('image')}}">
+            <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" name="image" value="{{old('image')}}">
             @error('image')
             <div class="invalid-feedback">
                 {{$message}}
@@ -60,7 +60,7 @@
         </div>
         
         <div class="mb-3 form-check">
-            <input class="form-check-input" type="checkbox" value="" id="visible" name="visible" checked>
+            <input class="form-check-input" type="checkbox" value="1" id="visible" name="visible" checked>
             <label class="form-check-label" for="visible">
                 Visibile?
             </label>

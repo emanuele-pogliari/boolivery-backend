@@ -73,41 +73,6 @@ return [
             'vat' => 'IT67584930210',
             'user_id' => 5
         ],
-        [
-            'name' => 'Pasticceria Dolce Vita',
-            'image' => 'dolce_vita_image.jpg',
-            'address' => 'Via Venezia 9, Venezia',
-            'vat' => 'IT84930216789',
-            'user_id' => 6
-        ],
-        [
-            'name' => 'Ristorante La Pergola',
-            'image' => 'la_pergola_image.jpg',
-            'address' => 'Via Bologna 13, Bologna',
-            'vat' => 'IT10293847565',
-            'user_id' => 7
-        ],
-        [
-            'name' => 'Enoteca Vinum',
-            'image' => 'vinum_image.jpg',
-            'address' => 'Via Napoli 20, Napoli',
-            'vat' => 'IT19283746578',
-            'user_id' => 8
-        ],
-        [
-            'name' => 'Ristorante La Fontana',
-            'image' => 'la_fontana_image.jpg',
-            'address' => 'Via Genova 7, Genova',
-            'vat' => 'IT38475692011',
-            'user_id' => 9
-        ],
-        [
-            'name' => 'Trattoria Da Marco',
-            'image' => 'da_marco_image.jpg',
-            'address' => 'Via Salerno 14, Salerno',
-            'vat' => 'IT29384756023',
-            'user_id' => 10
-        ],
     ],
 
     'types' => [
@@ -142,6 +107,7 @@ return [
             'type' => 'Steakhouse'
         ]
     ],
+
     'dishes' => [
         [
             "name" => "Spaghetti Carbonara",
@@ -178,7 +144,7 @@ return [
             "ingredients" => ["Pasta", "Ragù", "Besciamella", "Parmigiano", "Mozzarella"],
             "price" => 13.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 2,
         ],
         [
             "name" => "Insalata Caprese",
@@ -187,7 +153,7 @@ return [
             "ingredients" => ["Pomodoro", "Mozzarella", "Basilico", "Olio", "Sale"],
             "price" => 7.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 2,
         ],
         [
             "name" => "Pollo alla Cacciatora",
@@ -196,7 +162,7 @@ return [
             "ingredients" => ["Pollo", "Pomodoro", "Olive", "Vino", "Rosmarino"],
             "price" => 15.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 2,
         ],
         [
             "name" => "Fettuccine Alfredo",
@@ -205,7 +171,7 @@ return [
             "ingredients" => ["Fettuccine", "Burro", "Parmigiano", "Panna", "Pepe"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Bruschetta al Pomodoro",
@@ -214,7 +180,7 @@ return [
             "ingredients" => ["Pane", "Pomodoro", "Basilico", "Aglio", "Olio"],
             "price" => 5.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Tiramisù",
@@ -223,7 +189,7 @@ return [
             "ingredients" => ["Mascarpone", "Savoiardi", "Caffè", "Cacao", "Zucchero"],
             "price" => 6.00,
             "visible" => true,
-            "restaurant_id" => 6,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Gnocchi al Pesto",
@@ -232,7 +198,7 @@ return [
             "ingredients" => ["Gnocchi", "Basilico", "Aglio", "Pinoli", "Parmigiano"],
             "price" => 10.50,
             "visible" => true,
-            "restaurant_id" => 7,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Tagliata di Manzo",
@@ -241,7 +207,7 @@ return [
             "ingredients" => ["Manzo", "Rucola", "Parmigiano", "Olio", "Sale"],
             "price" => 18.00,
             "visible" => true,
-            "restaurant_id" => 8,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Penne all'Arrabbiata",
@@ -250,7 +216,7 @@ return [
             "ingredients" => ["Penne", "Pomodoro", "Peperoncino", "Aglio", "Olio"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 9,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Arancini di Riso",
@@ -259,7 +225,7 @@ return [
             "ingredients" => ["Riso", "Ragù", "Piselli", "Formaggio", "Pangrattato"],
             "price" => 7.50,
             "visible" => true,
-            "restaurant_id" => 10,
+            "restaurant_id" => 5,
         ],
         [
             "name" => "Calamari Fritti",
@@ -268,7 +234,7 @@ return [
             "ingredients" => ["Calamari", "Farina", "Olio", "Limone", "Sale"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 5,
         ],
         [
             "name" => "Pasta e Fagioli",
@@ -277,133 +243,7 @@ return [
             "ingredients" => ["Pasta", "Fagioli", "Pancetta", "Pomodoro", "Rosmarino"],
             "price" => 8.50,
             "visible" => true,
-            "restaurant_id" => 6,
-        ],
-        [
-            "name" => "Parmigiana di Melanzane",
-            "image" => "immagine",
-            "description" => "Melanzane al forno con salsa di pomodoro e formaggio.",
-            "ingredients" => ["Melanzane", "Pomodoro", "Mozzarella", "Parmigiano", "Basilico"],
-            "price" => 11.50,
-            "visible" => true,
-            "restaurant_id" => 7,
-        ],
-        [
-            "name" => "Ossobuco alla Milanese",
-            "image" => "immagine",
-            "description" => "Stinco di vitello con gremolata e risotto.",
-            "ingredients" => ["Vitello", "Limone", "Aglio", "Prezzemolo", "Brodo"],
-            "price" => 19.00,
-            "visible" => true,
-            "restaurant_id" => 8,
-        ],
-        [
-            "name" => "Focaccia",
-            "image" => "immagine",
-            "description" => "Pane morbido condito con olio e rosmarino.",
-            "ingredients" => ["Farina", "Acqua", "Olio", "Sale", "Rosmarino"],
-            "price" => 4.50,
-            "visible" => true,
-            "restaurant_id" => 9,
-        ],
-        [
-            "name" => "Pappardelle al Cinghiale",
-            "image" => "immagine",
-            "description" => "Pasta fresca con ragù di cinghiale.",
-            "ingredients" => ["Pappardelle", "Cinghiale", "Vino", "Pomodoro", "Aromi"],
-            "price" => 16.00,
-            "visible" => true,
-            "restaurant_id" => 7,
-        ],
-        [
-            "name" => "Ribollita",
-            "image" => "immagine",
-            "description" => "Zuppa toscana con pane e verdure.",
-            "ingredients" => ["Pane", "Cavolo nero", "Fagioli", "Carote", "Cipolla"],
-            "price" => 9.50,
-            "visible" => true,
-            "restaurant_id" => 3,
-        ],
-        [
-            "name" => "Polenta e Salsiccia",
-            "image" => "immagine",
-            "description" => "Polenta cremosa con salsiccia in umido.",
-            "ingredients" => ["Polenta", "Salsiccia", "Pomodoro", "Cipolla", "Brodo"],
-            "price" => 13.50,
-            "visible" => true,
-            "restaurant_id" => 2,
-        ],
-        [
-            "name" => "Insalata di Mare",
-            "image" => "immagine",
-            "description" => "Mix di frutti di mare con limone e prezzemolo.",
-            "ingredients" => ["Calamari", "Gamberi", "Cozze", "Limone", "Prezzemolo"],
-            "price" => 14.50,
-            "visible" => true,
-            "restaurant_id" => 4,
-        ],
-        [
-            "name" => "Ravioli di Ricotta e Spinaci",
-            "image" => "immagine",
-            "description" => "Pasta fresca ripiena con salsa al burro e salvia.",
-            "ingredients" => ["Ravioli", "Ricotta", "Spinaci", "Burro", "Salvia"],
-            "price" => 12.00,
-            "visible" => true,
             "restaurant_id" => 5,
         ],
-        [
-            "name" => "Zuppa di Pesce",
-            "image" => "immagine",
-            "description" => "Zuppa ricca di pesce fresco.",
-            "ingredients" => ["Pesce", "Pomodoro", "Aglio", "Prezzemolo", "Vino"],
-            "price" => 17.00,
-            "visible" => true,
-            "restaurant_id" => 6,
-        ],
-        [
-            "name" => "Torta della Nonna",
-            "image" => "immagine",
-            "description" => "Dolce con crema pasticcera e pinoli.",
-            "ingredients" => ["Farina", "Uova", "Zucchero", "Pinoli", "Limone"],
-            "price" => 5.50,
-            "visible" => true,
-            "restaurant_id" => 7,
-        ],
-        [
-            "name" => "Vitello Tonnato",
-            "image" => "immagine",
-            "description" => "Vitello freddo con salsa tonnata.",
-            "ingredients" => ["Vitello", "Tonno", "Maionese", "Capperi", "Limone"],
-            "price" => 14.00,
-            "visible" => true,
-            "restaurant_id" => 8,
-        ],
-        [
-            "name" => "Panzanella",
-            "image" => "immagine",
-            "description" => "Insalata di pane e verdure estive.",
-            "ingredients" => ["Pane", "Pomodoro", "Cipolla", "Cetriolo", "Basilico"],
-            "price" => 7.50,
-            "visible" => true,
-            "restaurant_id" => 9,
-        ],
-        [
-            "name" => "Cannelloni",
-            "image" => "immagine",
-            "description" => "Pasta ripiena di carne e ricotta.",
-            "ingredients" => ["Pasta", "Carne", "Ricotta", "Pomodoro", "Parmigiano"],
-            "price" => 13.00,
-            "visible" => true,
-            "restaurant_id" => 10,
-        ],
-        [
-            "name" => "Saltimbocca alla Romana",
-            "image" => "immagine",
-            "description" => "Scaloppine di vitello con prosciutto e salvia.",
-            "ingredients" => ["Vitello", "Prosciutto", "Salvia", "Vino", "Burro"],
-            "price" => 15.00,
-            "visible" => true,
-            "restaurant_id" => 4,
-        ]
     ]
 ];
