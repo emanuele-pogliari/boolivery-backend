@@ -71,7 +71,19 @@ class DishController extends Controller
      */
     public function update(UpdateDishRequest $request, Dish $dish)
     {
-        //
+        $request->validated();
+
+        if ($request->hasFile('image')) {
+            // we save the path of the image in a variable
+            $path = Storage::disk('public')->put('dish_images', $request->file('image'));
+            // we save the path of the image in the database
+            $dish->image = $path;
+
+            return redirect()->route('admin.dishes.show', $dish->id);
+        }
+
+        $dish->update($request->all());
+        $dish->save();
     }
 
     /**
@@ -79,6 +91,8 @@ class DishController extends Controller
      */
     public function destroy(Dish $dish)
     {
-        //
+        $dish->delete();
+
+        return redirect()->route('admin.index');
     }
 }
