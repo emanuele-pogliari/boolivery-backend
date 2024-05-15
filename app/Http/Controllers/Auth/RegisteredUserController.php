@@ -38,6 +38,8 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+        $request->validated();
+
         $user = User::create([
             'name' => $request->name,
             'surname' => $request->surname,
@@ -56,6 +58,7 @@ class RegisteredUserController extends Controller
 
 
         event(new Registered($user));
+        event(new Registered($restaurant));
 
         Auth::login($user);
 
