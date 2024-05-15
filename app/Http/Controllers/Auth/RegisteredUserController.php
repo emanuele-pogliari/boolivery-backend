@@ -57,8 +57,13 @@ class RegisteredUserController extends Controller
         ]);
 
 
-        $restaurant = new Restaurant();
-        $restaurant->fill($request->all());
+        $restaurant = Restaurant::create([
+            'user_id' => $user->id,
+            'name' => $request->restaurant_name,
+            'address' => $request->address,
+            'vat' => $request->vat,
+            'image' => $request->image,
+        ]);
 
         // check if the image is present
         if ($request->hasFile('image')) {
