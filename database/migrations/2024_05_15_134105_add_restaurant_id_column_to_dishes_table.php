@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('restaurants', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->text('image');
-            $table->string('address');
-            $table->string('vat');
-            $table->integer('user_id');
-            $table->timestamps();
+        Schema::table('dishes', function (Blueprint $table) {
+            $table->foreignId('restaurant_id')->constrained();
         });
     }
 
@@ -27,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('restaurants');
+        Schema::table('dishes', function (Blueprint $table) {
+            //
+        });
     }
 };

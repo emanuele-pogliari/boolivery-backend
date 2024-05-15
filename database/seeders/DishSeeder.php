@@ -23,6 +23,7 @@ class DishSeeder extends Seeder
             $newDish->ingredients = implode(',', $dish['ingredients']);
             $newDish->price = $dish['price'];
             $newDish->visible = $dish['visible'];
+            $newDish->restaurant_id = $dish['restaurant_id'];
             $newDish->save();
         }
     }
