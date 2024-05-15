@@ -15,7 +15,9 @@ class DishController extends Controller
      */
     public function index()
     {
-        //
+        $dishes = Dish::where('restaurant_id', Auth::id())->get();
+        dump($dishes);
+        return view('admin.index', compact('dishes'));
     }
 
     /**
@@ -34,8 +36,10 @@ class DishController extends Controller
         $request->validated();
         $newDish = new Dish();
 
-        $newDish->fill($request->all());
-        $newDish->restaurant_id = Auth::user()->id;
+        // $newDish->restaurant_id = Auth::user()->id;
+
+        $request["restaurant_id"] = Auth::id();
+
         // da controllare se funzionante
 
         if ($request->hasFile('image')) {
@@ -45,9 +49,11 @@ class DishController extends Controller
             $newDish->image = $path;
         }
 
+        $newDish->fill($request->all());
+
         $newDish->save();
 
-        return redirect()->route('dishes.index');
+        return redirect()->route('admin.dishes.show', $newDish->id);
     }
 
     /**
