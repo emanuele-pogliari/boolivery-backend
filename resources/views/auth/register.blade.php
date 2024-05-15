@@ -52,6 +52,27 @@
                         </div>
 
                         <div class="mb-4 row">
+                            <div class="col-md-6">
+                            <label for="type" class="mb-2" for="type">Tipologia Ristorante</label>
+                
+                            <select  name="type" id="type"  class="form-select @error('type') is-invalid @enderror">
+                
+                                <option value=""></option>
+                
+                                @foreach ($types as $type)
+                                <option value="{{$type->id}}" {{ $type->id == old('type_id') ? 'selected' : '' }}>{{ $type->name }}</option>
+                                @endforeach
+                
+                            </select>
+                            @error('type')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="mb-4 row">
                             <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Image') }}</label>
 
                             <div class="col-md-6">
