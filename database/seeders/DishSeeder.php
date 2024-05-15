@@ -13,7 +13,7 @@ class DishSeeder extends Seeder
      */
     public function run(): void
     {
-        $dishes = config('boolivery.restaurants');
+        $dishes = config('boolivery.dishes');
 
         foreach ($dishes as $dish) {
             $newDish = new Dish();
