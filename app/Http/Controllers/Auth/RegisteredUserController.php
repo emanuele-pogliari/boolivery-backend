@@ -53,8 +53,6 @@ class RegisteredUserController extends Controller
             'vat' => $request->vat,
         ]);
 
-
-
         event(new Registered($user));
 
         Auth::login($user);
