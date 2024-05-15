@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('image');
             $table->string('address');
             $table->string('vat');
-            $table->integer('user_id');
+            $table->integer('user_id')->nullable();
             $table->timestamps();
         });
     }
