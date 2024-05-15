@@ -6,7 +6,7 @@
 
     <h1>Aggiungi un piatto</h1>
 
-    <form action="{{route('...')}}" method="POST">
+    <form action="{{route('dishes.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
 
         <div class="mb-3">
