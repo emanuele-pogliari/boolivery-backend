@@ -11,8 +11,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $dishes = Dish::where('restaurant_id', Auth::id())->get();
-        dump($dishes);
+        $dishes = Dish::where('restaurant_id', Auth::id())->orderBy('name')->get();
         return view('admin.index', compact('dishes'));
     }
 }
