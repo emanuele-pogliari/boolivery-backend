@@ -19,17 +19,17 @@
         {{$dish->price}}
     </p>
 
-    <div class="d-flex">
+    <div class="d-flex gap-2 align-items-center">
 
         <div class="py-2">
-            <a href="{{route('admin.dishes.edit', $dish->id)}}" class="btn btn-warning">Modifica</a>       
+            <a href="{{route('admin.dishes.edit', $dish->id)}}" class="btn btn-warning d-flex align-items-center" style="height: 50px;">Modifica</a>       
         </div>
     
         <div class="py-2">
-            <a href="{{route('admin.dishes.index', $dish->id)}}" class="btn btn-secondary">Indietro</a>       
+            <a href="{{route('admin.dishes.index', $dish->id)}}" class="btn btn-secondary d-flex align-items-center" style="height: 50px;">Indietro</a>       
         </div>
     
-        <button type="button" class="btn btn-danger py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-danger py-2 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 50px;">
             Elimina
         </button>
 
