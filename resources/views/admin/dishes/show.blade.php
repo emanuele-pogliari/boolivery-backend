@@ -23,6 +23,10 @@
         <a href="{{route('admin.dishes.edit', $dish->id)}}" class="btn btn-warning">Modifica</a>       
     </div>
 
+    <div class="py-5">
+        <a href="{{route('admin.dishes.index', $dish->id)}}" class="btn btn-secondary">Indietro</a>       
+    </div>
+
     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Elimina
     </button>
