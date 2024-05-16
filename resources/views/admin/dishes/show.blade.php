@@ -3,33 +3,37 @@
 @section ('content')
 
 <div class="container py-5">
-    <h1>{{$dish->name}}</h1>
+    <h1 class="py-2">{{$dish->name}}</h1>
 
-    <img src="{{asset('storage/' . $dish->image)}}" alt="">
+    <img src="{{asset('storage/' . $dish->image)}}" alt="" class="img-thumbnail" >
 
-    <p>
+    <p class="py-2">
         {{$dish->description}}
     </p>
 
-    <p>
+    <p class="py-2">
         {{$dish->ingredients}}
     </p>
 
-    <p>
+    <p class="py-2">
         {{$dish->price}}
     </p>
 
-    <div class="py-5">
-        <a href="{{route('admin.dishes.edit', $dish->id)}}" class="btn btn-warning">Modifica</a>       
-    </div>
+    <div class="d-flex">
 
-    <div class="py-5">
-        <a href="{{route('admin.dishes.index', $dish->id)}}" class="btn btn-secondary">Indietro</a>       
-    </div>
+        <div class="py-2">
+            <a href="{{route('admin.dishes.edit', $dish->id)}}" class="btn btn-warning">Modifica</a>       
+        </div>
+    
+        <div class="py-2">
+            <a href="{{route('admin.dishes.index', $dish->id)}}" class="btn btn-secondary">Indietro</a>       
+        </div>
+    
+        <button type="button" class="btn btn-danger py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Elimina
+        </button>
 
-    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Elimina
-    </button>
+    </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
