@@ -7,6 +7,7 @@ use App\Models\Restaurant;
 use App\Models\Type;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
+use Faker\Guesser\Name;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -36,6 +37,7 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             // USER VALIDATION RULES
+            'name' => ['nullable', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
 
