@@ -9,7 +9,7 @@
     @foreach ($dishes as $dish)
 
         <div class="col-3 card">
-            <img src="{{asset('storage/') . $dish->image}}" class="card-img-top img-fluid" alt="">
+            <img src="{{asset('storage/' . $dish->image)}}" class="card-img-top img-fluid" alt="">
             <div class="card-body text-center">
                 <h5 class="card-title">{{$dish->name}}</h5>
                 <p class="card-text">{{$dish->price}} €</p>
