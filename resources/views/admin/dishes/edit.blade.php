@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+<div class="container py-5">
     
     <form action="{{route('admin.dishes.update', $dish->id)}}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -67,4 +69,5 @@
             <a href="{{route('admin.dishes.index')}}" class="btn btn-secondary">Back</a>
         </div>
     </form>
+</div>
 @endsection
