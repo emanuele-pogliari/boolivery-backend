@@ -36,16 +36,14 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             // USER VALIDATION RULES
-            'name' => ['required', 'string', 'max:255'],
-            'surname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
 
             // RESTAURANT VALIDATION RULES
             'restaurant_name' => ['required', 'string', 'max:255'],
-            'image' => ['file', 'required', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
             'address' => ['required', 'string', 'max:255'],
             'vat' => ['required', 'string', 'min:11', 'max:11', 'unique:' . Restaurant::class],
+            'types' => ['required', 'array'],
         ]);
 
 
@@ -125,11 +123,6 @@ class RegisteredUserController extends Controller
             'restaurant_name.max' => 'The name must be less than 255 characters',
 
 
-            // Image messages
-            'image.required' => 'The image field is required',
-            'image.file' => 'The image must be a file',
-
-
             // Address messages
             'address.required' => 'The address field is required',
             'address.string' => 'The address must be composed of letters or letters and numbers',
@@ -141,6 +134,10 @@ class RegisteredUserController extends Controller
             'vat.number' => 'The VAT must be composed of numbers',
             'vat.max' => 'The VAT must be 11 characters',
             'vat.min' => 'The VAT must be 11 characters',
+
+
+            // Types messages
+            'types.required' => 'The types field is required',
         ];
     }
 }
