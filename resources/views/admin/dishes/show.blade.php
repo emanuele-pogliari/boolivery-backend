@@ -5,7 +5,7 @@
 <div class="container py-5">
     <h1>{{$dish->name}}</h1>
 
-    <img src="{{$dish->image}}" alt="">
+    <img src="{{asset('storage/' . $dish->image)}}" alt="">
 
     <p>
         {{$dish->description}}
