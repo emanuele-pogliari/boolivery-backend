@@ -7,8 +7,9 @@
 
     <div class="row mb-5">
 
-    @foreach($restaurants->types as $type)
-        <span class="badge rounded-pill text-bg-light">{{$type->type}}</span>
+    @foreach($restaurants as $restaurant)
+        <span class="badge rounded-pill text-bg-light">{{$restaurant->name}}</span>
+        <img src="{{asset('storage/' . $restaurant->image)}}" alt="">
     @endforeach
 
     @foreach ($dishes as $dish)
