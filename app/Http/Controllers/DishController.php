@@ -6,6 +6,7 @@ use App\Http\Requests\StoreDishRequest;
 use App\Http\Requests\UpdateDishRequest;
 use App\Models\Dish;
 use App\Models\Restaurant;
+use App\Models\Type;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
@@ -16,9 +17,7 @@ class DishController extends Controller
      */
     public function index()
     {
-        $dishes = Dish::where('restaurant_id', Auth::id())->orderBy('name')->get();
-        $restaurants = Restaurant::where('user_id', Auth::id())->get();
-        return view('admin.index', compact('dishes', 'restaurants'));
+        return view('admin.index');
     }
 
     /**

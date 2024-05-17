@@ -10,6 +10,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
@@ -34,6 +35,8 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
+
+        $data = $request->all();
         $request->validate([
             // USER VALIDATION RULES
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
@@ -69,9 +72,9 @@ class RegisteredUserController extends Controller
             $restaurant->image = $path;
         }
 
+        if (Arr::exists($data, "types")) $restaurant->types()->attach($data["types"]);
         $restaurant->save();
 
-        $restaurant->types()->attach($request->types);
 
 
 

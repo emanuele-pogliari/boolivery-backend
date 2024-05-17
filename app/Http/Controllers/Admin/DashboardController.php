@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreTypeRequest;
 use App\Models\Dish;
 use App\Models\Restaurant;
 use App\Models\Type;
@@ -15,7 +16,6 @@ class DashboardController extends Controller
     {
         $dishes = Dish::where('restaurant_id', Auth::id())->orderBy('name')->get();
         $restaurants = Restaurant::where('user_id', Auth::id())->get();
-        $types = Type::all();
-        return view('admin.index', compact('dishes', 'types', 'restaurants'));
+        return view('admin.index', compact('dishes', 'restaurants'));
     }
 }
