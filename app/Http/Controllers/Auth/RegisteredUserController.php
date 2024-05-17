@@ -37,17 +37,73 @@ class RegisteredUserController extends Controller
     {
 
         $data = $request->all();
-        $request->validate([
-            // USER VALIDATION RULES
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        $request->validate(
+            [
+                // USER VALIDATION RULES
+                'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
+                'password' => ['required', 'confirmed', Rules\Password::defaults()],
 
-            // RESTAURANT VALIDATION RULES
-            'restaurant_name' => ['required', 'string', 'max:255'],
-            'address' => ['required', 'string', 'max:255'],
-            'vat' => ['required', 'string', 'min:11', 'max:11', 'unique:' . Restaurant::class],
-            'types' => ['required', 'array'],
-        ]);
+                // RESTAURANT VALIDATION RULES
+                'restaurant_name' => ['required', 'string', 'max:255'],
+                'address' => ['nullable', 'string', 'max:255'],
+                'vat' => ['nullable', 'string', 'min:11', 'max:11', 'unique:' . Restaurant::class],
+                'types' => ['required', 'array'],
+            ],
+
+            [
+                'name.required' => 'Devi inserire un nome',
+                'name.string' => 'Il nome deve essere composto da lettere oppure lettere e numeri',
+                'name.max' => 'Il nome deve essere meno di 255 caratteri',
+
+                // Surname messages
+                'surname.required' => 'Devi inserire un cognome',
+                'surname.string' => 'Il cognome deve essere composto da lettere',
+                'surname.max' => 'Il cognome deve essere meno di 255 caratteri',
+
+                // Email messages
+                'email.required' => 'Devi inserire una mail',
+                'email.string' => 'La mail deve essere composta da lettere oppure lettere e numeri',
+                'email.lowercase' => 'La mail deve essere scritta in minuscolo',
+                'email.email' => 'La mail deve essere valida',
+                'email.max' => 'La mail deve essere meno di 255 caratteri',
+                'email.unique' => 'La mail deve essere unica',
+
+                // Password messages
+                'password.required' => 'Devi inserire una password',
+                'password.confirmed' => 'Devi confermare la password',
+
+
+
+                // ---------------------------------------------------------------------------------------------------
+
+
+                // RESTAURANT VALIDATION RULES
+
+                // Name messages
+                'restaurant_name.required' => 'Devi inserire un nome',
+                'restaurant_name.string' => 'Il nome deve essere composto da lettere oppure lettere e numeri',
+                'restaurant_name.max' => 'Il nome deve essere meno di 255 caratteri',
+
+
+                // Address messages
+                'address.required' => 'Devi inserire un indirizzo',
+                'address.string' => 'L indirizzo deve essere composto da lettere oppure lettere e numeri',
+                'address.max' => 'L indirizzo deve essere meno di 255 caratteri',
+
+
+                // VAT messages
+                'vat.required' => 'Devi inserire la P.IVA',
+                'vat.number' => 'La P. IVA deve essere composta da numeri',
+                'vat.max' => 'La P. IVA deve essere di 11 caratteri',
+                'vat.min' => 'La P. IVA deve essere di 11 caratteri',
+
+
+                // Types messages
+                'types.required' => 'Devi inserire una tipologia',
+            ]
+
+
+        );
 
 
         $user = User::create([
@@ -86,61 +142,13 @@ class RegisteredUserController extends Controller
         return redirect(RouteServiceProvider::HOME);
     }
 
-    public function message()
+    public function messages()
     {
         return [
             // USER VALIDATION RULES
 
             // Name messages
-            'name.required' => 'The name field is required',
-            'name.string' => 'The name must be composed of letters or letters and numbers',
-            'name.max' => 'The name must be less than 255 characters',
 
-            // Surname messages
-            'surname.required' => 'The surname field is required',
-            'surname.string' => 'The surname must be composed of letters or letters and numbers',
-            'surname.max' => 'The surname must be less than 255 characters',
-
-            // Email messages
-            'email.required' => 'The email field is required',
-            'email.string' => 'The email must be composed of letters or letters and numbers',
-            'email.lowercase' => 'The email must be lowercase',
-            'email.email' => 'The email must be a valid email',
-            'email.max' => 'The email must be less than 255 characters',
-            'email.unique' => 'The email must be unique',
-
-            // Password messages
-            'password.required' => 'The password field is required',
-            'password.confirmed' => 'The password must be confirmed',
-
-
-
-            // ---------------------------------------------------------------------------------------------------
-
-
-            // RESTAURANT VALIDATION RULES
-
-            // Name messages
-            'restaurant_name.required' => 'Devi inserire un nome',
-            'restaurant_name.string' => 'Il nome deve essere composto da lettere oppure lettere e numeri',
-            'restaurant_name.max' => 'Il nome deve essere meno di 255 caratteri',
-
-
-            // Address messages
-            'address.required' => 'Devi inserire un indirizzo',
-            'address.string' => 'L indirizzo deve essere composto da lettere oppure lettere e numeri',
-            'address.max' => 'L indirizzo deve essere meno di 255 caratteri',
-
-
-            // VAT messages
-            'vat.required' => 'Devi inserire la P.IVA',
-            'vat.number' => 'La P. IVA deve essere composta da numeri',
-            'vat.max' => 'La P. IVA deve essere di 11 caratteri',
-            'vat.min' => 'La P. IVA deve essere di 11 caratteri',
-
-
-            // Types messages
-            'types.required' => 'Devi inserire una tipologia',
         ];
     }
 }
