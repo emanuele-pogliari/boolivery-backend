@@ -50,6 +50,8 @@ class RegisteredUserController extends Controller
                 'types' => ['required', 'array'],
             ],
 
+            //USER VALIDATION MESSAGES
+
             [
                 'name.required' => 'Devi inserire un nome',
                 'name.string' => 'Il nome deve essere composto da lettere oppure lettere e numeri',
@@ -140,15 +142,5 @@ class RegisteredUserController extends Controller
         Auth::login($user);
 
         return redirect(RouteServiceProvider::HOME);
-    }
-
-    public function messages()
-    {
-        return [
-            // USER VALIDATION RULES
-
-            // Name messages
-
-        ];
     }
 }
