@@ -23,7 +23,7 @@ class StoreRestaurantRequest extends FormRequest
     {
 
         return [
-            // 
+            'types' => 'required|exists:type,id'
         ];
     }
 

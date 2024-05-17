@@ -6,6 +6,11 @@
     <h1 class="text-center mb-4">I tuoi Piatti</h1>
 
     <div class="row mb-5">
+
+    @foreach($restaurants->types as $type)
+        <span class="badge rounded-pill text-bg-light">{{$type->type}}</span>
+    @endforeach
+
     @foreach ($dishes as $dish)
 
         <div class="col-3 card">
