@@ -121,26 +121,26 @@ class RegisteredUserController extends Controller
             // RESTAURANT VALIDATION RULES
 
             // Name messages
-            'restaurant_name.required' => 'The name field is required',
-            'restaurant_name.string' => 'The name must be composed of letters or letters and numbers',
-            'restaurant_name.max' => 'The name must be less than 255 characters',
+            'restaurant_name.required' => 'Devi inserire un nome',
+            'restaurant_name.string' => 'Il nome deve essere composto da lettere oppure lettere e numeri',
+            'restaurant_name.max' => 'Il nome deve essere meno di 255 caratteri',
 
 
             // Address messages
-            'address.required' => 'The address field is required',
-            'address.string' => 'The address must be composed of letters or letters and numbers',
-            'address.max' => 'The address must be less than 255 characters',
+            'address.required' => 'Devi inserire un indirizzo',
+            'address.string' => 'L indirizzo deve essere composto da lettere oppure lettere e numeri',
+            'address.max' => 'L indirizzo deve essere meno di 255 caratteri',
 
 
             // VAT messages
-            'vat.required' => 'The VAT field is required',
-            'vat.number' => 'The VAT must be composed of numbers',
-            'vat.max' => 'The VAT must be 11 characters',
-            'vat.min' => 'The VAT must be 11 characters',
+            'vat.required' => 'Devi inserire la P.IVA',
+            'vat.number' => 'La P. IVA deve essere composta da numeri',
+            'vat.max' => 'La P. IVA deve essere di 11 caratteri',
+            'vat.min' => 'La P. IVA deve essere di 11 caratteri',
 
 
             // Types messages
-            'types.required' => 'The types field is required',
+            'types.required' => 'Devi inserire una tipologia',
         ];
     }
 }
