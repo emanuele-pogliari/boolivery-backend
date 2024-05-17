@@ -26,7 +26,7 @@
         </div>
     
         <div class="py-2">
-            <a href="{{route('admin.dishes.index', $dish->id)}}" class="btn btn-secondary d-flex align-items-center" style="height: 50px;">Indietro</a>       
+            <a href="{{route('admin.index')}}" class="btn btn-secondary d-flex align-items-center" style="height: 50px;">Indietro</a>       
         </div>
     
         <button type="button" class="btn btn-danger py-2 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 50px;">
