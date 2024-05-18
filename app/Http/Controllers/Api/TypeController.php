@@ -3,17 +3,17 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\Restaurant;
+use App\Models\Type;
 use Illuminate\Http\Request;
 
-class RestaurantController extends Controller
+class TypeController extends Controller
 {
     public function index()
     {
-        $restaurants = Restaurant::with(['types', 'dishes'])->paginate(6);
+        $types = Type::all();
         return response()->json([
             'success' => true,
-            'restaurants' => $restaurants,
+            'types' => $types,
         ]);
     }
 }
