@@ -13,7 +13,7 @@ class TypeController extends Controller
         $types = Type::all();
         return response()->json([
             'success' => true,
-            'types' => $types,
+            'results' => $types,
         ]);
     }
 }
