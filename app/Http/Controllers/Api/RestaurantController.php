@@ -27,7 +27,7 @@ class RestaurantController extends Controller
         $restaurants = $query->paginate(5);
         return response()->json([
             'success' => true,
-            'restaurants' => $restaurants,
+            'results' => $restaurants,
         ]);
     }
 }
