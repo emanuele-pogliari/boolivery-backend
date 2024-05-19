@@ -66,7 +66,7 @@
        
         <div class="d-flex gap-3">
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="{{route('admin.dishes.index')}}" class="btn btn-secondary">Back</a>
+            <a href="{{route('admin.index')}}" class="btn btn-secondary">Back</a>
         </div>
     </form>
 </div>

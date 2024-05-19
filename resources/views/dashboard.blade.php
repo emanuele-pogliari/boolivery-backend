@@ -21,9 +21,6 @@
                 </div>
 
                 <div>
-                    @foreach($dishes as $dish)
-                    <div>{{$dish->name}}</div>
-                    @endforeach
                 </div>
             </div>
         </div>
