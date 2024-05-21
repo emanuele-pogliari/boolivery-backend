@@ -122,6 +122,7 @@ class RegisteredUserController extends Controller
             'address' => $request->address,
             'vat' => $request->vat,
             'image' => $request->image,
+            'type' => $request->type,
         ]);
 
         // check if the image is present

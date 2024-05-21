@@ -61,7 +61,7 @@
                                 </div>
                             </div>
 
-                            <div class="mb-4 row">
+                            {{-- <div class="mb-4 row">
                                 <div class="col-md-6">
                                     <label for="types" class="mb-2" for="types">Tipologia Ristorante</label>
                                     <ul class="list-group">
@@ -83,6 +83,32 @@
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
+                                </div>
+                            </div> --}}
+
+                            <div class="mb-4 row">
+                                <div class="col-md-6">
+                                    <label for="types" class="mb-2">Tipologia Ristorante</label>
+                                    <ul class="list-group">
+                                        <li class="d-flex flex-wrap gap-5 list-group-item" style="list-style-type: none;">
+                                            @foreach ($types as $type)
+                                                <div>
+                                                    <input class="form-check-input me-1 {{ $errors->has('types') ? 'is-invalid' : '' }}" 
+                                                           type="checkbox" value="{{ $type->id }}"
+                                                           id="{{ $type->type }}" name="types[]"
+                                                           {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
+                                                    <label class="form-check-label text-uppercase" for="{{ $type->type }}">
+                                                        {{ $type->type }}
+                                                    </label>
+                                                </div>
+                                            @endforeach
+                                        </li>
+                                    </ul>
+                                    @if ($errors->has('types'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('types') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
 
