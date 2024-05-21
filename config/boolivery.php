@@ -88,9 +88,9 @@ return [
         [
             'type' => 'Chinese',
         ],
-        [
-            'type' => 'Japanese',
-        ],
+        // [
+        //     'type' => 'Japanese',
+        // ],
         [
             'type' => 'Thai',
         ],
