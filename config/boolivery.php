@@ -40,14 +40,14 @@ return [
     'restaurants' => [
         [
             'name' => 'Ristorante da Luigi',
-            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
+            'image' => 'https://livitaly-666b.kxcdn.com/wp-content/uploads/2019/10/shutterstock_1054754711.jpg',
             'address' => 'Via Roma 10, Roma',
             'vat' => 'IT12345678901',
             'user_id' => 1
         ],
         [
             'name' => 'Pizzeria Bella Napoli',
-            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
+            'image' => 'https://www.mrnystyleandtravel.com/wp-content/uploads/2018/07/Den-Exterior.jpg',
             'address' => 'Corso Italia 22, Napoli',
             'vat' => 'IT98765432109',
             'user_id' => 2
@@ -61,14 +61,14 @@ return [
         ],
         [
             'name' => 'Osteria Al Dente',
-            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
+            'image' => 'https://flawless.life/wp-content/uploads/2020/02/Le_migliori_pizzerie_di_Milano_PiccolaIschia.jpg',
             'address' => 'Via Milano 5, Milano',
             'vat' => 'IT56473829100',
             'user_id' => 4
         ],
         [
             'name' => 'Ristorante Il Girasole',
-            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
+            'image' => 'https://mangiaebevi.us/wp-content/uploads/2020/01/DSC4594-1024x683.jpg',
             'address' => 'Via Torino 18, Torino',
             'vat' => 'IT67584930210',
             'user_id' => 5
@@ -77,31 +77,31 @@ return [
 
     'types' => [
         [
-            'type' => 'mexican',
+            'type' => 'Mexican',
         ],
         [
-            'type' => 'italian',
+            'type' => 'Italian',
         ],
         [
-            'type' => 'pizzeria',
+            'type' => 'Pizzeria',
         ],
         [
-            'type' => 'chinese',
+            'type' => 'Chinese',
         ],
         [
-            'type' => 'japanese',
+            'type' => 'Japanese',
         ],
         [
-            'type' => 'thai',
+            'type' => 'Thai',
         ],
         [
-            'type' => 'indian',
+            'type' => 'Indian',
         ],
         [
-            'type' => 'fusion',
+            'type' => 'Fusion',
         ],
         [
-            'type' => 'greek',
+            'type' => 'Greek',
         ],
         [
             'type' => 'Steakhouse'
