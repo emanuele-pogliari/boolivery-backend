@@ -19,16 +19,29 @@ class RestaurantController extends Controller
 
         $query = Restaurant::with('types');
 
+        // if ($request->has('types')) {
+
+        //     $types = $request->input('types');
+
+        //     $typesArray = explode(',', $types);
+        //     if ($typesArray) {
+        //         $query->whereHas('types', function ($query) use ($typesArray) {
+        //             $query->whereIn('type', $typesArray);
+        //         });
+        //     }
+        // }
+
         if ($request->has('types')) {
-
             $types = $request->input('types');
-
             $typesArray = explode(',', $types);
-            if ($typesArray) {
-                $query->whereHas('types', function ($query) use ($typesArray) {
+
+            $query->whereHas('types', function ($query) use ($typesArray) {
+                $query->whereIn('type', $typesArray);
+            })
+
+                ->whereHas('types', function ($query) use ($typesArray) {
                     $query->whereIn('type', $typesArray);
-                });
-            }
+                }, '=', count($typesArray));
         }
 
         $restaurants = $query->paginate(4);
