@@ -40,35 +40,35 @@ return [
     'restaurants' => [
         [
             'name' => 'Ristorante da Luigi',
-            'image' => 'luigi_image.jpg',
+            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
             'address' => 'Via Roma 10, Roma',
             'vat' => 'IT12345678901',
             'user_id' => 1
         ],
         [
             'name' => 'Pizzeria Bella Napoli',
-            'image' => 'bella_napoli_image.jpg',
+            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
             'address' => 'Corso Italia 22, Napoli',
             'vat' => 'IT98765432109',
             'user_id' => 2
         ],
         [
             'name' => 'Trattoria Alla Vecchia',
-            'image' => 'vecchia_trattoria_image.jpg',
+            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
             'address' => 'Piazza Garibaldi 15, Firenze',
             'vat' => 'IT19283746501',
             'user_id' => 3
         ],
         [
             'name' => 'Osteria Al Dente',
-            'image' => 'al_dente_image.jpg',
+            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
             'address' => 'Via Milano 5, Milano',
             'vat' => 'IT56473829100',
             'user_id' => 4
         ],
         [
             'name' => 'Ristorante Il Girasole',
-            'image' => 'girasole_image.jpg',
+            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
             'address' => 'Via Torino 18, Torino',
             'vat' => 'IT67584930210',
             'user_id' => 5
