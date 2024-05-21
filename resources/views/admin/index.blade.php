@@ -7,13 +7,17 @@
 
     <div class="row mb-5">
 
+        <div class="section-one-container">
         @foreach($restaurants as $restaurant)
-        <span class="badge rounded-pill text-bg-light">{{$restaurant->name}}</span>
+        <span class="restaurant-name">{{$restaurant->name}}</span>
         <img src="{{asset('storage/' . $restaurant->image)}}" alt="">
+        <div class="badge-container">
         @foreach($restaurant->types as $type)
-            <span class="badge rounded-pill text-bg-light">{{$type->type}}</span>
+                <span class="badge rounded-pill text-bg-light custom-badge">{{$type->type}}</span>
         @endforeach
+        </div>
         @endforeach
+        </div>
 
         
 
