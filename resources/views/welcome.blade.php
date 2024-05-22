@@ -11,7 +11,7 @@
         </h1>
 
         <p class="col-md-8 fs-4">Questa è la pagina dove puoi modificare e aggiungere i tuoi piatti</p>
-        <a href="https://packagist.org/packages/pacificdev/laravel_9_preset" class="btn btn-primary btn-lg" type="button">Documentation</a>
+        <a href="{{ url('admin') }}" class="btn btn-primary btn-lg" type="button">Go to Admin</a>
     </div>
 </div>
 
