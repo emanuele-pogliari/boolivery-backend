@@ -18,7 +18,7 @@
                                 <div class="col-md-6">
                                     <input id="name" type="text"
                                         class="form-control @error('name') is-invalid @enderror" name="name"
-                                        value="{{ old('name') }}" autocomplete="name" autofocus pattern="^[A-Za-zÀ-ÿ]+$">
+                                        value="{{ old('name') }}" autocomplete="name" autofocus pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]{2,}" title="Name must be at least 2 charachters and it cannot contain number or special charactrers or symbols">
 
                                     @error('name')
                                         <span class="invalid-feedback" role="alert">
@@ -34,7 +34,7 @@
                                 <div class="col-md-6">
                                     <input id="surname" type="text"
                                         class="form-control @error('surname') is-invalid @enderror" name="surname"
-                                        value="{{ old('surname') }}" autocomplete="surname" autofocus pattern="^[A-Za-zÀ-ÿ]+$">
+                                        value="{{ old('surname') }}" autocomplete="surname" autofocus pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]{2,}">
 
                                     @error('surname')
                                         <span class="invalid-feedback" role="alert">
@@ -132,7 +132,7 @@
                                 <div class="col-md-6">
                                     <input id="vat" type="text"
                                         class="form-control @error('vat') is-invalid @enderror" name="vat"
-                                        value="{{ old('vat') }}" autocomplete="vat" autofocus required pattern="\d{11}" title="VAT must be of 11 digits">
+                                        value="{{ old('vat') }}" autocomplete="vat" autofocus required pattern="^IT[0-9]{9}$" title="VAT must be of 11 digits">
 
                                     @error('vat')
                                         <span class="invalid-feedback" role="alert">
@@ -149,7 +149,7 @@
                                 <div class="col-md-6">
                                     <input id="email" type="email"
                                         class="form-control @error('email') is-invalid @enderror" name="email"
-                                        value="{{ old('email') }}" autocomplete="email" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,3}$">
+                                        value="{{ old('email') }}" autocomplete="email" required pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -182,7 +182,7 @@
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
-                                        name="password_confirmation" autocomplete="new-password" required >
+                                        name="password_confirmation" autocomplete="new-password" required pattern="{8,}">
                                 </div>
                             </div>
 
@@ -200,3 +200,26 @@
         </div>
     </div>
 @endsection
+
+
+<script>
+//     const passwordInput = document.getElementById('password');
+// const confirmPasswordInput = document.getElementById('confirmPassword');
+// const submitButton = document.getElementById('submitButton');
+
+// passwordInput.addEventListener('input', checkPasswords);
+// confirmPasswordInput.addEventListener('input', checkPasswords);
+
+// function checkPasswords() {
+//   const password = passwordInput.value;
+//   const confirmPassword = confirmPasswordInput.value;
+
+//   if (password === confirmPassword) {
+//     submitButton.disabled = false;
+//     submitButton.classList.remove('error');
+//   } else {
+//     submitButton.disabled = true;
+//     submitButton.classList.add('error');
+//   }
+// }
+</script>

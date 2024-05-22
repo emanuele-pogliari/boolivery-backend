@@ -9,7 +9,7 @@
         @method('PUT')
 
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{$dish->name}}" required title="cassone">
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') ?? $dish->name}}" required title="cassone">
             <label for="name" class="form-label text-capitalize">Dish Name</label>
             @error('name')
                 <div class="invalid-feedback">
@@ -20,7 +20,7 @@
 
         <div class="mb-3">
             <label for="image" class="form-label text-capitalize">Image</label>
-            <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{$dish->image}}">
+            <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image')}}">
             @error('image')
                 <div class="invalid-feedback">
                     {{ $message }}
@@ -29,7 +29,7 @@
         </div>
 
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('description') is-invalid @enderror" id="name" name="description" value="{{$dish->description}}">
+            <input type="text" class="form-control @error('description') is-invalid @enderror" id="name" name="description" value="{{ old('description') ?? $dish->description}}">
             <label for="description" class="form-label text-capitalize">Description</label>
             @error('description')
                 <div class="invalid-feedback">
@@ -39,7 +39,7 @@
         </div>
 
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients" name="ingredients" value="{{$dish->ingredients}} required">
+            <input type="text" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients" name="ingredients" value="{{ old('ingredients') ?? $dish->ingredients}}" required">
             <label for="ingredients" class="form-label text-capitalize">Ingredients</label>
             @error('ingredients')
                 <div class="invalid-feedback">
@@ -49,7 +49,7 @@
         </div>
 
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{$dish->price}}">
+            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{ old('price') ?? $dish->price}}">
             <label for="price" class="form-label text-capitalize">Price</label>
             @error('price')
                 <div class="invalid-feedback">
