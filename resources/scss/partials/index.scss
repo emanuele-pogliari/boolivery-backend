@@ -1,0 +1,25 @@
+.card-container {
+    img {
+        border-radius: 25px;
+        margin-top: 10px;
+    }
+}
+
+.show-button,
+.add-dish-button {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.show-button:hover {
+    color: black;
+    background-color: rgb(151, 151, 151);
+}
+
+.add-dish-button:hover {
+    color: black;
+    background-color: white;
+}

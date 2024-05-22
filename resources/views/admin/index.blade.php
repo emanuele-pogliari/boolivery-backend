@@ -25,18 +25,18 @@
 
     @foreach ($dishes as $dish)
 
-        <div class="col-3 card">
+        <div class="col-3 card card-container">
             <img src="{{asset('storage/' . $dish->image)}}" class="card-img-top img-fluid" alt="">
             <div class="card-body text-center">
                 <h5 class="card-title">{{$dish->name}}</h5>
                 <p class="card-text">{{$dish->price}} €</p>
-                <a class="btn btn-primary" href="{{route('admin.dishes.show', $dish->id)}}">Visualizza</a>
+                <a class="show-button" href="{{route('admin.dishes.show', $dish->id)}}">Visualizza</a>
             </div>
         </div>
     @endforeach
 </div>
         <div class="align-items-center text-center">
-            <a href="{{route('admin.dishes.create')}}" class="btn btn-primary">Aggiungi Piatto</a>                          
+            <a href="{{route('admin.dishes.create')}}" class="add-dish-button">Aggiungi Piatto</a>                          
         </div>
 </div>
 
