@@ -50,4 +50,14 @@ class RestaurantController extends Controller
             'results' => $restaurants,
         ]);
     }
+
+    public function show($id)
+    {
+        $restaurant = Restaurant::find($id);
+
+        return response()->json([
+            'success' => true,
+            'results' => $restaurant,
+        ]);
+    }
 }
