@@ -53,11 +53,11 @@ class RestaurantController extends Controller
 
     public function show($id)
     {
-        $restaurant = Restaurant::find($id);
+        $restaurants = Restaurant::with(['dishes'])->find($id);
 
         return response()->json([
             'success' => true,
-            'results' => $restaurant,
+            'results' => $restaurants,
         ]);
     }
 }
