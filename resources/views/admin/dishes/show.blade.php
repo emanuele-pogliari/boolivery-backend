@@ -5,31 +5,33 @@
 <div class="container py-5">
     <h1 class="py-2">{{$dish->name}}</h1>
 
-    <img src="{{ asset('storage/' . $dish->image) }}" alt="" style="height: 200px;">
+    <div class="dish-image">
+        <img src="{{ asset('storage/' . $dish->image) }}" alt="" style="height: 200px;">
+    </div>
 
     <p class="py-2">
         {{$dish->description}}
     </p>
 
-    <p class="py-2">
+    <p class="py-2 dish-ingredients">
         {{$dish->ingredients}}
     </p>
 
-    <p class="py-2">
-        {{$dish->price}}
+    <p class="py-2 dish-price">
+        € {{$dish->price}}
     </p>
 
     <div class="d-flex gap-2 align-items-center">
 
         <div class="py-2">
-            <a href="{{route('admin.dishes.edit', $dish->id)}}" class="btn btn-warning d-flex align-items-center" style="height: 50px;">Modifica</a>       
+            <a href="{{route('admin.dishes.edit', $dish->id)}}" class="edit-button">Modifica</a>       
         </div>
     
         <div class="py-2">
-            <a href="{{route('admin.index')}}" class="btn btn-secondary d-flex align-items-center" style="height: 50px;">Indietro</a>       
+            <a href="{{route('admin.index')}}" class="back-button">Indietro</a>       
         </div>
     
-        <button type="button" class="btn btn-danger py-2 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 50px;">
+        <button type="button" class="delete-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Elimina
         </button>
 
