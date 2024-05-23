@@ -10,7 +10,7 @@
         @csrf
           
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{old('name')}}">
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{old('name')}}" required title="Must insert dish name">
           <label for="name" class="form-label">Dish Name</label>
           @error('image')
             <div class="invalid-feedback">
@@ -38,7 +38,7 @@
                 {{$message}}
             </div>
             @enderror
-            <small id="descriptionHelper" class="text-muted">(optional) Descrive your dish</small>
+            <small id="descriptionHelper" class="text-muted">(optional) Describe your dish</small>
         </div>
         
         <div class="mb-3 form-floating">
@@ -55,7 +55,7 @@
         
         <div class="mb-3 form-floating ">
             <label for="price" class="form-label">Price</label>
-            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" aria-describedby="priceHelper" value="{{old('price')}}">
+            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" aria-describedby="priceHelper" value="{{old('price')}}" required title="Must insert a price">
             @error('price')
             <div class="invalid-feedback">
                 {{$message}}
