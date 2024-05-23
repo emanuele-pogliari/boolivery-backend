@@ -8,9 +8,9 @@
         @csrf
         @method('PUT')
 
-        <div class="mb-3">
+        <div class="mb-3 form-floating">
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') ?? $dish->name}}" required title="cassone">
             <label for="name" class="form-label text-capitalize">Dish Name</label>
-            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{$dish->name}}">
             @error('name')
                 <div class="invalid-feedback">
                     {{ $message }}
@@ -20,7 +20,7 @@
 
         <div class="mb-3">
             <label for="image" class="form-label text-capitalize">Image</label>
-            <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{$dish->image}}">
+            <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image')}}">
             @error('image')
                 <div class="invalid-feedback">
                     {{ $message }}
@@ -28,9 +28,9 @@
             @enderror
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 form-floating">
+            <input type="text" class="form-control @error('description') is-invalid @enderror" id="name" name="description" value="{{ old('description') ?? $dish->description}}">
             <label for="description" class="form-label text-capitalize">Description</label>
-            <input type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{$dish->description}}">
             @error('description')
                 <div class="invalid-feedback">
                     {{ $message }}
@@ -38,9 +38,9 @@
             @enderror
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 form-floating">
+            <input type="text" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients" name="ingredients" value="{{ old('ingredients') ?? $dish->ingredients}}" required">
             <label for="ingredients" class="form-label text-capitalize">Ingredients</label>
-            <input type="text" class="form-control @error('ingredients') is-invalid @enderror" name="ingredients" value="{{$dish->ingredients}}">
             @error('ingredients')
                 <div class="invalid-feedback">
                     {{ $message }}
@@ -48,9 +48,9 @@
             @enderror
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 form-floating">
+            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{ old('price') ?? $dish->price}}">
             <label for="price" class="form-label text-capitalize">Price</label>
-            <input type="text" class="form-control @error('price') is-invalid @enderror" name="price" value="{{$dish->price}}">
             @error('price')
                 <div class="invalid-feedback">
                     {{ $message }}
@@ -58,12 +58,13 @@
             @enderror
         </div>
 
-        <div class="mb-3">
-            <label for="visible" class="form-check-input text-capitalize">Visible</label>
-            <input type="text" class="form-control" name="visible" value="{{$dish->visible}}">
-        </div>
+        <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="visible" name="visible" checked>
+            <label class="form-check-label" for="visible">
+                Visibile?
+            </label>
+          </div>
 
-       
         <div class="d-flex gap-3">
             <button type="submit" class="btn btn-primary">Submit</button>
             <a href="{{route('admin.index')}}" class="btn btn-secondary">Back</a>
