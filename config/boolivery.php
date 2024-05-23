@@ -41,6 +41,7 @@ return [
         [
             'name' => 'Ristorante da Luigi',
             'image' => 'https://livitaly-666b.kxcdn.com/wp-content/uploads/2019/10/shutterstock_1054754711.jpg',
+            'phone' => '+39 3517785963',
             'address' => 'Via Roma 10, Roma',
             'vat' => 'IT12345678901',
             'user_id' => 1
@@ -49,6 +50,7 @@ return [
             'name' => 'Pizzeria Bella Napoli',
             'image' => 'https://www.mrnystyleandtravel.com/wp-content/uploads/2018/07/Den-Exterior.jpg',
             'address' => 'Corso Italia 22, Napoli',
+            'phone' => '+39 3781598745',
             'vat' => 'IT98765432109',
             'user_id' => 2
         ],
@@ -56,6 +58,7 @@ return [
             'name' => 'Trattoria Alla Vecchia',
             'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
             'address' => 'Piazza Garibaldi 15, Firenze',
+            'phone' => '+39 3795896521',
             'vat' => 'IT19283746501',
             'user_id' => 3
         ],
@@ -63,6 +66,7 @@ return [
             'name' => 'Osteria Al Dente',
             'image' => 'https://flawless.life/wp-content/uploads/2020/02/Le_migliori_pizzerie_di_Milano_PiccolaIschia.jpg',
             'address' => 'Via Milano 5, Milano',
+            'phone' => '+39 3253698547',
             'vat' => 'IT56473829100',
             'user_id' => 4
         ],
@@ -70,6 +74,7 @@ return [
             'name' => 'Ristorante Il Girasole',
             'image' => 'https://mangiaebevi.us/wp-content/uploads/2020/01/DSC4594-1024x683.jpg',
             'address' => 'Via Torino 18, Torino',
+            'phone' => '+39 3782654851',
             'vat' => 'IT67584930210',
             'user_id' => 5
         ],

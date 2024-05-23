@@ -46,6 +46,7 @@ class RegisteredUserController extends Controller
                 // RESTAURANT VALIDATION RULES
                 'restaurant_name' => ['required', 'string', 'max:255'],
                 'address' => ['nullable', 'string', 'max:255'],
+                'phone' => ['nullable', 'string', 'min:10', 'max:10'],
                 'vat' => ['nullable', 'string', 'min:11', 'max:11', 'unique:' . Restaurant::class],
                 'types' => ['required', 'array'],
             ],
@@ -91,6 +92,10 @@ class RegisteredUserController extends Controller
                 'address.required' => 'Devi inserire un indirizzo',
                 'address.string' => 'L indirizzo deve essere composto da lettere oppure lettere e numeri',
                 'address.max' => 'L indirizzo deve essere meno di 255 caratteri',
+
+                'phone.string' => 'Il numero di telefono deve essere composto da numeri',
+                'phone.min' => 'Il numero di telefono deve avere minimo 10 caratteri',
+                'phone.max' => 'Il numero di telefono deve avere massimo 10 caratteri',
 
 
                 // VAT messages
