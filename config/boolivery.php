@@ -111,7 +111,7 @@ return [
     'dishes' => [
         [
             "name" => "Spaghetti Carbonara",
-            "image" => "immagine",
+            "image" => "https://www.ricettaidea.it/articoli/ricette-regionali/lazio/original_spaghetti-alla-carbonara.jpg",
             "description" => "Spaghetti con crema di uova e pancetta.",
             "ingredients" => ["Spaghetti", "Uova", "Pancetta", "Pecorino", "Pepe"],
             "price" => 12.50,
@@ -121,7 +121,7 @@ return [
         ],
         [
             "name" => "Pizza Margherita",
-            "image" => "immagine",
+            "image" => "https://vitaitaliantours.com.au/wp-content/uploads/2016/03/Neapolitan-Pizza-Margherita.jpg",
             "description" => "Pizza classica con pomodoro e mozzarella.",
             "ingredients" => ["Pomodoro", "Mozzarella", "Basilico", "Olio", "Sale"],
             "price" => 8.00,
@@ -130,7 +130,7 @@ return [
         ],
         [
             "name" => "Risotto ai Funghi",
-            "image" => "immagine",
+            "image" => "https://blog.giallozafferano.it/peperoncino88/wp-content/uploads/2017/10/DSC_0020.jpg",
             "description" => "Risotto cremoso con funghi porcini.",
             "ingredients" => ["Riso", "Funghi", "Brodo", "Burro", "Parmigiano"],
             "price" => 14.00,
@@ -139,7 +139,7 @@ return [
         ],
         [
             "name" => "Lasagna",
-            "image" => "immagine",
+            "image" => "https://facts.net/wp-content/uploads/2023/05/Slice-of-lasagna.jpeg",
             "description" => "Strati di pasta con ragù e besciamella.",
             "ingredients" => ["Pasta", "Ragù", "Besciamella", "Parmigiano", "Mozzarella"],
             "price" => 13.00,
@@ -148,7 +148,7 @@ return [
         ],
         [
             "name" => "Insalata Caprese",
-            "image" => "immagine",
+            "image" => "https://www.tasteoftravel.at/wp-content/uploads/Rezept-Caprese-Salat.jpg",
             "description" => "Pomodoro e mozzarella con basilico fresco.",
             "ingredients" => ["Pomodoro", "Mozzarella", "Basilico", "Olio", "Sale"],
             "price" => 7.00,
@@ -157,7 +157,7 @@ return [
         ],
         [
             "name" => "Pollo alla Cacciatora",
-            "image" => "immagine",
+            "image" => "https://4.bp.blogspot.com/-sLQkRHQnI0g/V5y0Lj1C6QI/AAAAAAAAIL0/B1fHSzXrZaMAgZTOwgzFpNU0gAhVVT_RQCLcB/s640/pollo_padella.jpg",
             "description" => "Pollo brasato con pomodoro e olive.",
             "ingredients" => ["Pollo", "Pomodoro", "Olive", "Vino", "Rosmarino"],
             "price" => 15.00,
@@ -166,7 +166,7 @@ return [
         ],
         [
             "name" => "Fettuccine Alfredo",
-            "image" => "immagine",
+            "image" => "https://www.thechunkychef.com/wp-content/uploads/2016/02/Roasted-Garlic-Cream-Sauce-6-1.jpg",
             "description" => "Pasta con salsa cremosa al burro e parmigiano.",
             "ingredients" => ["Fettuccine", "Burro", "Parmigiano", "Panna", "Pepe"],
             "price" => 11.00,
@@ -175,7 +175,7 @@ return [
         ],
         [
             "name" => "Bruschetta al Pomodoro",
-            "image" => "immagine",
+            "image" => "https://www.cucchiaio.it/content/cucchiaio/it/ricette/2009/11/ricetta-bruschetta-pomodoro/_jcr_content/header-par/image_single.img.jpg/1596625322419.jpg",
             "description" => "Pane tostato con pomodoro fresco e basilico.",
             "ingredients" => ["Pane", "Pomodoro", "Basilico", "Aglio", "Olio"],
             "price" => 5.00,
@@ -184,7 +184,7 @@ return [
         ],
         [
             "name" => "Tiramisù",
-            "image" => "immagine",
+            "image" => "https://www.divella.it/wp-content/uploads/2022/12/tiramisu.jpg",
             "description" => "Dolce al caffè con mascarpone e savoiardi.",
             "ingredients" => ["Mascarpone", "Savoiardi", "Caffè", "Cacao", "Zucchero"],
             "price" => 6.00,
@@ -193,7 +193,7 @@ return [
         ],
         [
             "name" => "Gnocchi al Pesto",
-            "image" => "immagine",
+            "image" => "https://lognocco.it/wp-content/uploads/2018/07/9-preparazione-ricetta-gnocchi-pesto.jpg",
             "description" => "Gnocchi di patate con pesto fresco.",
             "ingredients" => ["Gnocchi", "Basilico", "Aglio", "Pinoli", "Parmigiano"],
             "price" => 10.50,
@@ -202,7 +202,7 @@ return [
         ],
         [
             "name" => "Tagliata di Manzo",
-            "image" => "immagine",
+            "image" => "https://staticcookist.akamaized.net/wp-content/uploads/sites/21/2023/01/Tagliata-di-manzo.jpg",
             "description" => "Manzo alla griglia con rucola e parmigiano.",
             "ingredients" => ["Manzo", "Rucola", "Parmigiano", "Olio", "Sale"],
             "price" => 18.00,
@@ -211,7 +211,7 @@ return [
         ],
         [
             "name" => "Penne all'Arrabbiata",
-            "image" => "immagine",
+            "image" => "https://cdn.ilclubdellericette.it/wp-content/uploads/2021/09/penne-arrabbiata-1280x720.jpg",
             "description" => "Pasta piccante con salsa di pomodoro e peperoncino.",
             "ingredients" => ["Penne", "Pomodoro", "Peperoncino", "Aglio", "Olio"],
             "price" => 9.00,
