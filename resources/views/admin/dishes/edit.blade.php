@@ -9,7 +9,7 @@
         @method('PUT')
 
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') ?? $dish->name}}" required title="cassone">
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') ?? $dish->name}}" required title="Must insert a name">
             <label for="name" class="form-label text-capitalize">Dish Name</label>
             @error('name')
                 <div class="invalid-feedback">
@@ -49,7 +49,7 @@
         </div>
 
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{ old('price') ?? $dish->price}}">
+            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{ old('price') ?? $dish->price}}" required title="Must insert a price">
             <label for="price" class="form-label text-capitalize">Price</label>
             @error('price')
                 <div class="invalid-feedback">
