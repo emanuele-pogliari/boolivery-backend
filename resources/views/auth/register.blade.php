@@ -18,7 +18,7 @@
                                 <div class="col-md-6">
                                     <input id="name" type="text"
                                         class="form-control @error('name') is-invalid @enderror" name="name"
-                                        value="{{ old('name') }}" autocomplete="name" autofocus pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]{2,}" title="Name must be at least 2 charachters and it cannot contain number or special charactrers or symbols">
+                                        value="{{ old('name') }}" autocomplete="name" autofocus pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]{2,}" title="Name must be at least 2 characters and it cannot contain number or special characters or symbols">
 
                                     @error('name')
                                         <span class="invalid-feedback" role="alert">
@@ -34,7 +34,7 @@
                                 <div class="col-md-6">
                                     <input id="surname" type="text"
                                         class="form-control @error('surname') is-invalid @enderror" name="surname"
-                                        value="{{ old('surname') }}" autocomplete="surname" autofocus pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]{2,}">
+                                        value="{{ old('surname') }}" autocomplete="surname" autofocus pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]{2,}" title="Surname must be at least 2 characters and it cannot contain number or special characters or symbols">
 
                                     @error('surname')
                                         <span class="invalid-feedback" role="alert">
@@ -166,7 +166,7 @@
                                 <div class="col-md-6">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
-                                        autocomplete="new-password" required pattern="{8,}">
+                                        autocomplete="new-password" required pattern="{8,}" title="Password must be at least 6 characters long">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
