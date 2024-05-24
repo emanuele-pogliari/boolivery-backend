@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Braintree\Gateway;
 use Illuminate\Http\Request;
 use Braintree\Transaction;
+use \Braintree\Test\Nonces;
 
 class PaymentController extends Controller
 {
@@ -29,20 +30,29 @@ class PaymentController extends Controller
 
     public function processPayment(Request $request)
     {
-        $nonce = $request->input('payment_method_nonce');
+        $nonce = 'fake-processor-declined-visa-nonce';
+        // $amount = $request->input('amount');
 
-        $transaction = new Transaction();
-        $result = $transaction->sale([
-            'amount' => $request->input('amount'),
+        $amount = "10.00";
+        $result = $this->gateway->transaction()->sale([
+            'amount' => $amount,
             'paymentMethodNonce' => $nonce,
+            'options' => [
+                'submitForSettlement' => true
+            ]
         ]);
 
+        // if ($result->success) {
+        //     // Transazione riuscita!
+        //     return response()->json([
+        //         'message' => 'Payment successful',
+        //         'transactionId' => $result->transaction->getId()
+        //     ]);
+        // }
         if ($result->success) {
-            // Transazione riuscita!
-            return response()->json(['success' => true]);
+            return response()->json(['success' => true, 'transaction' => $result->transaction]);
         } else {
-            // Transazione fallita!
-            return response()->json(['error' => $result->error->message]);
+            return response()->json(['success' => false, 'error' => $result->message]);
         }
     }
 }

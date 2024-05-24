@@ -25,5 +25,5 @@ Route::get('/restaurants', [RestaurantController::class, 'index']);
 Route::get('/types', [TypeController::class, 'index']);
 Route::get('/restaurants/{id}', [RestaurantController::class, 'show']);
 
-Route::post('/process-payment', [PaymentController::class, 'processPayment']);
+Route::post('/payment', [PaymentController::class, 'processPayment']);
 Route::get('/token', [PaymentController::class, 'token']);
