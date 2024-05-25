@@ -125,6 +125,7 @@ class RegisteredUserController extends Controller
             'user_id' => $user->id,
             'name' => $request->restaurant_name,
             'address' => $request->address,
+            'phone' => $request->phone,
             'vat' => $request->vat,
             'image' => $request->image,
             'type' => $request->type,
