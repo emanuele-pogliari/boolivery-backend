@@ -30,10 +30,11 @@ class PaymentController extends Controller
 
     public function processPayment(Request $request)
     {
-        $nonce = 'fake-processor-declined-visa-nonce';
+        $nonce = $request->input('paymentMethodNonce');
+        // $nonce = 'fake-processor-declined-visa-nonce';
         // $amount = $request->input('amount');
 
-        $amount = "10.00";
+        $amount = 30;
         $result = $this->gateway->transaction()->sale([
             'amount' => $amount,
             'paymentMethodNonce' => $nonce,
@@ -42,17 +43,16 @@ class PaymentController extends Controller
             ]
         ]);
 
-        // if ($result->success) {
-        //     // Transazione riuscita!
-        //     return response()->json([
-        //         'message' => 'Payment successful',
-        //         'transactionId' => $result->transaction->getId()
-        //     ]);
-        // }
         if ($result->success) {
-            return response()->json(['success' => true, 'transaction' => $result->transaction]);
+            // Transazione riuscita!
+            return response()->json([
+                'message' => 'Payment successful',
+                'transaction' => $result->transaction
+            ]);
         } else {
-            return response()->json(['success' => false, 'error' => $result->message]);
+            return response()->json([
+                'success' => false, 'error' => $result->message
+            ]);
         }
     }
 }
