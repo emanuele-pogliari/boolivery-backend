@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::table('dish_order', function (Blueprint $table) {
             $table->integer('quantity');
-            $table->decimal("single_price");
         });
     }
 
