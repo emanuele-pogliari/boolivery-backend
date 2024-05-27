@@ -22,6 +22,12 @@ class OrderController extends Controller
             $query->where('restaurant_id', $restaurant->id);
         })->with('dishes')->orderBy('created_at', 'DESC')->get();
 
+        $orders->load([
+            'dishes' => function ($query) {
+                $query->withPivot('quantity');
+            }
+        ]);
+
         return view('admin.orders.index', compact('orders'));
     }
 
