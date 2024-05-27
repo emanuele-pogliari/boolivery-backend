@@ -22,8 +22,6 @@ class OrderController extends Controller
             $query->where('restaurant_id', $restaurant->id);
         })->with('dishes')->orderBy('created_at', 'DESC')->get();
 
-        dump($orders);
-
         return view('admin.orders.index', compact('orders'));
     }
 

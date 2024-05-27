@@ -16,16 +16,18 @@
     </thead>
     <tbody>
 
+    @foreach ($orders as $order)
       <tr>
-        <th scope="row">1</th>
-        <td>€ 28,00</td>
-        <td>3</td>
-        <td>Sergio</td>
-        <td>Rossi</td>
-        <td>Via Antonucci, 28</td>
-        <td>sergiorossi@mail.it</td>
-        <td>+39 3514875962</td>
+        <th scope="row">{{$order->id}}</th>
+        <td>€ {{$order->total_price}}</td>
+        <td>{{$order->quantity}}</td>
+        <td>{{$order->customer_name}}</td>
+        <td>{{$order->customer_last_name}}</td>
+        <td>{{$order->customer_address}}</td>
+        <td>{{$order->customer_email}}</td>
+        <td>{{$order->customer_phone}}</td>
       </tr>
+    @endforeach
       
     </tbody>
   </table>
