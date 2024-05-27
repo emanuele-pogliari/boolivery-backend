@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreOrderRequest;
 use App\Http\Requests\UpdateOrderRequest;
 use App\Models\Order;
+use App\Models\Restaurant;
 use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
@@ -14,10 +15,11 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $restaurantId = Auth::user()->restaurant_id;
+        $restaurant = Restaurant::where('user_id', Auth::id())->firstOrFail();
 
-        $orders = Order::whereHas('dishes', function ($query) use ($restaurantId) {
-            $query->where('restaurant_id', $restaurantId);
+        // Ottieni gli ordini che contengono piatti del ristorante specifico
+        $orders = Order::whereHas('dishes', function ($query) use ($restaurant) {
+            $query->where('restaurant_id', $restaurant->id);
         })->with('dishes')->orderBy('created_at', 'DESC')->get();
 
         dump($orders);
