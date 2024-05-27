@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreOrderRequest;
 use App\Http\Requests\UpdateOrderRequest;
 use App\Models\Order;
+use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
@@ -13,7 +14,15 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $restaurantId = Auth::user()->restaurant_id;
+
+        $orders = Order::whereHas('dishes', function ($query) use ($restaurantId) {
+            $query->where('restaurant_id', $restaurantId);
+        })->with('dishes')->orderBy('created_at', 'DESC')->get();
+
+        dump($orders);
+
+        return view('admin.orders.index', compact('orders'));
     }
 
     /**

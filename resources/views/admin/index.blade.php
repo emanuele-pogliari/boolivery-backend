@@ -36,7 +36,8 @@
     @endforeach
 </div>
         <div class="align-items-center text-center">
-            <a href="{{route('admin.dishes.create')}}" class="add-dish-button">Aggiungi Piatto</a>                          
+            <a href="{{route('admin.dishes.create')}}" class="add-dish-button">Aggiungi Piatto</a>
+            <a href="{{route('admin.orders.index')}}" class="add-dish-button">Riepilogo Ordini</a>                          
         </div>
 </div>
 
