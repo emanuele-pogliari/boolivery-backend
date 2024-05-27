@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
 use Braintree\Gateway;
 use Illuminate\Http\Request;
 use Braintree\Transaction;
@@ -24,17 +25,30 @@ class PaymentController extends Controller
 
     public function token()
     {
+        //generate client token from braintree gateway
         $clientToken = $this->gateway->clientToken()->generate();
         return response()->json(['token' => $clientToken]);
     }
 
+
     public function processPayment(Request $request)
     {
-        $nonce = $request->input('paymentMethodNonce');
-        // $nonce = 'fake-processor-declined-visa-nonce';
-        // $amount = $request->input('amount');
+        //validate form data
+        $validData = $request->validate([
+            'customer_name' => 'required',
+            'customer_last_name' => 'required',
+            'customer_address' => 'required',
+            'customer_email' => 'required',
+            'customer_phone' => 'required',
+            'total_price' => 'required',
+            'paymentMethodNonce' => 'required'
+        ]);
 
-        $amount = 30;
+        //set amount and nonce from form user data
+        $amount = $validData['total_price'];
+        $nonce = $validData['paymentMethodNonce'];
+
+        //process payment with braintree gateway
         $result = $this->gateway->transaction()->sale([
             'amount' => $amount,
             'paymentMethodNonce' => $nonce,
@@ -42,8 +56,22 @@ class PaymentController extends Controller
                 'submitForSettlement' => true
             ]
         ]);
-
+        //return response from api
+        //if success, create a new order from validation form above
         if ($result->success) {
+
+            //save order in db
+            $order = new Order();
+            $order->fill($validData);
+            $order->save();
+
+            //
+            $orderInfo = json_decode($request->input('orderInfo'), true);
+            foreach ($orderInfo as $dish) {
+                $order->dishes()->attach($dish['dish_id'], ['quantity' => $dish['quantity']]);
+            }
+
+
             // Transazione riuscita!
             return response()->json([
                 'message' => 'Payment successful',
