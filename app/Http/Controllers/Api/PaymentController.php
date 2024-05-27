@@ -35,14 +35,14 @@ class PaymentController extends Controller
     {
         //validate form data
         $validData = $request->validate([
-            'total_price' => 'numeric|min:0.01',
-            'customer_name' => 'string|max:255',
-            'customer_last_name' => 'string|max:255',
-            'customer_address' => 'string|max:255',
-            'customer_email' => 'email|max:255',
-            'customer_phone' => 'string|max:20',
+            'total_price' => 'required|numeric|min:0.01',
+            'customer_name' => 'required|string|max:255',
+            'customer_last_name' => 'required|string|max:255',
+            'customer_address' => 'required|string|max:255',
+            'customer_email' => 'required|email|max:255',
+            'customer_phone' => 'required|string|max:20',
             'customer_note' => 'string|max:255',
-            'paymentMethodNonce' => 'string',
+            'paymentMethodNonce' => 'required|string',
         ]);
 
         //set amount and nonce from form user data
