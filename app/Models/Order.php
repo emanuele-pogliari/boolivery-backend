@@ -12,6 +12,6 @@ class Order extends Model
     protected $fillable = ['total_price', 'customer_name', 'customer_last_name', 'customer_address', 'customer_email', 'customer_phone'];
     public function dishes()
     {
-        return $this->hasMany(Dish::class);
+        return $this->belongsToMany(Dish::class);
     }
 }

@@ -35,18 +35,17 @@ class PaymentController extends Controller
     {
         //validate form data
         $validData = $request->validate([
-            'total_price' => 'numeric',
+            'total_price' => 'numeric|min:0.01',
             'customer_name' => 'string|max:255',
             'customer_last_name' => 'string|max:255',
             'customer_address' => 'string|max:255',
-            'customer_phone' => 'max:20',
-            'customer_email' => 'max:255',
+            'customer_email' => 'email|max:255',
+            'customer_phone' => 'string|max:20',
             'paymentMethodNonce' => 'string',
-            'orderInfo' => 'json'
         ]);
 
         //set amount and nonce from form user data
-        $amount = 13.92;
+        $amount = $validData['total_price'];
         $nonce = $validData['paymentMethodNonce'];
 
         //process payment with braintree gateway
@@ -67,7 +66,7 @@ class PaymentController extends Controller
             $order->save();
 
             //
-            $orderInfo = json_decode($request->input('orderInfo'), true);
+            $orderInfo = json_decode($request->input('userData'), true);
             foreach ($orderInfo as $dish) {
                 $order->dishes()->attach($dish['dish_id'], ['quantity' => $dish['quantity']]);
             }
