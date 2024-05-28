@@ -12,6 +12,7 @@
 
         <p class="col-md-8 fs-4">Questa è la pagina dove puoi modificare e aggiungere i tuoi piatti</p>
         <a href="{{ url('admin') }}" class="btn btn-primary btn-lg" type="button">Go to Admin</a>
+        <a href="http://localhost:5173" class="btn btn-primary btn-lg">Vai alla Home di Boolivery</a>
     </div>
 </div>
 
