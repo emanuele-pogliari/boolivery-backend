@@ -23,3 +23,19 @@
     color: black;
     background-color: white;
 }
+
+.restaurant-img {
+    max-width: 275px;
+}
+
+.custom_badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #37373b;
+    font-size: larger;
+    font-weight: 500;
+
+    padding: .5rem 1.4rem;
+}

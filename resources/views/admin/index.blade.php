@@ -2,23 +2,25 @@
 @extends ('layouts.app')
 @section('content')
 
-<div class="container py-5">
-    <h1 class="text-center mb-4">I tuoi Piatti</h1>
+<div class="py-5 d-flex row justify-content-center w-100">
+    @foreach($restaurants as $restaurant)
+    <h1 class="text-center mb-4">Welcome in "{{$restaurant->name}}" Home! </h1>
+
+    <img class="restaurant-img" src="{{asset('storage/' . $restaurant->image)}}" alt="">
 
     <div class="row mb-5">
 
         <div class="section-one-container">
-        @foreach($restaurants as $restaurant)
-        <span class="restaurant-name">{{$restaurant->name}}</span>
-        <img src="{{asset('storage/' . $restaurant->image)}}" alt="">
-        <div class="badge-container">
-        @foreach($restaurant->types as $type)
-                <span class="badge rounded-pill text-bg-light custom-badge">{{$type->type}}</span>
-        @endforeach
-        </div>
-        @endforeach
-        </div>
+            
+            <div class="badge-container">
 
+                @foreach($restaurant->types as $type)
+                        <p class="badge rounded-pill custom_badge mt-5">{{$type->type}}</p>
+                @endforeach
+            </div>
+
+        </div>
+    @endforeach
         
 
 
