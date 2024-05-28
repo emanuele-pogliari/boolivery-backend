@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\NewOrderNotificationMail;
 use App\Mail\OrderConfirmationMail;
+use App\Models\Lead;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
@@ -26,12 +27,11 @@ class LeadController extends Controller
             ]);
         }
 
-        $new_lead = new LeadController();
+        $new_lead = new Lead();
         $new_lead->fill($data);
         $new_lead->save();
 
-        Mail::to('')->send(new OrderConfirmationMail($new_lead));
-        Mail::to('')->send(new NewOrderNotificationMail($new_lead));
+        Mail::to("manu.pogliari@gmail.com")->send(new OrderConfirmationMail($new_lead));
 
         return response()->json([
             'success' => true

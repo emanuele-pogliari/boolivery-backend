@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Mail\NewOrderNotificationMail;
 use App\Mail\OrderConfirmationMail;
+use App\Models\Dish;
 use App\Models\Order;
+use App\Models\Restaurant;
 use Braintree\Gateway;
 use Illuminate\Http\Request;
 use Braintree\Transaction;
@@ -44,7 +46,7 @@ class PaymentController extends Controller
             'customer_address' => 'required|string|max:255',
             'customer_email' => 'required|email|max:255',
             'customer_phone' => 'required|string|max:20',
-            'customer_note' => 'string|max:255',
+            'customer_note' => 'nullable|string|max:255',
             'paymentMethodNonce' => 'required|string',
         ]);
 
@@ -64,6 +66,8 @@ class PaymentController extends Controller
         //if success, create a new order from validation form above
         if ($result->success) {
 
+
+
             //save order in db
             $order = new Order();
             $order->fill($validData);
@@ -75,19 +79,25 @@ class PaymentController extends Controller
                 $order->dishes()->attach($dish['dish_id'], ['quantity' => $dish['quantity']]);
             }
 
-            Mail::to($order->customer_email)->send(new OrderConfirmationMail($order->restaurant->email));
+            $dish_id = array_column($orderInfo, 'dish_id');
+            $restaurant_id = Dish::whereIn('id', $dish_id)->value('restaurant_id');
+            $restaurant = Restaurant::findOrFail($restaurant_id);
 
-            Mail::to($order->restaurant->email)->send(new NewOrderNotificationMail($order->customer->email));
+            Mail::to($order->customer_email)->send(new OrderConfirmationMail($order));
+            Mail::to($restaurant->user->email)->send(new NewOrderNotificationMail($order));
 
 
             // Transazione riuscita!
             return response()->json([
+                'success' => true,
                 'message' => 'Payment successful',
-                'transaction' => $result->transaction
+                'transaction' => $result->transaction,
+                'order' => $order
             ]);
         } else {
             return response()->json([
-                'success' => false, 'error' => $result->message
+                'success' => false,
+                'error' => $result->message
             ]);
         }
     }

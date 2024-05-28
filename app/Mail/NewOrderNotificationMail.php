@@ -17,9 +17,9 @@ class NewOrderNotificationMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($lead)
+    public function __construct($_lead)
     {
-        $this->lead = $lead;
+        $this->lead = $_lead;
     }
 
     /**
