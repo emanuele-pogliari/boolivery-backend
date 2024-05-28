@@ -12,7 +12,6 @@
         <th scope="col">Customer Email</th>
         <th scope="col">Customer Phone</th>
         <th scope="col">Total Price</th>
-        <th scope="col">Quantity</th>
         <th scope="col">Customer Note</th>
         <th scope="col">Created At</th>
       </tr>
@@ -28,9 +27,11 @@
         <td>{{$order->customer_email}}</td>
         <td>{{$order->customer_phone}}</td>
         <td>€ {{$order->total_price}}</td>
-        <td>{{$order->quantity}}</td>
         <td>{{$order->customer_note}}</td>
         <td>{{$order->created_at}}</td>
+        <td>
+            <a href="{{ route('admin.orders.show', $order->id) }}" class="btn btn-primary">Visualizza</a>
+        </td>
       </tr>
     @endforeach
       

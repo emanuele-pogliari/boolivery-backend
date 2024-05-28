@@ -39,4 +39,5 @@ Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(
     Route::get('/', [DashboardController::class, 'index'])->name('index');
     Route::resource('dishes', DishController::class);
     Route::resource('orders', OrderController::class);
+    Route::get('orders/{order}', [OrderController::class, 'show'])->name('orders.show');
 });
