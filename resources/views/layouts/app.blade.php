@@ -39,25 +39,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <div class="navbar-nav d-flex gap-4 align-items-center">
-                        <p class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{url('/') }}">{{ __('Home') }}</a>
-                        </p>
+                        </li>
                     
 
                     <!-- Right Side Of Navbar -->
                     
                         <!-- Authentication Links -->
                         @guest
-                        <p class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </p>
+                        </li>
                         @if (Route::has('register'))
-                        <p class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </p>
+                        </li>
                         @endif
                         @else
-                        <P class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
@@ -75,7 +75,7 @@
                                     @csrf
                                 </form>
                             </div>
-                        </P>
+                        </li>
                         @endguest
                     </div>
                 </div>
