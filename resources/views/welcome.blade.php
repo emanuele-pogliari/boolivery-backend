@@ -6,18 +6,12 @@
         <div class="logo_laravel">
             <img src="{{Vite::asset('resources/img/Logo2.png')}}" alt="Boolivery-logo">
         </div>
-        <h1 class="display-5 fw-bold">
-            Welcome to Boolivery Admin Page
+        <h1 class="display-5 fw-bold mt-3">
+            Welcome in Boolivery, Restaurateur!
         </h1>
 
-        <p class="col-md-8 fs-4">Questa è la pagina dove puoi modificare e aggiungere i tuoi piatti</p>
-        <a href="{{ url('admin') }}" class="btn btn-primary btn-lg" type="button">Go to Admin</a>
-    </div>
-</div>
-
-<div class="content">
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora temporibus, dicta nemo aliquam totam nisi deserunt soluta quas voluptatum ab beatae praesentium necessitatibus minus, facilis illum rerum officiis accusamus dolores!</p>
+        <p class="col-md-8 fs-4">Welcome to your dedicated administrative portal. Here, you have full control over your restaurant, menus, and orders. Take charge of your culinary journey with ease and efficiency.</p>
+        <a href="{{ url('admin') }}" class="btn btn-primary btn-lg mt-5 my_btn" type="button">Join Your Portal</a>
     </div>
 </div>
 @endsection
