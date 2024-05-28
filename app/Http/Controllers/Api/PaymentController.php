@@ -3,11 +3,16 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Mail\OrderRestaurant;
+use App\Mail\OrderUser;
+use App\Models\Dish;
 use App\Models\Order;
+use App\Models\Restaurant;
 use Braintree\Gateway;
 use Illuminate\Http\Request;
 use Braintree\Transaction;
 use \Braintree\Test\Nonces;
+use Illuminate\Support\Facades\Mail;
 
 class PaymentController extends Controller
 {
@@ -72,6 +77,14 @@ class PaymentController extends Controller
                 $order->dishes()->attach($dish['dish_id'], ['quantity' => $dish['quantity']]);
             }
 
+            $dish_id = array_column($orderInfo, 'dish_id');
+
+            $restaurant_id = Dish::whereIn('id', $dish_id)->value('restaurant_id');
+
+            $restaurant = Restaurant::findOrFail($restaurant_id);
+
+            Mail::to($order->customer_email)->send(new OrderUser($order));
+            Mail::to($restaurant->users->email)->send(new OrderRestaurant($order));
 
             // Transazione riuscita!
             return response()->json([
