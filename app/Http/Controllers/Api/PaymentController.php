@@ -37,7 +37,9 @@ class PaymentController extends Controller
 
 
     public function processPayment(Request $request)
+
     {
+
         //validate form data
         $validData = $request->validate([
             'total_price' => 'required|numeric|min:0.01',
@@ -73,6 +75,7 @@ class PaymentController extends Controller
             $order->fill($validData);
             $order->save();
 
+
             //
             $orderInfo = json_decode($request->input('userData'), true);
             foreach ($orderInfo as $dish) {
@@ -82,6 +85,7 @@ class PaymentController extends Controller
             $dish_id = array_column($orderInfo, 'dish_id');
             $restaurant_id = Dish::whereIn('id', $dish_id)->value('restaurant_id');
             $restaurant = Restaurant::findOrFail($restaurant_id);
+
 
             Mail::to($order->customer_email)->send(new OrderConfirmationMail($order));
             Mail::to($restaurant->user->email)->send(new NewOrderNotificationMail($order));

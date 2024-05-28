@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Order;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -36,10 +37,13 @@ class OrderConfirmationMail extends Mailable
     /**
      * Get the message content definition.
      */
-    public function content(): Content
+    public function content($order): Content
     {
         return new Content(
             view: 'admin.mails.confirmation',
+            with: [
+                'order' => $order,
+            ],
         );
     }
 
