@@ -6,7 +6,7 @@
 @endphp
 
 <div class="container">
-<table class="table table-hover mt-5">
+<table class="table table-hover mt-5" style="border-radius: 5px; overflow:hidden">
     <thead>
       <tr>
         {{-- <th scope="col">#</th> --}}
