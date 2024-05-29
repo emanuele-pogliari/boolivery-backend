@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('image')->nullable();
             $table->string('address');
             $table->string('vat');
-            $table->foreignId('user_id')->costrained();
+            $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });
     }
