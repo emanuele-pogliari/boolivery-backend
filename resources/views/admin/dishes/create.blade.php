@@ -87,7 +87,7 @@
         </div>
         @endif
 
-        <button type="submit" class="btn my_form_btn">Save</button>
+        <button type="submit" class="btn btn-primary my_submit_btn">Save</button>
 
     </form>
 </div>

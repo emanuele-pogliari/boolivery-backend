@@ -16,3 +16,19 @@
     background-color: #36373b;
     color: #f8f8f6 !important;
 }
+
+.dropdown-menu {
+    background-color: #f8f8f6;
+}
+
+.dropdown-item:hover {
+    background-color: #f2ca39;
+    color: #36373b;
+
+    font-weight: 500;
+}
+
+.dropdown-item:active {
+    background-color: #f2ca39;
+    color: #36373b;
+}
