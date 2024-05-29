@@ -12,6 +12,7 @@ use Braintree\Gateway;
 use Illuminate\Http\Request;
 use Braintree\Transaction;
 use \Braintree\Test\Nonces;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 class PaymentController extends Controller
@@ -84,7 +85,7 @@ class PaymentController extends Controller
             $restaurant = Restaurant::findOrFail($restaurant_id);
 
             Mail::to($order->customer_email)->send(new OrderUser($order));
-            Mail::to($restaurant->users->email)->send(new OrderRestaurant($order));
+            // Mail::to($restaurant->users->email)->send(new OrderRestaurant($order));
 
             // Transazione riuscita!
             return response()->json([
