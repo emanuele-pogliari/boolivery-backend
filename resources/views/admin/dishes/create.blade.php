@@ -75,7 +75,7 @@
             </div>
             @enderror
             <small id="descriptionHelper" class="text-muted d-block m-0">If this is checked your plates will be shown in your menu</small>
-          </div>
+        </div>
 
           @if($errors->any())
         <div class="alert alert-danger">

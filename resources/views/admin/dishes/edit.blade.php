@@ -19,7 +19,6 @@
         </div>
 
         <div class="mb-3">
-            <label for="image" class="form-label text-capitalize">Image</label>
             <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image')}}">
             @error('image')
                 <div class="invalid-feedback">
@@ -29,7 +28,7 @@
         </div>
 
         <div class="mb-3 form-floating">
-            <input type="text" class="form-control @error('description') is-invalid @enderror" id="name" name="description" value="{{ old('description') ?? $dish->description}}">
+            <textarea style="height: 150px;" type="text" class="form-control @error('description') is-invalid @enderror" id="name" name="description">{{ old('description') ?? $dish->description}}</textarea>
             <label for="description" class="form-label text-capitalize">Description</label>
             @error('description')
                 <div class="invalid-feedback">
@@ -58,16 +57,26 @@
             @enderror
         </div>
 
-        <div class="mb-3 form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="visible" name="visible" checked>
+        {{-- QUESTO COMANDO NON FUNZIONA --}}
+
+        <div class="mb-3 form-check my_visible">
+            <input class="form-check-input my_check" type="checkbox" value="1" id="visible" name="visible" aria-describedby="visibleHelper" checked>
             <label class="form-check-label" for="visible">
                 Visibile?
             </label>
-          </div>
+            @error('visible')
+            <div class="invalid-feedback">
+                {{$message}}
+            </div>
+            @enderror
+            <small id="descriptionHelper" class="text-muted d-block m-0">If this is checked your plates will be shown in your menu</small>
+        </div>
+
+        {{-- / QUESTO COMANDO NON FUNZIONA / --}}
 
         <div class="d-flex gap-3">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="{{route('admin.index')}}" class="btn btn-secondary">Back</a>
+            <button type="submit" class="btn btn-primary my_submit_btn">Submit</button>
+            <a href="{{route('admin.index')}}" class="btn  my_form_btn">Back</a>
         </div>
     </form>
 </div>

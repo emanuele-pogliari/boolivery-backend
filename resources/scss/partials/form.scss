@@ -1,6 +1,6 @@
 .my_form_btn {
     color: white;
-    background-color: black;
+    background-color: #37373b;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;
@@ -10,14 +10,27 @@
 }
 
 .my_form_btn:hover {
-    color: black;
+    color: #37373b;
+    background-color: #f8f8f6;
+}
+
+.my_submit_btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    transition: all 0.3s linear;
+    font-weight: 600;
+}
+
+.my_submit_btn:hover {
+    color: #0249b3;
     background-color: #f8f8f6;
 }
 
 .my_visible {
     position: relative;
 
-    color: black;
+    color: #37373b;
     background-color: #f8f8f6;
 
     padding: .5rem;
