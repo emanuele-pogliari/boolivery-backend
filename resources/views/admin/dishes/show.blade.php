@@ -12,15 +12,15 @@
     <div class="p_container">
 
         
-        <p class="py-2">
+        <p class="py-2 show_p">
             <span class="show_titles">Description:</span> {{$dish->description}}
         </p>
 
-        <p class="py-2 dish-ingredients">
+        <p class="py-2 show_p dish-ingredients">
             <span class="show_titles">Ingredients:</span> {{$dish->ingredients}}
         </p>
 
-        <p class="py-2 dish-price">
+        <p class="py-2 show_p dish-price">
             <span class="show_titles">Price:</span> € {{$dish->price}}
         </p>
     </div>
