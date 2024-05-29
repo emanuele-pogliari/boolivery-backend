@@ -6,20 +6,24 @@
     <h1 class="py-2">{{$dish->name}}</h1>
 
     <div class="dish-image">
-        <img src="{{ asset('storage/' . $dish->image) }}" alt="" style="height: 200px;">
+        <img src="{{ str_starts_with($dish->image, 'http') ? $dish->image : asset('storage/' . $dish->image)}}" class="card-img-top img-fluid" alt="" style="width: 500px;">
     </div>
 
-    <p class="py-2">
-        {{$dish->description}}
-    </p>
+    <div class="p_container">
 
-    <p class="py-2 dish-ingredients">
-        {{$dish->ingredients}}
-    </p>
+        
+        <p class="py-2">
+            <span class="show_titles">Description:</span> {{$dish->description}}
+        </p>
 
-    <p class="py-2 dish-price">
-        € {{$dish->price}}
-    </p>
+        <p class="py-2 dish-ingredients">
+            <span class="show_titles">Ingredients:</span> {{$dish->ingredients}}
+        </p>
+
+        <p class="py-2 dish-price">
+            <span class="show_titles">Price:</span> € {{$dish->price}}
+        </p>
+    </div>
 
     <div class="d-flex gap-2 align-items-center">
 
