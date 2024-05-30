@@ -32,3 +32,9 @@
     background-color: #f2ca39;
     color: #36373b;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1rem 0 !important;
+    }
+  }

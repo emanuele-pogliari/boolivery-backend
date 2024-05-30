@@ -23,7 +23,7 @@
     <div id="app">
 
 
-        <nav class="navbar navbar-expand py-3">
+        <nav class="navbar navbar-expand py-1">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="logo_laravel logo-navbar">
