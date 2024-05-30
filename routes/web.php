@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\DishController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StatsController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -40,4 +41,5 @@ Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(
     Route::resource('dishes', DishController::class);
     Route::resource('orders', OrderController::class);
     Route::get('orders/{order}', [OrderController::class, 'show'])->name('orders.show');
+    Route::get('statistics', [StatsController::class, 'index'])->name('statistics.index');
 });
