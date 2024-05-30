@@ -49,3 +49,9 @@
     transform: translateY(25%);
 
 }
+
+@media screen and (max-width: 768px) {
+    .phone-none {
+        display: none;
+    }
+  }

@@ -8,28 +8,28 @@
 <div class="container">
 <table class="table table-hover mt-5" style="border-radius: 5px; overflow:hidden">
     <thead>
-      <tr>
+      <tr style="vertical-align: middle">
         {{-- <th scope="col">#</th> --}}
-        <th scope="col">Name</th>
+        <th class="phone-none" scope="col">Name</th>
         <th scope="col">Last Name</th>
-        <th scope="col">Address</th>
-        <th scope="col">Email</th>
+        <th class="phone-none" scope="col">Address</th>
+        <th class="phone-none" scope="col">Email</th>
         <th scope="col">Phone</th>
         <th scope="col">Total Price</th>
-        <th scope="col">Order Date</th>
+        <th class="phone-none" scope="col">Order Date</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody">
 
     @foreach ($orders as $order)
-    <tr onclick="window.location='{{ route('admin.orders.show', $order->id) }}';" style="cursor:pointer;">
-      <td class="align-middle">{{$order->customer_name}}</td>
+    <tr onclick="window.location='{{ route('admin.orders.show', $order->id) }}';" style="cursor:pointer; vertical-align: middle;">
+      <td class="align-middle phone-none">{{$order->customer_name}}</td>
       <td class="align-middle">{{$order->customer_last_name}}</td>
-      <td class="align-middle">{{$order->customer_address}}</td>
-      <td class="align-middle">{{$order->customer_email}}</td>
+      <td class="align-middle phone-none">{{$order->customer_address}}</td>
+      <td class="align-middle phone-none">{{$order->customer_email}}</td>
       <td class="align-middle">{{$order->customer_phone}}</td>
       <td class="align-middle">€ {{$order->total_price}}</td>
-      <td class="align-middle">{{ Carbon::parse($order->created_at)->format('d/m/Y H:i') }}</td>
+      <td class="align-middle phone-none">{{ Carbon::parse($order->created_at)->format('d/m/Y H:i') }}</td>
     </tr>    
       
     @endforeach
