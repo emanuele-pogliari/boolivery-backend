@@ -82,15 +82,18 @@ class PaymentController extends Controller
 
             $restaurant_id = Dish::whereIn('id', $dish_id)->value('restaurant_id');
 
-            $restaurant = Restaurant::findOrFail($restaurant_id);
+            $restaurant = Restaurant::with('user')->findOrFail($restaurant_id);
+
 
             Mail::to($order->customer_email)->send(new OrderUser($order));
-            // Mail::to($restaurant->users->email)->send(new OrderRestaurant($order));
+            Mail::to($restaurant->user->email)->send(new OrderRestaurant($order));
 
             // Transazione riuscita!
             return response()->json([
                 'message' => 'Payment successful',
-                'transaction' => $result->transaction
+                'transaction' => $result->transaction,
+                'dish' => $dish_id,
+                'restaurant_id' => $restaurant_id,
             ]);
         } else {
             return response()->json([
