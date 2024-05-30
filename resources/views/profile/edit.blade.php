@@ -2,9 +2,9 @@
 @section('content')
 
 <div class="container">
-    <h2 class="fs-4 text-secondary my-4">
+    <h1 class="fs-2 my-4" style="color: #36373b">
         {{ __('Profile') }}
-    </h2>
+    </h1>
     <div class="card p-4 mb-4 bg-white shadow rounded-lg">
         @include('profile.partials.update-profile-information-form')
     </div>

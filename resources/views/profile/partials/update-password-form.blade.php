@@ -1,6 +1,6 @@
 <section>
     <header>
-        <h2 class="text-lg font-medium text-gray-900">
+        <h2 class="fs-3 text-lg font-medium" style="color: #36373b">
             {{ __('Update Password') }}
         </h2>
 

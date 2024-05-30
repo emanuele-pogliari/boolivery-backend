@@ -1,6 +1,6 @@
 <section>
     <header>
-        <h2 class="text-secondary">
+        <h2 class="fs-3" style="color: #36373b">
             {{ __('Profile Information') }}
         </h2>
 

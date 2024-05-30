@@ -23,6 +23,15 @@
         <p class="py-2 show_p dish-price">
             <span class="show_titles">Price:</span> € {{$dish->price}}
         </p>
+
+        <p class="py-2 show_p dish-visible">
+            <span class="show_titles">Visible:</span> 
+            @if ($dish->visible == 1)
+                yes
+            @else
+                no
+            @endif
+        </p>
     </div>
 
     <div class="d-flex gap-2 align-items-center">
