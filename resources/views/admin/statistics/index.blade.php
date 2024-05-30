@@ -32,7 +32,7 @@
           label: '# of Orders',
           data: ordersPerMonth,
           borderWidth: 1,
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          backgroundColor: 'rgba(245, 39, 82, 0.8)',
           borderColor: 'rgba(54, 162, 235, 1)',
         }]
       },
@@ -53,7 +53,7 @@
           label: 'Revenue (€)',
           data: revenuePerMonth,
           borderWidth: 1,
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          backgroundColor: 'rgba(245, 39, 82, 0.8)',
           borderColor: 'rgba(75, 192, 192, 1)',
         }]
       },
