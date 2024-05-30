@@ -47,7 +47,7 @@ class PaymentController extends Controller
             'customer_address' => 'required|string|max:255',
             'customer_email' => 'required|email|max:255',
             'customer_phone' => 'required|string|max:20',
-            'customer_note' => 'string|max:255',
+            'customer_note' => 'max:255',
             'paymentMethodNonce' => 'required|string',
         ]);
 
