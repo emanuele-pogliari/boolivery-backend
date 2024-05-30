@@ -33,6 +33,6 @@
     <h2>Totale Ordine</h2>
     <p>€ {{ $order->total_price }}</p>
 
-    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Torna agli Ordini</a>
+    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Back to Orders</a>
 </div>
 @endsection

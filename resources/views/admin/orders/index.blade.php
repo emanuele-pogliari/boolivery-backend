@@ -37,7 +37,7 @@
     </tbody>
   </table>
 
-  <a href="{{route('admin.statistics.index')}}" class="add-dish-button">Visualizza Tabella</a> 
+  <a href="{{route('admin.statistics.index')}}" class="add-dish-button">Show Chart</a> 
 
 </div>
 
