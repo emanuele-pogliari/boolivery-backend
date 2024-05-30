@@ -2,6 +2,11 @@
     background-color: #f8f8f6;
 }
 
+.my_logo {
+    max-width: 7rem;
+    width: 100%;
+}
+
 .nav-link {
     border: 1px solid #36373b;
     border-radius: 12px;
@@ -36,5 +41,9 @@
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 1rem 0 !important;
+    }
+
+    .my_logo {
+        max-width: 5rem;
     }
   }

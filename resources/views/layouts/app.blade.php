@@ -26,9 +26,7 @@
         <nav class="navbar navbar-expand py-1">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-                    <div class="logo_laravel logo-navbar">
-                        <img src="{{Vite::asset('resources/img/Logo2.png')}}">
-                    </div>
+                        <img class="my_logo" src="{{Vite::asset('resources/img/Logo2.png')}}">
                     {{-- config('app.name', 'Laravel') --}}
                 </a>
 
