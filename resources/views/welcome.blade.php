@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="jumbotron p-5 mb-4 rounded-3 jumbotron-welcome">
+<div class="jumbotron p-2 mb-4 rounded-3 jumbotron-welcome">
     <div class="container py-5 welcome-container">
         <div class="logo_laravel">
             <img src="{{Vite::asset('resources/img/Logo2.png')}}" alt="Boolivery-logo">
