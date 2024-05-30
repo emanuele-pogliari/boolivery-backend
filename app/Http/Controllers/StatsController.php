@@ -24,10 +24,13 @@ class StatsController extends Controller
         });
 
         $ordersPerMonth = array_fill(0, 5, 0);
+        $revenuePerMonth = array_fill(0, 5, 0);
+
         foreach ($monthlyOrders as $month => $orders) {
             $ordersPerMonth[(int)$month - 1] = count($orders);
+            $revenuePerMonth[(int)$month - 1] = $orders->sum('total_price');
         }
 
-        return view('admin.statistics.index', compact('ordersPerMonth'));
+        return view('admin.statistics.index', compact('ordersPerMonth', 'revenuePerMonth'));
     }
 }
