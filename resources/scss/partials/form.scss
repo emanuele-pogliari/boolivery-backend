@@ -50,8 +50,25 @@
 
 }
 
+.table_mail {
+    max-width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @media screen and (max-width: 768px) {
     .phone-none {
         display: none;
     }
   }
+
+@media screen and (max-width: 991px) {
+.table_address {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-width: 8rem;
+}
+}

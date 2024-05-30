@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container my-4">
     <h1>Dettaglio Ordine #{{ $order->id }}</h1>
 
     <table class="table">
@@ -16,7 +16,8 @@
             @foreach($order->dishes as $dish)
                 <tr>
                     <td>{{ $dish->name }}</td>
-                    <td>{{ $dish->quantity }}</td>
+                    <td>{{ $dish->quantity }}</td> 
+                    {{-- QUANTITY MANCA --}}
                     <td>€ {{ $dish->price }}</td>
                 </tr>
             @endforeach
