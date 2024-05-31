@@ -74,4 +74,19 @@ class OrderController extends Controller
     {
         //
     }
+
+    public function usermail()
+    {
+
+        $restaurant = Restaurant::where('user_id', Auth::id())->firstOrFail();
+
+        // Ottieni gli ordini che contengono piatti del ristorante specifico
+        $orders = Order::whereHas('dishes', function ($query) use ($restaurant) {
+            $query->where('restaurant_id', $restaurant->id);
+        })->with('dishes')->orderBy('created_at', 'DESC')->get();
+
+        // dump($orders);
+
+        return view('admin.mails.usermail', compact('orders'));
+    }
 }
