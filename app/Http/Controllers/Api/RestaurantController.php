@@ -35,11 +35,9 @@ class RestaurantController extends Controller
 
     public function show($id)
     {
-        $restaurants = Restaurant::with(['dishes', 'types'])->find($id);
-
-        // $restaurants = Restaurant::with(['dishes' => function ($query) {
-        //     $query->where('visible', true);
-        // }])->find($id);
+        $restaurants = Restaurant::with(['dishes' => function ($query) {
+            $query->where('visible', true);
+        }, 'types'])->find($id);
 
         if (!$restaurants) {
             return response()->json([

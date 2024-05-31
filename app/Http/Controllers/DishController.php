@@ -36,8 +36,6 @@ class DishController extends Controller
         $request->validated();
         $newDish = new Dish();
 
-        // $newDish->restaurant_id = Auth::user()->id;
-
         $request["restaurant_id"] = Auth::id();
 
         // da controllare se funzionante
@@ -48,6 +46,8 @@ class DishController extends Controller
             // we save the path of the image in the database
             $newDish->image = $path;
         }
+
+        $newDish->visible = $request->has('visible') ? 1 : 0;
 
         $newDish->fill($request->all());
 
@@ -81,15 +81,6 @@ class DishController extends Controller
     {
         $request->validated();
 
-        // if ($request->hasFile('image')) {
-        //     // we save the path of the image in a variable
-        //     $path = Storage::disk('public')->put('dish_images', $request->file('image'));
-        //     // we save the path of the image in the database
-        //     $dish->image = $path;
-
-        //     return redirect()->route('admin.dishes.show', $dish->id);
-        // }
-
         if ($request->hasFile('image')) {
 
             $path = Storage::disk('public')->put('dish_images', $request->image);
@@ -97,6 +88,7 @@ class DishController extends Controller
             $dish->image = $path;
         }
 
+        $dish->visible = $request->has('visible') ? 1 : 0;
         $dish->update($request->all());
         $dish->save();
 
