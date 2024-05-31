@@ -85,8 +85,8 @@ class PaymentController extends Controller
             $restaurant = Restaurant::with('user')->findOrFail($restaurant_id);
 
 
-            Mail::to($order->customer_email)->send(new OrderUser($order));
-            Mail::to($restaurant->user->email)->send(new OrderRestaurant($order));
+            // Mail::to($order->customer_email)->send(new OrderUser($order));
+            // Mail::to($restaurant->user->email)->send(new OrderRestaurant($order));
 
             // Transazione riuscita!
             return response()->json([
