@@ -224,7 +224,7 @@ return [
         ],
         [
             "name" => "Rice Balls",
-            "image" => "image",
+            "image" => "https://www.thespruceeats.com/thmb/WlPKK4-UvBDf9V2f0h014AUJ1W8=/1500x998/filters:fill(auto,1)/rice-balls-2031330-26-5b3fd34346e0fb00376633fa.jpg",
             "description" => "Fried rice balls filled with meat sauce.",
             "ingredients" => ["Rice", "Meat Sauce", "Peas", "Cheese", "Breadcrumbs"],
             "price" => 7.50,
@@ -233,7 +233,7 @@ return [
         ],
         [
             "name" => "Fried Calamari",
-            "image" => "image",
+            "image" => "https://www.willcookforsmiles.com/wp-content/uploads/2021/07/Calamari-6-1024x1536.jpg",
             "description" => "Fried calamari served with lemon.",
             "ingredients" => ["Calamari", "Flour", "Oil", "Lemon", "Salt"],
             "price" => 12.00,
@@ -242,16 +242,17 @@ return [
         ],
         [
             "name" => "Pasta and Beans",
-            "image" => "image",
+            "image" => "https://slowcookermeals.com/wp-content/uploads/2022/08/Crock-Pot-Pasta-Fagioli-1.jpg",
             "description" => "Pasta soup with beans and pancetta.",
             "ingredients" => ["Pasta", "Beans", "Pancetta", "Tomato", "Rosemary"],
             "price" => 8.50,
             "visible" => true,
             "restaurant_id" => 5,
         ],
+        // Additional dishes
         [
             "name" => "Seafood Linguine",
-            "image" => "image",
+            "image" => "https://www.tasteofhome.com/wp-content/uploads/2017/10/Mediterranean-Shrimp-Linguine_exps120872_SD2232457C08_26_3bC_RMS.jpg",
             "description" => "Linguine with mixed seafood.",
             "ingredients" => ["Linguine", "Shrimp", "Clams", "Tomato", "Garlic"],
             "price" => 16.00,
@@ -260,7 +261,7 @@ return [
         ],
         [
             "name" => "Vegetarian Pizza",
-            "image" => "image",
+            "image" => "https://lacucharaveggie.com/wp-content/uploads/2016/03/v-img-043.jpg",
             "description" => "Pizza with mixed vegetables.",
             "ingredients" => ["Dough", "Tomato", "Mozzarella", "Bell Peppers", "Olives"],
             "price" => 10.00,
@@ -269,7 +270,7 @@ return [
         ],
         [
             "name" => "Chicken Parmesan",
-            "image" => "image",
+            "image" => "https://www.onceuponachef.com/images/2019/04/Chicken-Parmesan-15-1200x1553.jpg",
             "description" => "Breaded chicken with parmesan.",
             "ingredients" => ["Chicken", "Breadcrumbs", "Parmesan", "Tomato Sauce", "Mozzarella"],
             "price" => 14.00,
@@ -278,7 +279,7 @@ return [
         ],
         [
             "name" => "Grilled Salmon",
-            "image" => "image",
+            "image" => "https://www.cookingclassy.com/wp-content/uploads/2018/05/grilled-lemon-herb-salmon-7.jpg",
             "description" => "Salmon grilled with herbs.",
             "ingredients" => ["Salmon", "Olive Oil", "Lemon", "Garlic", "Dill"],
             "price" => 18.00,
@@ -287,7 +288,7 @@ return [
         ],
         [
             "name" => "Chocolate Cake",
-            "image" => "image",
+            "image" => "https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg",
             "description" => "Rich chocolate layered cake.",
             "ingredients" => ["Chocolate", "Flour", "Sugar", "Eggs", "Butter"],
             "price" => 7.00,
@@ -296,7 +297,7 @@ return [
         ],
         [
             "name" => "Minestrone Soup",
-            "image" => "image",
+            "image" => "https://slowcookermeals.com/wp-content/uploads/2022/08/Crock-Pot-Pasta-Fagioli-4-1024x1024.jpg",
             "description" => "Hearty vegetable soup.",
             "ingredients" => ["Tomato", "Carrot", "Celery", "Beans", "Pasta"],
             "price" => 9.00,
@@ -305,7 +306,7 @@ return [
         ],
         [
             "name" => "Eggplant Parmesan",
-            "image" => "image",
+            "image" => "https://www.andiemitchell.com/wp-content/uploads/2019/03/healthy_baked_eggplant_parmesan-1.jpg",
             "description" => "Breaded eggplant with cheese.",
             "ingredients" => ["Eggplant", "Breadcrumbs", "Parmesan", "Tomato Sauce", "Mozzarella"],
             "price" => 12.00,
@@ -314,7 +315,7 @@ return [
         ],
         [
             "name" => "Garlic Bread",
-            "image" => "image",
+            "image" => "https://www.cookingclassy.com/wp-content/uploads/2019/09/garlic-bread-04.jpg",
             "description" => "Toasted bread with garlic butter.",
             "ingredients" => ["Bread", "Butter", "Garlic", "Parsley", "Salt"],
             "price" => 4.00,
@@ -323,7 +324,7 @@ return [
         ],
         [
             "name" => "Lamb Chops",
-            "image" => "image",
+            "image" => "https://thescranline.com/wp-content/uploads/2024/01/GREEK-LAMB-CHOPS-WEB-05.jpg",
             "description" => "Grilled lamb with rosemary.",
             "ingredients" => ["Lamb", "Rosemary", "Garlic", "Olive Oil", "Salt"],
             "price" => 20.00,
@@ -332,7 +333,7 @@ return [
         ],
         [
             "name" => "Cheeseburger",
-            "image" => "image",
+            "image" => "https://i.pinimg.com/originals/66/87/aa/6687aabb09412dfb3609b30dc327c206.png",
             "description" => "Burger with cheese and toppings.",
             "ingredients" => ["Beef", "Cheese", "Lettuce", "Tomato", "Bun"],
             "price" => 10.00,
@@ -341,7 +342,7 @@ return [
         ],
         [
             "name" => "Pasta Primavera",
-            "image" => "image",
+            "image" => "https://www.cookingclassy.com/wp-content/uploads/2018/09/pasta-primavera-1.jpg",
             "description" => "Pasta with fresh vegetables.",
             "ingredients" => ["Pasta", "Bell Peppers", "Zucchini", "Tomato", "Garlic"],
             "price" => 11.00,
@@ -350,7 +351,7 @@ return [
         ],
         [
             "name" => "Shrimp Scampi",
-            "image" => "image",
+            "image" => "https://mymorningmocha.com/wp-content/uploads/2023/03/Drizzling-garlic-butter-over-prawns-683x1024.jpg",
             "description" => "Shrimp in garlic butter sauce.",
             "ingredients" => ["Shrimp", "Garlic", "Butter", "Lemon", "Parsley"],
             "price" => 17.00,
@@ -359,7 +360,7 @@ return [
         ],
         [
             "name" => "Caesar Salad",
-            "image" => "image",
+            "image" => "https://www.jessicagavin.com/wp-content/uploads/2019/07/caesar-salad-10.jpg",
             "description" => "Salad with Caesar dressing.",
             "ingredients" => ["Lettuce", "Croutons", "Parmesan", "Caesar Dressing", "Chicken"],
             "price" => 8.50,
@@ -368,7 +369,7 @@ return [
         ],
         [
             "name" => "Clam Chowder",
-            "image" => "image",
+            "image" => "https://therecipecritic.com/wp-content/uploads/2018/10/Clam-Chowder-5.jpg",
             "description" => "Creamy soup with clams.",
             "ingredients" => ["Clams", "Potato", "Cream", "Onion", "Bacon"],
             "price" => 12.50,
@@ -377,7 +378,7 @@ return [
         ],
         [
             "name" => "BBQ Ribs",
-            "image" => "image",
+            "image" => "https://www.barossafinefoods.com.au/glide-cache/containers/main/2020_bff_porkribs_bbq_website-2.jpg/03d880f2ca84b83fdeb147548e7d9b12.jpg",
             "description" => "Ribs with BBQ sauce.",
             "ingredients" => ["Ribs", "BBQ Sauce", "Garlic", "Brown Sugar", "Paprika"],
             "price" => 18.50,
@@ -386,7 +387,7 @@ return [
         ],
         [
             "name" => "Veggie Burger",
-            "image" => "image",
+            "image" => "https://cupfulofkale.com/wp-content/uploads/2017/08/Vegan-Spicy-Bean-Burgers-720x720.jpg.webp",
             "description" => "Vegetarian burger with toppings.",
             "ingredients" => ["Veggie Patty", "Lettuce", "Tomato", "Cheese", "Bun"],
             "price" => 9.00,
@@ -395,7 +396,7 @@ return [
         ],
         [
             "name" => "Stuffed Peppers",
-            "image" => "image",
+            "image" => "https://www.eatwell101.com/wp-content/uploads/2018/05/low-carb-stuffed-bell-peppers-3.jpg",
             "description" => "Peppers stuffed with rice and meat.",
             "ingredients" => ["Bell Peppers", "Rice", "Ground Beef", "Tomato Sauce", "Cheese"],
             "price" => 11.50,
@@ -404,7 +405,7 @@ return [
         ],
         [
             "name" => "Fish Tacos",
-            "image" => "image",
+            "image" => "https://www.eatwell101.com/wp-content/uploads/2022/06/fish-tacos-recipe-cod.jpg",
             "description" => "Tacos with fried fish.",
             "ingredients" => ["Fish", "Tortilla", "Cabbage", "Lime", "Sour Cream"],
             "price" => 13.00,
@@ -413,7 +414,7 @@ return [
         ],
         [
             "name" => "French Onion Soup",
-            "image" => "image",
+            "image" => "https://valentinascorner.com/wp-content/uploads/2020/01/Fish-Taco-Recipe-1-1.jpg",
             "description" => "Soup with caramelized onions.",
             "ingredients" => ["Onions", "Beef Broth", "Bread", "Cheese", "Thyme"],
             "price" => 7.50,
@@ -422,25 +423,17 @@ return [
         ],
         [
             "name" => "Pulled Pork Sandwich",
-            "image" => "image",
+            "image" => "https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/recipe-pulled_pork.jpg?itok=wCRki62R",
             "description" => "Sandwich with pulled pork.",
             "ingredients" => ["Pulled Pork", "BBQ Sauce", "Bun", "Pickles", "Onion"],
             "price" => 9.50,
             "visible" => true,
             "restaurant_id" => 5,
         ],
-        [
-            "name" => "Margherita Pizza",
-            "image" => "image",
-            "description" => "Classic pizza with tomato and mozzarella.",
-            "ingredients" => ["Tomato", "Mozzarella", "Basil", "Olive Oil", "Salt"],
-            "price" => 10.00,
-            "visible" => true,
-            "restaurant_id" => 1,
-        ],
+
         [
             "name" => "Grilled Chicken",
-            "image" => "image",
+            "image" => "https://www.averiecooks.com/wp-content/uploads/2019/06/limecilantrochicken-650x1000.jpg",
             "description" => "Chicken grilled with herbs.",
             "ingredients" => ["Chicken", "Olive Oil", "Lemon", "Garlic", "Rosemary"],
             "price" => 12.00,
@@ -449,7 +442,7 @@ return [
         ],
         [
             "name" => "Spaghetti Bolognese",
-            "image" => "image",
+            "image" => "https://static.fanpage.it/wp-content/uploads/sites/22/2021/06/spaghetti-bolognese.jpg",
             "description" => "Spaghetti with meat sauce.",
             "ingredients" => ["Spaghetti", "Ground Beef", "Tomato", "Onion", "Garlic"],
             "price" => 11.50,
@@ -458,7 +451,7 @@ return [
         ],
         [
             "name" => "Chicken Alfredo",
-            "image" => "image",
+            "image" => "https://iwashyoudry.com/wp-content/uploads/2022/08/Chicken-Alfredo-Low-Res-21.jpg",
             "description" => "Pasta with creamy Alfredo sauce.",
             "ingredients" => ["Pasta", "Chicken", "Cream", "Parmesan", "Garlic"],
             "price" => 13.50,
@@ -467,7 +460,7 @@ return [
         ],
         [
             "name" => "Beef Stroganoff",
-            "image" => "image",
+            "image" => "https://ohsweetbasil.com/wp-content/uploads/easy-ground-beef-stroganoff-recipe-8.jpg",
             "description" => "Beef with creamy mushroom sauce.",
             "ingredients" => ["Beef", "Mushrooms", "Sour Cream", "Onion", "Garlic"],
             "price" => 14.00,
@@ -476,7 +469,7 @@ return [
         ],
         [
             "name" => "Vegetable Stir Fry",
-            "image" => "image",
+            "image" => "https://fedandfit.com/wp-content/uploads/2021/11/211112_Vegetable-Stir-Fry-05.jpg",
             "description" => "Stir-fried mixed vegetables.",
             "ingredients" => ["Bell Peppers", "Broccoli", "Carrots", "Soy Sauce", "Garlic"],
             "price" => 10.00,
@@ -485,7 +478,7 @@ return [
         ],
         [
             "name" => "Roast Beef",
-            "image" => "image",
+            "image" => "https://static01.nyt.com/images/2015/12/09/dining/09COOKING-BEEFROAST3/09COOKING-BEEFROAST3-superJumbo.jpg",
             "description" => "Slow-cooked roast beef.",
             "ingredients" => ["Beef", "Garlic", "Rosemary", "Olive Oil", "Salt"],
             "price" => 15.00,
@@ -494,7 +487,7 @@ return [
         ],
         [
             "name" => "Shrimp Alfredo",
-            "image" => "image",
+            "image" => "https://www.dinneratthezoo.com/wp-content/uploads/2018/06/shrimp-alfredo-5.jpg",
             "description" => "Pasta with shrimp in Alfredo sauce.",
             "ingredients" => ["Pasta", "Shrimp", "Cream", "Parmesan", "Garlic"],
             "price" => 16.00,
@@ -503,7 +496,7 @@ return [
         ],
         [
             "name" => "Chicken Caesar Salad",
-            "image" => "image",
+            "image" => "https://www.deliciousmeetshealthy.com/wp-content/uploads/2021/06/Chicken-Caesar-Salad-4-768x1156.jpg",
             "description" => "Salad with chicken and Caesar dressing.",
             "ingredients" => ["Lettuce", "Chicken", "Croutons", "Parmesan", "Caesar Dressing"],
             "price" => 9.00,
@@ -512,7 +505,7 @@ return [
         ],
         [
             "name" => "Garlic Shrimp",
-            "image" => "image",
+            "image" => "https://bigoven-res.cloudinary.com/image/upload/t_recipe-1280/garlic-shrimp-10782d.jpg",
             "description" => "Shrimp in garlic butter.",
             "ingredients" => ["Shrimp", "Garlic", "Butter", "Lemon", "Parsley"],
             "price" => 15.00,
@@ -521,7 +514,7 @@ return [
         ],
         [
             "name" => "Beef Tacos",
-            "image" => "image",
+            "image" => "https://i.pinimg.com/originals/e7/e2/34/e7e2342f999776e4fe028e18672ac21d.jpg",
             "description" => "Tacos with beef and toppings.",
             "ingredients" => ["Beef", "Tortilla", "Lettuce", "Tomato", "Cheese"],
             "price" => 11.00,
@@ -530,7 +523,7 @@ return [
         ],
         [
             "name" => "Chicken Tacos",
-            "image" => "image",
+            "image" => "https://s23209.pcdn.co/wp-content/uploads/2019/08/Easy-Chicken-TacosIMG_9890.jpg",
             "description" => "Tacos with chicken and toppings.",
             "ingredients" => ["Chicken", "Tortilla", "Lettuce", "Tomato", "Cheese"],
             "price" => 11.00,
@@ -539,7 +532,7 @@ return [
         ],
         [
             "name" => "Fish Tacos",
-            "image" => "image",
+            "image" => "https://www.platingpixels.com/wp-content/uploads/2021/01/Beer-Battered-Fish-Tacos-recipe-9.jpg",
             "description" => "Tacos with fish and toppings.",
             "ingredients" => ["Fish", "Tortilla", "Cabbage", "Lime", "Sour Cream"],
             "price" => 13.00,
@@ -548,7 +541,7 @@ return [
         ],
         [
             "name" => "Vegetarian Tacos",
-            "image" => "image",
+            "image" => "https://www.twospoons.ca/wp-content/uploads/2020/07/best-vegan-taco-recipe-easy-how-to-make-vegan-tacos-twospoons-5-1365x2048.jpg",
             "description" => "Tacos with mixed vegetables.",
             "ingredients" => ["Tortilla", "Bell Peppers", "Onion", "Corn", "Cheese"],
             "price" => 10.00,
@@ -557,7 +550,7 @@ return [
         ],
         [
             "name" => "BBQ Chicken Pizza",
-            "image" => "image",
+            "image" => "https://carlsbadcravings.com/wp-content/uploads/2020/06/BBQ-Chicken-Pizza-v17a.jpg",
             "description" => "Pizza with BBQ chicken.",
             "ingredients" => ["Dough", "BBQ Sauce", "Chicken", "Onion", "Mozzarella"],
             "price" => 12.50,
@@ -566,7 +559,7 @@ return [
         ],
         [
             "name" => "Pepperoni Pizza",
-            "image" => "image",
+            "image" => "http://fillyourplate.org/blog/wp-content/uploads/2015/02/bigstock-Hot-Homemade-Pepperoni-Pizza-74542819.jpg",
             "description" => "Pizza with pepperoni.",
             "ingredients" => ["Dough", "Tomato Sauce", "Pepperoni", "Mozzarella", "Olive Oil"],
             "price" => 11.50,
@@ -575,7 +568,7 @@ return [
         ],
         [
             "name" => "Four Cheese Pizza",
-            "image" => "image",
+            "image" => "https://www.tasteatlas.com/images/recipes/7e6c5e28f707410e9e25608b92b376b1.jpg?mw=910",
             "description" => "Pizza with four types of cheese.",
             "ingredients" => ["Dough", "Tomato Sauce", "Mozzarella", "Parmesan", "Gorgonzola", "Ricotta"],
             "price" => 12.00,
@@ -584,7 +577,7 @@ return [
         ],
         [
             "name" => "Hawaiian Pizza",
-            "image" => "image",
+            "image" => "https://northshoretaverntownsville.com.au/wp-content/uploads/2023/10/11.jpg",
             "description" => "Pizza with ham and pineapple.",
             "ingredients" => ["Dough", "Tomato Sauce", "Ham", "Pineapple", "Mozzarella"],
             "price" => 12.00,
@@ -593,7 +586,7 @@ return [
         ],
         [
             "name" => "Buffalo Wings",
-            "image" => "image",
+            "image" => "http://delightsofculinaria.com/wp-content/uploads/2013/02/dsc_1110.jpg",
             "description" => "Spicy chicken wings.",
             "ingredients" => ["Chicken Wings", "Buffalo Sauce", "Butter", "Garlic", "Celery"],
             "price" => 10.00,
@@ -602,7 +595,7 @@ return [
         ],
         [
             "name" => "Mozzarella Sticks",
-            "image" => "image",
+            "image" => "https://vignette1.wikia.nocookie.net/laurainthekitchen/images/8/89/IMG_3457.jpg/revision/latest?cb=20140605071844",
             "description" => "Fried mozzarella sticks.",
             "ingredients" => ["Mozzarella", "Breadcrumbs", "Eggs", "Flour", "Marinara Sauce"],
             "price" => 7.00,
@@ -611,7 +604,7 @@ return [
         ],
         [
             "name" => "Chicken Nuggets",
-            "image" => "image",
+            "image" => "https://thetoastedpinenut.com/wp-content/uploads/2017/08/IMG_5288.jpg",
             "description" => "Breaded and fried chicken pieces.",
             "ingredients" => ["Chicken", "Breadcrumbs", "Eggs", "Flour", "Ketchup"],
             "price" => 8.00,
@@ -620,7 +613,7 @@ return [
         ],
         [
             "name" => "Pork Chops",
-            "image" => "image",
+            "image" => "https://www.porkcdn.com/recipes/HR/Grilled_Pork_Chops_with_Basil-Garlic_Rub_HR.jpg",
             "description" => "Grilled pork chops with herbs.",
             "ingredients" => ["Pork Chops", "Olive Oil", "Garlic", "Rosemary", "Salt"],
             "price" => 15.00,
@@ -629,7 +622,7 @@ return [
         ],
         [
             "name" => "Lamb Curry",
-            "image" => "image",
+            "image" => "https://www.thespruceeats.com/thmb/6dNkdIvw7UrZ_GeNp5oBhI9q8CE=/6051x3404/smart/filters:no_upscale()/indian-lamb-curry-1957560-Hero-5b699ec1c9e77c005006d572.jpg",
             "description" => "Spicy lamb curry with rice.",
             "ingredients" => ["Lamb", "Curry Powder", "Coconut Milk", "Onion", "Garlic"],
             "price" => 18.00,
@@ -638,7 +631,7 @@ return [
         ],
         [
             "name" => "Chicken Curry",
-            "image" => "image",
+            "image" => "https://dinnerthendessert.com/wp-content/uploads/2018/04/Indian-Chicken-Korma1-640x640.jpg",
             "description" => "Spicy chicken curry with rice.",
             "ingredients" => ["Chicken", "Curry Powder", "Coconut Milk", "Onion", "Garlic"],
             "price" => 16.00,
@@ -647,7 +640,7 @@ return [
         ],
         [
             "name" => "Beef Curry",
-            "image" => "image",
+            "image" => "https://www.simplejoy.com/wp-content/uploads/2020/06/beef-curry-recipe-2-1365x2048.jpg",
             "description" => "Spicy beef curry with rice.",
             "ingredients" => ["Beef", "Curry Powder", "Coconut Milk", "Onion", "Garlic"],
             "price" => 17.00,
@@ -656,7 +649,7 @@ return [
         ],
         [
             "name" => "Vegetable Curry",
-            "image" => "image",
+            "image" => "https://i.pinimg.com/736x/dc/03/7a/dc037a83805ec7639e51e8462adec7b6.jpg",
             "description" => "Spicy vegetable curry with rice.",
             "ingredients" => ["Bell Peppers", "Carrots", "Coconut Milk", "Onion", "Garlic"],
             "price" => 14.00,
@@ -665,16 +658,17 @@ return [
         ],
         [
             "name" => "Salmon Sashimi",
-            "image" => "image",
+            "image" => "https://aubreyskitchen.com/wp-content/uploads/2021/01/salmon-sashimi-recipe-768x768.jpg",
             "description" => "Fresh salmon sashimi.",
             "ingredients" => ["Salmon", "Soy Sauce", "Wasabi", "Ginger", "Lemon"],
             "price" => 20.00,
             "visible" => true,
             "restaurant_id" => 4,
         ],
+
         [
             "name" => "Tuna Sashimi",
-            "image" => "image",
+            "image" => "https://oshisushis.com/wp-content/uploads/2020/06/Tuna-Sashimi-812x812.png",
             "description" => "Fresh tuna sashimi.",
             "ingredients" => ["Tuna", "Soy Sauce", "Wasabi", "Ginger", "Lemon"],
             "price" => 20.00,
@@ -683,7 +677,7 @@ return [
         ],
         [
             "name" => "Beef Stir Fry",
-            "image" => "image",
+            "image" => "https://thegirlonbloor.com/wp-content/uploads/2019/04/The-best-Beef-stir-fry-3-790x1185.jpg",
             "description" => "Stir-fried beef with vegetables.",
             "ingredients" => ["Beef", "Bell Peppers", "Broccoli", "Soy Sauce", "Garlic"],
             "price" => 14.00,
@@ -692,7 +686,7 @@ return [
         ],
         [
             "name" => "Chicken Stir Fry",
-            "image" => "image",
+            "image" => "https://tatyanaseverydayfood.com/wp-content/uploads/2019/03/Chicken-Teriyaki-Stir-Fry.jpg",
             "description" => "Stir-fried chicken with vegetables.",
             "ingredients" => ["Chicken", "Bell Peppers", "Broccoli", "Soy Sauce", "Garlic"],
             "price" => 13.00,
@@ -701,7 +695,7 @@ return [
         ],
         [
             "name" => "Pork Stir Fry",
-            "image" => "image",
+            "image" => "https://s3-us-east-2.amazonaws.com/thesaltymarshmallow/wp-content/uploads/2018/01/03061735/pork-stir-fry2.jpg",
             "description" => "Stir-fried pork with vegetables.",
             "ingredients" => ["Pork", "Bell Peppers", "Broccoli", "Soy Sauce", "Garlic"],
             "price" => 14.00,
@@ -710,7 +704,7 @@ return [
         ],
         [
             "name" => "Vegetable Stir Fry",
-            "image" => "image",
+            "image" => "https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-2.jpg",
             "description" => "Stir-fried mixed vegetables.",
             "ingredients" => ["Bell Peppers", "Broccoli", "Carrots", "Soy Sauce", "Garlic"],
             "price" => 12.00,
@@ -719,7 +713,7 @@ return [
         ],
         [
             "name" => "Fish and Chips",
-            "image" => "image",
+            "image" => "https://nicelandseafood.com/wp-content/uploads/2020/04/classic-fish-and-chips-with-haddock.jpg",
             "description" => "Fried fish with chips.",
             "ingredients" => ["Fish", "Potatoes", "Flour", "Oil", "Salt"],
             "price" => 12.00,
@@ -728,7 +722,7 @@ return [
         ],
         [
             "name" => "Chicken and Chips",
-            "image" => "image",
+            "image" => "https://timi-codes.github.io/BetaChop/UI/img/chickenndchips.jpg",
             "description" => "Fried chicken with chips.",
             "ingredients" => ["Chicken", "Potatoes", "Flour", "Oil", "Salt"],
             "price" => 12.00,
@@ -737,16 +731,24 @@ return [
         ],
         [
             "name" => "Prawn Cocktail",
-            "image" => "image",
+            "image" => "https://www.deliciousmagazine.co.uk/wp-content/uploads/2019/09/prawn-cocktail.jpg",
             "description" => "Prawns in a creamy sauce.",
             "ingredients" => ["Prawns", "Mayonnaise", "Ketchup", "Lemon", "Lettuce"],
             "price" => 10.00,
             "visible" => true,
             "restaurant_id" => 3,
         ],
+
+
+
+
+
+
+
+
         [
             "name" => "Stuffed Mushrooms",
-            "image" => "image",
+            "image" => "https://i.pinimg.com/originals/49/86/3c/49863c5b1ee5348e5cdcdf3dafd5d033.jpg",
             "description" => "Mushrooms stuffed with cheese.",
             "ingredients" => ["Mushrooms", "Cheese", "Breadcrumbs", "Garlic", "Parsley"],
             "price" => 9.00,
@@ -755,7 +757,7 @@ return [
         ],
         [
             "name" => "Egg Salad",
-            "image" => "image",
+            "image" => "https://theforkedspoon.com/wp-content/uploads/2019/07/Egg-Salad-9-700x1050.jpg",
             "description" => "Salad with boiled eggs.",
             "ingredients" => ["Eggs", "Lettuce", "Tomato", "Mayonnaise", "Onion"],
             "price" => 8.00,
@@ -764,7 +766,7 @@ return [
         ],
         [
             "name" => "Tuna Salad",
-            "image" => "image",
+            "image" => "https://www.eatingbirdfood.com/wp-content/uploads/2021/01/tuna-salad-bowl-crackers-670x1005.jpg",
             "description" => "Salad with tuna.",
             "ingredients" => ["Tuna", "Lettuce", "Tomato", "Onion", "Olive Oil"],
             "price" => 9.00,
@@ -773,7 +775,7 @@ return [
         ],
         [
             "name" => "Salmon Salad",
-            "image" => "image",
+            "image" => "https://www.acedarspoon.com/wp-content/uploads/2021/04/Mediterranean-Salmon-Bowl-Image-4-735x694.jpg",
             "description" => "Salad with salmon.",
             "ingredients" => ["Salmon", "Lettuce", "Tomato", "Onion", "Olive Oil"],
             "price" => 10.00,
@@ -782,7 +784,7 @@ return [
         ],
         [
             "name" => "Chicken Salad",
-            "image" => "image",
+            "image" => "https://www.aspicyperspective.com/wp-content/uploads/2020/03/ultimate-southern-chicken-salad-recipe-12-650x875.jpg",
             "description" => "Salad with chicken.",
             "ingredients" => ["Chicken", "Lettuce", "Tomato", "Onion", "Olive Oil"],
             "price" => 9.00,
@@ -791,7 +793,7 @@ return [
         ],
         [
             "name" => "Grilled Cheese Sandwich",
-            "image" => "image",
+            "image" => "https://static01.nyt.com/images/2021/08/30/dining/as-grilled-cheese-sandwich-on-the-grill/as-grilled-cheese-sandwich-on-the-grill-threeByTwoMediumAt2X.jpg",
             "description" => "Sandwich with melted cheese.",
             "ingredients" => ["Bread", "Cheese", "Butter", "Garlic", "Parsley"],
             "price" => 7.00,
@@ -800,7 +802,7 @@ return [
         ],
         [
             "name" => "Ham and Cheese Sandwich",
-            "image" => "image",
+            "image" => "https://www.pumpkinnspice.com/wp-content/uploads/2016/08/grilled-ham-cheese-sandwich-26.jpg",
             "description" => "Sandwich with ham and cheese.",
             "ingredients" => ["Bread", "Ham", "Cheese", "Butter", "Garlic"],
             "price" => 8.00,
@@ -809,16 +811,22 @@ return [
         ],
         [
             "name" => "Turkey Sandwich",
-            "image" => "image",
+            "image" => "https://fthmb.tqn.com/z4fsO6WbzaVVXojI77-u2pWox_Q=/3867x2578/filters:fill(auto,1)/Baked-Turkey-Sandwich-58add8dd3df78c345bdf210c.jpg",
             "description" => "Sandwich with turkey.",
             "ingredients" => ["Bread", "Turkey", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 9.00,
             "visible" => true,
             "restaurant_id" => 2,
         ],
+
+
+
+
+
+
         [
             "name" => "BLT Sandwich",
-            "image" => "image",
+            "image" => "https://vikalinka.com/wp-content/uploads/2021/06/Maple-BLT-Sandwich-12-Edit.jpg",
             "description" => "Sandwich with bacon, lettuce, and tomato.",
             "ingredients" => ["Bread", "Bacon", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 8.50,
@@ -827,7 +835,7 @@ return [
         ],
         [
             "name" => "Veggie Sandwich",
-            "image" => "image",
+            "image" => "https://i.pinimg.com/originals/a5/f2/10/a5f21054fcc0f406d154a1d151fa1f04.jpg",
             "description" => "Sandwich with vegetables.",
             "ingredients" => ["Bread", "Lettuce", "Tomato", "Cucumber", "Avocado"],
             "price" => 8.00,
@@ -836,7 +844,7 @@ return [
         ],
         [
             "name" => "Pastrami Sandwich",
-            "image" => "image",
+            "image" => "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/kegziasw/8d328464-170c-4a4e-93d3-4e6757f2df0d.jpg",
             "description" => "Sandwich with pastrami.",
             "ingredients" => ["Bread", "Pastrami", "Mustard", "Pickles", "Cheese"],
             "price" => 9.50,
@@ -845,7 +853,7 @@ return [
         ],
         [
             "name" => "Reuben Sandwich",
-            "image" => "image",
+            "image" => "https://www.simplyrecipes.com/thmb/d735twlFKqG5IgMClyozXhkpAGM=/4907x2760/smart/filters:no_upscale()/Simply-Recipes-Reuben-Sandwich-Lead-1b-df911d5d7fff4cbf986beeacb80b99c9.jpg",
             "description" => "Sandwich with corned beef and sauerkraut.",
             "ingredients" => ["Bread", "Corned Beef", "Sauerkraut", "Swiss Cheese", "Thousand Island Dressing"],
             "price" => 10.00,
@@ -854,7 +862,7 @@ return [
         ],
         [
             "name" => "Pulled Pork Sandwich",
-            "image" => "image",
+            "image" => "https://www.cookingwithvinyl.com/wp-content/uploads/2015/01/Pulled-Pork.jpg",
             "description" => "Sandwich with pulled pork.",
             "ingredients" => ["Bread", "Pulled Pork", "BBQ Sauce", "Coleslaw", "Pickles"],
             "price" => 9.50,
@@ -863,7 +871,7 @@ return [
         ],
         [
             "name" => "Meatball Sandwich",
-            "image" => "image",
+            "image" => "https://dailyappetite.com/wp-content/uploads/2019/02/Crockpot-Meatball-Subs-3.jpg",
             "description" => "Sandwich with meatballs.",
             "ingredients" => ["Bread", "Meatballs", "Marinara Sauce", "Provolone Cheese", "Parmesan"],
             "price" => 9.50,
@@ -872,7 +880,7 @@ return [
         ],
         [
             "name" => "Chicken Parmesan Sandwich",
-            "image" => "image",
+            "image" => "https://www.thespruceeats.com/thmb/J22wsiGBc6vx32BKTZWGKV7R4zE=/3000x2001/filters:fill(auto,1)/ChickenParmesanSandwichHERO-950abfea32f542a493a0bb9f70912406.jpg",
             "description" => "Sandwich with chicken parmesan.",
             "ingredients" => ["Bread", "Chicken Parmesan", "Marinara Sauce", "Mozzarella", "Parmesan"],
             "price" => 10.00,
@@ -881,7 +889,7 @@ return [
         ],
         [
             "name" => "Philly Cheesesteak",
-            "image" => "image",
+            "image" => "https://thestayathomechef.com/wp-content/uploads/2020/09/Authentic-Philly-Cheesesteak-5.jpg",
             "description" => "Sandwich with steak and cheese.",
             "ingredients" => ["Bread", "Steak", "Cheese", "Onions", "Peppers"],
             "price" => 11.00,
@@ -890,7 +898,7 @@ return [
         ],
         [
             "name" => "Cubano Sandwich",
-            "image" => "image",
+            "image" => "https://dinnerthendessert.com/wp-content/uploads/2021/01/Cuban-Sandwich-1x1-1.jpg",
             "description" => "Sandwich with ham, pork, and pickles.",
             "ingredients" => ["Bread", "Ham", "Pork", "Pickles", "Mustard"],
             "price" => 9.50,
@@ -899,7 +907,7 @@ return [
         ],
         [
             "name" => "Egg Salad Sandwich",
-            "image" => "image",
+            "image" => "https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/e24aeb52-ea33-4008-b898-dd81778119ac.jpg",
             "description" => "Sandwich with egg salad.",
             "ingredients" => ["Bread", "Egg Salad", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 8.00,
@@ -908,7 +916,7 @@ return [
         ],
         [
             "name" => "Shrimp Po' Boy",
-            "image" => "image",
+            "image" => "https://www.simplyrecipes.com/thmb/NWR2yj5F6btUCzcJ9M3r4WsZk0M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Shrimp-Po-Boy-LEAD-22-33ab39c8d49249d688918b1039f72468.jpg",
             "description" => "Sandwich with fried shrimp.",
             "ingredients" => ["Bread", "Fried Shrimp", "Lettuce", "Tomato", "Remoulade Sauce"],
             "price" => 10.00,
@@ -917,7 +925,7 @@ return [
         ],
         [
             "name" => "Turkey Club Sandwich",
-            "image" => "image",
+            "image" => "https://www.thespruceeats.com/thmb/Mb1XDRC56r_qTsGuZllzWkgUJHk=/3600x0/filters:no_upscale():max_bytes(150000):strip_icc()/turkey-club-sandwich-recipe-996062-step-04-5c252ecec9e77c0001d6b56a.jpg",
             "description" => "Triple-decker sandwich with turkey, bacon, and lettuce.",
             "ingredients" => ["Bread", "Turkey", "Bacon", "Lettuce", "Tomato"],
             "price" => 9.50,
@@ -926,7 +934,7 @@ return [
         ],
         [
             "name" => "Italian Sub",
-            "image" => "image",
+            "image" => "https://boarshead.scdn5.secure.raxcdn.com/img/_content/recipe/1501460417-that-s-italian-sub/detail-001.1490628991.jpg",
             "description" => "Sub with Italian meats and cheeses.",
             "ingredients" => ["Bread", "Salami", "Ham", "Provolone", "Olive Oil"],
             "price" => 10.00,
@@ -935,7 +943,7 @@ return [
         ],
         [
             "name" => "BBQ Pulled Chicken Sandwich",
-            "image" => "image",
+            "image" => "https://www.jessicagavin.com/wp-content/uploads/2015/06/barbecue-pulled-chicken-sandwiches.jpg",
             "description" => "Sandwich with BBQ pulled chicken.",
             "ingredients" => ["Bread", "Pulled Chicken", "BBQ Sauce", "Coleslaw", "Pickles"],
             "price" => 9.00,
@@ -944,7 +952,7 @@ return [
         ],
         [
             "name" => "French Dip Sandwich",
-            "image" => "image",
+            "image" => "https://www.cookingclassy.com/wp-content/uploads/2017/10/slow-cooker-french-dip-sandwiches-3.jpg",
             "description" => "Sandwich with roast beef and au jus.",
             "ingredients" => ["Bread", "Roast Beef", "Swiss Cheese", "Au Jus", "Onions"],
             "price" => 10.50,
@@ -953,7 +961,7 @@ return [
         ],
         [
             "name" => "Buffalo Chicken Sandwich",
-            "image" => "image",
+            "image" => "https://www.thespruceeats.com/thmb/A64fbBqBWccnWy2MpFmyu-yxbqY=/1893x0/filters:no_upscale():max_bytes(150000):strip_icc()/buffalo-chicken-sandwich-2937545-step-08-2dcdcca090694b558c394343ad8ed5a2.jpg",
             "description" => "Sandwich with buffalo chicken.",
             "ingredients" => ["Bread", "Buffalo Chicken", "Lettuce", "Tomato", "Blue Cheese Dressing"],
             "price" => 9.50,
@@ -962,7 +970,7 @@ return [
         ],
         [
             "name" => "BBQ Brisket Sandwich",
-            "image" => "image",
+            "image" => "https://cdn.mos.cms.futurecdn.net/tqztcMcTtPFSRSG2uSwxdB.jpg",
             "description" => "Sandwich with BBQ brisket.",
             "ingredients" => ["Bread", "BBQ Brisket", "Coleslaw", "Pickles", "Onions"],
             "price" => 11.00,
@@ -971,7 +979,7 @@ return [
         ],
         [
             "name" => "Tuna Melt",
-            "image" => "image",
+            "image" => "https://www.eatwell101.com/wp-content/uploads/2021/09/easy-tuna-melt-recipe.jpg",
             "description" => "Grilled sandwich with tuna and cheese.",
             "ingredients" => ["Bread", "Tuna Salad", "Cheese", "Butter", "Tomato"],
             "price" => 8.50,
@@ -980,7 +988,7 @@ return [
         ],
         [
             "name" => "Avocado Toast",
-            "image" => "image",
+            "image" => "https://i1.wp.com/myvegetarianroots.com/wp-content/uploads/2020/02/DSC_0027.jpeg?fit=1277%2C1920&ssl=1",
             "description" => "Toast with avocado spread.",
             "ingredients" => ["Bread", "Avocado", "Lemon", "Salt", "Pepper"],
             "price" => 7.00,
@@ -989,7 +997,7 @@ return [
         ],
         [
             "name" => "Chicken Salad Wrap",
-            "image" => "image",
+            "image" => "https://www.girlgonegourmet.com/wp-content/uploads/2016/05/Sun-Dried-Tomato-Chicken-Salad-Wraps-1.jpg",
             "description" => "Wrap with chicken salad.",
             "ingredients" => ["Tortilla", "Chicken Salad", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 9.00,
@@ -998,16 +1006,19 @@ return [
         ],
         [
             "name" => "Beef Burrito",
-            "image" => "image",
+            "image" => "https://thekitchencommunity.org/wp-content/uploads/2021/02/Beef-Burrito-Recipe.jpg",
             "description" => "Burrito with beef and beans.",
             "ingredients" => ["Tortilla", "Beef", "Beans", "Rice", "Cheese"],
             "price" => 10.00,
             "visible" => true,
             "restaurant_id" => 2,
         ],
+
+
+
         [
             "name" => "Chicken Quesadilla",
-            "image" => "image",
+            "image" => "https://bigoven-res.cloudinary.com/image/upload/t_recipe-1280/chicken-quesadilla-0c7614.jpg",
             "description" => "Quesadilla with chicken and cheese.",
             "ingredients" => ["Tortilla", "Chicken", "Cheese", "Onion", "Peppers"],
             "price" => 9.50,
@@ -1016,7 +1027,7 @@ return [
         ],
         [
             "name" => "Veggie Wrap",
-            "image" => "image",
+            "image" => "https://myfavoritelife.net/wp-content/uploads/2021/07/Thai-Peanut-Wraps.jpg",
             "description" => "Wrap with mixed vegetables.",
             "ingredients" => ["Tortilla", "Bell Peppers", "Cucumber", "Lettuce", "Hummus"],
             "price" => 8.50,
@@ -1025,7 +1036,7 @@ return [
         ],
         [
             "name" => "Pulled Pork Wrap",
-            "image" => "image",
+            "image" => "https://i.pinimg.com/originals/92/6b/14/926b14bee63f6ed2aa7e35295fd4f6c0.png",
             "description" => "Wrap with pulled pork.",
             "ingredients" => ["Tortilla", "Pulled Pork", "BBQ Sauce", "Coleslaw", "Pickles"],
             "price" => 9.00,
@@ -1034,7 +1045,7 @@ return [
         ],
         [
             "name" => "Shrimp Tacos",
-            "image" => "image",
+            "image" => "https://valentinascorner.com/wp-content/uploads/2020/02/Shrimp-Taco-Recipe-1.jpg",
             "description" => "Tacos with shrimp and toppings.",
             "ingredients" => ["Tortilla", "Shrimp", "Cabbage", "Lime", "Sour Cream"],
             "price" => 11.00,
@@ -1043,7 +1054,7 @@ return [
         ],
         [
             "name" => "Chicken Burrito",
-            "image" => "image",
+            "image" => "https://i.pinimg.com/originals/bb/85/60/bb85609e89baecaa1a7878acc4e70da2.jpg",
             "description" => "Burrito with chicken and beans.",
             "ingredients" => ["Tortilla", "Chicken", "Beans", "Rice", "Cheese"],
             "price" => 10.00,
@@ -1052,7 +1063,7 @@ return [
         ],
         [
             "name" => "Fish Burrito",
-            "image" => "image",
+            "image" => "https://mlx1wfobjbs4.i.optimole.com/w:1024/h:683/q:mauto/rt:fill/g:sm/f:avif/https://www.recipedev.com/wp-content/uploads/2022/04/fish-burrito-recipe.jpeg",
             "description" => "Burrito with fish and rice.",
             "ingredients" => ["Tortilla", "Fish", "Rice", "Cabbage", "Salsa"],
             "price" => 11.00,
@@ -1061,7 +1072,7 @@ return [
         ],
         [
             "name" => "Steak Fajitas",
-            "image" => "image",
+            "image" => "https://images.getbento.com/accounts/8f668701aa4b841bf51f6bd22df62eb9/media/images/57030Steak-Fajitas-Recipe-foodiecrush.com-17.jpg?w=768&fit=max&auto=compress,format",
             "description" => "Fajitas with steak and peppers.",
             "ingredients" => ["Steak", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 12.00,
@@ -1070,7 +1081,7 @@ return [
         ],
         [
             "name" => "Chicken Fajitas",
-            "image" => "image",
+            "image" => "https://cdn.momsdish.com/wp-content/uploads/2021/04/Chicken-Fajitas-011-scaled.jpg",
             "description" => "Fajitas with chicken and peppers.",
             "ingredients" => ["Chicken", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 11.00,
@@ -1079,7 +1090,7 @@ return [
         ],
         [
             "name" => "Veggie Fajitas",
-            "image" => "image",
+            "image" => "https://cookingmadehealthy.com/wp-content/uploads/2018/02/Fajita-Vegetables-2-768x1079.jpg",
             "description" => "Fajitas with mixed vegetables.",
             "ingredients" => ["Bell Peppers", "Onion", "Mushrooms", "Tortilla", "Cheese"],
             "price" => 10.00,
@@ -1088,7 +1099,7 @@ return [
         ],
         [
             "name" => "Beef Enchiladas",
-            "image" => "image",
+            "image" => "https://www.tasteofhome.com/wp-content/uploads/2017/10/Cheddar-Beef-Enchiladas_exps21076_GB2919407B01_10_3bC_RMS-2.jpg",
             "description" => "Enchiladas with beef and cheese.",
             "ingredients" => ["Tortilla", "Beef", "Cheese", "Onion", "Tomato Sauce"],
             "price" => 10.50,
@@ -1097,7 +1108,7 @@ return [
         ],
         [
             "name" => "Chicken Enchiladas",
-            "image" => "image",
+            "image" => "https://www.tasteofhome.com/wp-content/uploads/2018/01/Creamy-Chicken-Enchiladas_EXPS_DIA18_33124_B05_25_2b-4.jpg",
             "description" => "Enchiladas with chicken and cheese.",
             "ingredients" => ["Tortilla", "Chicken", "Cheese", "Onion", "Tomato Sauce"],
             "price" => 10.50,
@@ -1106,7 +1117,7 @@ return [
         ],
         [
             "name" => "Shrimp Enchiladas",
-            "image" => "image",
+            "image" => "https://charlotteshares.blog/wp-content/uploads/2021/04/img_7050_jpg-864344006-1619625432545-e1619710420555.jpg",
             "description" => "Enchiladas with shrimp and cheese.",
             "ingredients" => ["Tortilla", "Shrimp", "Cheese", "Onion", "Tomato Sauce"],
             "price" => 11.50,
@@ -1115,7 +1126,7 @@ return [
         ],
         [
             "name" => "Vegetable Enchiladas",
-            "image" => "image",
+            "image" => "https://www.spendwithpennies.com/wp-content/uploads/2021/03/FT-Veggie-Enchiladas-SpendWithPennies-9.jpg",
             "description" => "Enchiladas with mixed vegetables.",
             "ingredients" => ["Tortilla", "Bell Peppers", "Onion", "Cheese", "Tomato Sauce"],
             "price" => 10.00,
@@ -1124,7 +1135,7 @@ return [
         ],
         [
             "name" => "Beef Tostadas",
-            "image" => "image",
+            "image" => "https://www.tasteandtellblog.com/wp-content/uploads/2020/04/Beef-Tostadas-1.jpg",
             "description" => "Tostadas with beef and toppings.",
             "ingredients" => ["Tostada", "Beef", "Lettuce", "Cheese", "Salsa"],
             "price" => 9.50,
@@ -1133,7 +1144,7 @@ return [
         ],
         [
             "name" => "Chicken Tostadas",
-            "image" => "image",
+            "image" => "https://www.cookingclassy.com/wp-content/uploads/2013/02/slow-cooker-chicken-tostadas5.jpg",
             "description" => "Tostadas with chicken and toppings.",
             "ingredients" => ["Tostada", "Chicken", "Lettuce", "Cheese", "Salsa"],
             "price" => 9.50,
@@ -1142,7 +1153,7 @@ return [
         ],
         [
             "name" => "Shrimp Tostadas",
-            "image" => "image",
+            "image" => "https://www.the-girl-who-ate-everything.com/wp-content/uploads/2017/08/TheGirlWhoAteEverything_ShrimpTostadas_Hero2_Vertical.jpg",
             "description" => "Tostadas with shrimp and toppings.",
             "ingredients" => ["Tostada", "Shrimp", "Lettuce", "Cheese", "Salsa"],
             "price" => 10.50,
@@ -1151,7 +1162,7 @@ return [
         ],
         [
             "name" => "Vegetable Tostadas",
-            "image" => "image",
+            "image" => "https://www.delishknowledge.com/wp-content/uploads/Vegetable-Tostadas_10-1024x1536.jpg",
             "description" => "Tostadas with mixed vegetables.",
             "ingredients" => ["Tostada", "Bell Peppers", "Onion", "Lettuce", "Cheese"],
             "price" => 9.00,
@@ -1160,7 +1171,7 @@ return [
         ],
         [
             "name" => "Beef Nachos",
-            "image" => "image",
+            "image" => "https://iambaker.net/wp-content/uploads/2019/01/861A3209.nachos.jpg",
             "description" => "Nachos with beef and cheese.",
             "ingredients" => ["Tortilla Chips", "Beef", "Cheese", "Jalapenos", "Sour Cream"],
             "price" => 10.00,
@@ -1169,7 +1180,7 @@ return [
         ],
         [
             "name" => "Chicken Nachos",
-            "image" => "image",
+            "image" => "https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/Spicy_Chicken_Nachos_Recipe_With_Salsa_And_Sour_Cream-1.jpg",
             "description" => "Nachos with chicken and cheese.",
             "ingredients" => ["Tortilla Chips", "Chicken", "Cheese", "Jalapenos", "Sour Cream"],
             "price" => 10.00,
@@ -1178,7 +1189,7 @@ return [
         ],
         [
             "name" => "Shrimp Nachos",
-            "image" => "image",
+            "image" => "https://stlcooks.com/wp-content/uploads/2014/06/12174.jpg",
             "description" => "Nachos with shrimp and cheese.",
             "ingredients" => ["Tortilla Chips", "Shrimp", "Cheese", "Jalapenos", "Sour Cream"],
             "price" => 11.00,
@@ -1187,7 +1198,7 @@ return [
         ],
         [
             "name" => "Vegetable Nachos",
-            "image" => "image",
+            "image" => "https://thebusybaker.ca/wp-content/uploads/2017/12/rainbow-vegetable-skillet-nachos-fbig1-1024x1024.jpg",
             "description" => "Nachos with mixed vegetables.",
             "ingredients" => ["Tortilla Chips", "Bell Peppers", "Onion", "Cheese", "Sour Cream"],
             "price" => 9.50,
@@ -1196,7 +1207,7 @@ return [
         ],
         [
             "name" => "Beef Quesadilla",
-            "image" => "image",
+            "image" => "https://www.vindulge.com/wp-content/uploads/2023/02/Shredded-Beef-Quasadillas-FI.jpg",
             "description" => "Quesadilla with beef and cheese.",
             "ingredients" => ["Tortilla", "Beef", "Cheese", "Onion", "Peppers"],
             "price" => 9.50,
@@ -1205,7 +1216,7 @@ return [
         ],
         [
             "name" => "Chicken Fajitas",
-            "image" => "image",
+            "image" => "https://cdn.momsdish.com/wp-content/uploads/2021/04/Chicken-Fajitas-011-scaled.jpg",
             "description" => "Fajitas with chicken and vegetables.",
             "ingredients" => ["Chicken", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 12.00,
@@ -1214,7 +1225,7 @@ return [
         ],
         [
             "name" => "Beef Fajitas",
-            "image" => "image",
+            "image" => "https://thestayathomechef.com/wp-content/uploads/2013/05/Steak-Fajitas-1.jpg",
             "description" => "Fajitas with beef and vegetables.",
             "ingredients" => ["Beef", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 12.50,
@@ -1223,7 +1234,7 @@ return [
         ],
         [
             "name" => "Shrimp Fajitas",
-            "image" => "image",
+            "image" => "https://www.dinneratthezoo.com/wp-content/uploads/2018/05/shrimp-fajitas-3.jpg",
             "description" => "Fajitas with shrimp and vegetables.",
             "ingredients" => ["Shrimp", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 13.50,
@@ -1232,12 +1243,13 @@ return [
         ],
         [
             "name" => "Vegetable Fajitas",
-            "image" => "image",
+            "image" => "https://www.thelastfoodblog.com/wp-content/uploads/2019/05/open-vegetable-fajitas-side-on-768x1099.jpg",
             "description" => "Fajitas with mixed vegetables.",
             "ingredients" => ["Bell Peppers", "Onion", "Zucchini", "Tortilla", "Cheese"],
             "price" => 10.50,
             "visible" => true,
             "restaurant_id" => 5,
         ],
-    ],
+    ]
+
 ];
