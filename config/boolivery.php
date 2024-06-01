@@ -4,81 +4,220 @@ return [
 
     'users' => [
         [
-            'name' => 'Giuseppe',
-            'surname' => 'Rossi',
-            'email' => 'giusepperossi@example.com',
-            'password' =>  'password123',
+            'name' => 'Alessandro',
+            'surname' => 'Ferrari',
+            'email' => 'alessandroferrari@example.com',
+            'password' => 'password123',
         ],
         [
-            'name' => 'Mario',
+            'name' => 'Giulia',
+            'surname' => 'Russo',
+            'email' => 'giuliarusso@example.com',
+            'password' => 'password456',
+        ],
+        [
+            'name' => 'Federico',
             'surname' => 'Bianchi',
-            'email' => 'mariobianchi@example.com',
-            'password' =>  'password456',
+            'email' => 'federicobianchi@example.com',
+            'password' => 'password789',
         ],
         [
-            'name' => 'Luca',
-            'surname' => 'Verdi',
-            'email' => 'lucaverdi@example.com',
-            'password' =>  'password789',
+            'name' => 'Elisa',
+            'surname' => 'Romano',
+            'email' => 'elisaromano@example.com',
+            'password' => 'password1011',
         ],
         [
-            'name' => 'Marco',
-            'surname' => 'Rossi',
-            'email' => 'marcorossi@example.com',
-            'password' =>  'password1011',
+            'name' => 'Matteo',
+            'surname' => 'Gallo',
+            'email' => 'matteogallo@example.com',
+            'password' => 'password1213',
         ],
-
         [
-            'name' => 'Giuseppe',
-            'surname' => 'Cassone',
-            'email' => 'cassone@example.com',
-            'password' =>  'password123',
-        ]
-
+            'name' => 'Francesca',
+            'surname' => 'Costa',
+            'email' => 'francescacosta@example.com',
+            'password' => 'password1415',
+        ],
+        [
+            'name' => 'Lorenzo',
+            'surname' => 'Fontana',
+            'email' => 'lorenzofontana@example.com',
+            'password' => 'password1617',
+        ],
+        [
+            'name' => 'Sara',
+            'surname' => 'Marini',
+            'email' => 'saramarini@example.com',
+            'password' => 'password1819',
+        ],
+        [
+            'name' => 'Davide',
+            'surname' => 'Moretti',
+            'email' => 'davidemoretti@example.com',
+            'password' => 'password2021',
+        ],
+        [
+            'name' => 'Chiara',
+            'surname' => 'Santoro',
+            'email' => 'chiarasantoro@example.com',
+            'password' => 'password2223',
+        ],
+        [
+            'name' => 'Giorgio',
+            'surname' => 'Bruno',
+            'email' => 'giorgiobruno@example.com',
+            'password' => 'password2425',
+        ],
+        [
+            'name' => 'Martina',
+            'surname' => 'Pellegrini',
+            'email' => 'martinapellegrini@example.com',
+            'password' => 'password2627',
+        ],
+        [
+            'name' => 'Riccardo',
+            'surname' => 'Lombardi',
+            'email' => 'riccardolombardi@example.com',
+            'password' => 'password2829',
+        ],
+        [
+            'name' => 'Valentina',
+            'surname' => 'Rizzo',
+            'email' => 'valentinarizzo@example.com',
+            'password' => 'password3031',
+        ],
+        [
+            'name' => 'Stefano',
+            'surname' => 'Conti',
+            'email' => 'stefanoconti@example.com',
+            'password' => 'password3233',
+        ],
     ],
 
     'restaurants' => [
         [
-            'name' => 'Ristorante da Luigi',
-            'image' => 'https://livitaly-666b.kxcdn.com/wp-content/uploads/2019/10/shutterstock_1054754711.jpg',
-            'phone' => '+39 3517785963',
-            'address' => 'Via Roma 10, Roma',
-            'vat' => 'IT12345678901',
+            'name' => 'Ristorante La Scala',
+            'image' => 'https://images.lacucinaitaliana.it/gallery/123259/Big/bb3ff4b8-0af6-47ca-8d88-6ac1c2134f2b.jpg',
+            'address' => 'Via Verdi 1, Milano',
+            'phone' => '+39 3214567890',
+            'vat' => 'IT10293847561',
             'user_id' => 1
         ],
         [
-            'name' => 'Pizzeria Bella Napoli',
-            'image' => 'https://www.mrnystyleandtravel.com/wp-content/uploads/2018/07/Den-Exterior.jpg',
-            'address' => 'Corso Italia 22, Napoli',
-            'phone' => '+39 3781598745',
-            'vat' => 'IT98765432109',
+            'name' => 'Trattoria Il Duomo',
+            'image' => 'https://www.flawlessmilano.com/wp-content/uploads/2017/01/Ristorante-Arlati.jpg?x53037',
+            'address' => 'Piazza Duomo 2, Milano',
+            'phone' => '+39 3216549870',
+            'vat' => 'IT11223344556',
             'user_id' => 2
         ],
         [
-            'name' => 'Trattoria Alla Vecchia',
-            'image' => 'https://thearchitectsdiary.com/wp-content/uploads/2018/06/Best-Restaurant-Interior-Design-In-India-3.jpg',
-            'address' => 'Piazza Garibaldi 15, Firenze',
-            'phone' => '+39 3795896521',
-            'vat' => 'IT19283746501',
+            'name' => 'Pizzeria Bella Milano',
+            'image' => 'https://trattoria.bertame.it/wp-content/uploads/sites/4/2019/09/color-007-1.jpg',
+            'address' => 'Via Dante 3, Milano',
+            'phone' => '+39 3217896541',
+            'vat' => 'IT12345678901',
             'user_id' => 3
         ],
         [
-            'name' => 'Osteria Al Dente',
-            'image' => 'https://flawless.life/wp-content/uploads/2020/02/Le_migliori_pizzerie_di_Milano_PiccolaIschia.jpg',
-            'address' => 'Via Milano 5, Milano',
-            'phone' => '+39 3253698547',
-            'vat' => 'IT56473829100',
+            'name' => 'Osteria Alla Scala',
+            'image' => 'https://media-assets.lacucinaitaliana.it/photos/61fabe8151116b1ead93066e/16:9/w_2560%2Cc_limit/Landscape-osterie.jpg',
+            'address' => 'Via Manzoni 4, Milano',
+            'phone' => '+39 3214561234',
+            'vat' => 'IT23456789012',
             'user_id' => 4
         ],
         [
-            'name' => 'Ristorante Il Girasole',
-            'image' => 'https://mangiaebevi.us/wp-content/uploads/2020/01/DSC4594-1024x683.jpg',
-            'address' => 'Via Torino 18, Torino',
-            'phone' => '+39 3782654851',
-            'vat' => 'IT67584930210',
+            'name' => 'Ristorante La Rinascente',
+            'image' => 'https://d1tm14lrsghf7q.cloudfront.net/media/files/rtf/2019_06_FRAME/La_Rinascente_Milan-10.jpg',
+            'address' => 'Via Vittorio Emanuele 5, Milano',
+            'phone' => '+39 3216543210',
+            'vat' => 'IT34567890123',
             'user_id' => 5
         ],
+        [
+            'name' => 'Trattoria Il Naviglio',
+            'image' => 'https://i.pinimg.com/originals/c2/bb/c1/c2bbc13ebc4c84d9e969eedfa4f8493a.jpg',
+            'address' => 'Via Alzaia 6, Milano',
+            'phone' => '+39 3217891234',
+            'vat' => 'IT45678901234',
+            'user_id' => 6
+        ],
+        [
+            'name' => 'Pizzeria Milano Centrale',
+            'image' => 'https://assets-global.website-files.com/59baab33dea09c0001ac218f/59c7b5eba99f5700012f416b_obica-mozzarella-bar-milano-centrale-01.jpg',
+            'address' => 'Piazza Duca d\'Aosta 7, Milano',
+            'phone' => '+39 3214569870',
+            'vat' => 'IT56789012345',
+            'user_id' => 7
+        ],
+        [
+            'name' => 'Osteria Brera',
+            'image' => 'https://www.venetianlasvegas.com/content/dam/venetian/restaurants/brera-osteria/interior-3_1920x1080.jpg.resize.0.0.1200.630.jpg?ignorecache=true',
+            'address' => 'Via Brera 8, Milano',
+            'phone' => '+39 3216547890',
+            'vat' => 'IT67890123456',
+            'user_id' => 8
+        ],
+        [
+            'name' => 'Osteria Sforzesca',
+            'image' => 'https://www.veronawinesuites.com/data/files/clm/185/tour-osterie_1920_1920.jpg',
+            'address' => 'Via Castello 9, Milano',
+            'phone' => '+39 3217894561',
+            'vat' => 'IT78901234567',
+            'user_id' => 9
+        ],
+        [
+            'name' => 'Trattoria Porta Romana',
+            'image' => 'https://portaromana.com.br/wp-content/uploads/2019/04/trattoria-porta-romana-curitiba-02.jpg',
+            'address' => 'Corso di Porta Romana 10, Milano',
+            'phone' => '+39 3214563210',
+            'vat' => 'IT89012345678',
+            'user_id' => 10
+        ],
+        [
+            'name' => 'Pizzeria Porta Ticinese',
+            'image' => 'https://www.pizzeriatradizionale.com/wp-content/uploads/2017/06/interno-6-Pizzeria-Tradizionale-Ripa-di-Porta-Ticinese-7-%E2%80%93-20144-MIlano.jpg',
+            'address' => 'Via Vigevano 11, Milano',
+            'phone' => '+39 3216541234',
+            'vat' => 'IT90123456789',
+            'user_id' => 11
+        ],
+        [
+            'name' => 'Ristorante San Babila',
+            'image' => 'https://b.zmtcdn.com/data/pictures/3/16300053/4547a1ff1cf86f2baf8ac6a026f2ff39.jpg',
+            'address' => 'Piazza San Babila 12, Milano',
+            'phone' => '+39 3217896543',
+            'vat' => 'IT01234567890',
+            'user_id' => 12
+        ],
+        [
+            'name' => 'Osteria Bovisa',
+            'image' => 'https://www.theeatculture.com/wp-content/uploads/2018/11/osteria-milano_5.jpg',
+            'address' => 'Via Bovisasca 13, Milano',
+            'phone' => '+39 3214569876',
+            'vat' => 'IT12345098765',
+            'user_id' => 13
+        ],
+        [
+            'name' => 'Trattoria Cadorna',
+            'image' => 'https://cdn.sanity.io/images/v3ujbg13/production/6cdf2f72301e8ff147f9110547fee351ae978351-7140x4762.jpg?w=2400&auto=format',
+            'address' => 'Piazza Cadorna 14, Milano',
+            'phone' => '+39 3216547896',
+            'vat' => 'IT23456087654',
+            'user_id' => 14
+        ],
+        [
+            'name' => 'Pizzeria Porta Venezia',
+            'image' => 'https://www.scattidigusto.it/wp-content/uploads/2019/11/Cocciuto-nuova-pizzeria-Milano-via-Melzo-Porta-Venezia-sedute.jpg',
+            'address' => 'Corso Buenos Aires 15, Milano',
+            'phone' => '+39 3217894567',
+            'vat' => 'IT34567076543',
+            'user_id' => 15
+        ],
     ],
+
 
     'types' => [
         [
@@ -93,9 +232,9 @@ return [
         [
             'type' => 'Chinese',
         ],
-        // [
-        //     'type' => 'Japanese',
-        // ],
+        [
+            'type' => 'Japanese',
+        ],
         [
             'type' => 'Thai',
         ],
@@ -110,8 +249,24 @@ return [
         ],
         [
             'type' => 'Steakhouse'
-        ]
+        ],
+        [
+            'type' => 'French',
+        ],
+        [
+            'type' => 'Seafood',
+        ],
+        [
+            'type' => 'Vegetarian',
+        ],
+        [
+            'type' => 'Vegan',
+        ],
+        [
+            'type' => 'Middle Eastern',
+        ],
     ],
+
 
     'dishes' => [
         [
@@ -130,7 +285,7 @@ return [
             "ingredients" => ["Tomato", "Mozzarella", "Basil", "Olive Oil", "Salt"],
             "price" => 8.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Mushroom Risotto",
@@ -139,7 +294,7 @@ return [
             "ingredients" => ["Rice", "Mushrooms", "Broth", "Butter", "Parmesan"],
             "price" => 14.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 13,
         ],
         [
             "name" => "Lasagna",
@@ -148,7 +303,7 @@ return [
             "ingredients" => ["Pasta", "Meat Sauce", "Béchamel", "Parmesan", "Mozzarella"],
             "price" => 13.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 1,
         ],
         [
             "name" => "Caprese Salad",
@@ -157,7 +312,7 @@ return [
             "ingredients" => ["Tomato", "Mozzarella", "Basil", "Olive Oil", "Salt"],
             "price" => 7.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Chicken Cacciatore",
@@ -166,7 +321,7 @@ return [
             "ingredients" => ["Chicken", "Tomato", "Olives", "Wine", "Rosemary"],
             "price" => 15.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 6,
         ],
         [
             "name" => "Fettuccine Alfredo",
@@ -175,7 +330,7 @@ return [
             "ingredients" => ["Fettuccine", "Butter", "Parmesan", "Cream", "Pepper"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Tomato Bruschetta",
@@ -184,7 +339,7 @@ return [
             "ingredients" => ["Bread", "Tomato", "Basil", "Garlic", "Olive Oil"],
             "price" => 5.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Tiramisu",
@@ -193,7 +348,7 @@ return [
             "ingredients" => ["Mascarpone", "Ladyfingers", "Coffee", "Cocoa", "Sugar"],
             "price" => 6.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Gnocchi with Pesto",
@@ -202,7 +357,7 @@ return [
             "ingredients" => ["Gnocchi", "Basil", "Garlic", "Pine Nuts", "Parmesan"],
             "price" => 10.50,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 12,
         ],
         [
             "name" => "Beef Tagliata",
@@ -220,7 +375,7 @@ return [
             "ingredients" => ["Penne", "Tomato", "Chili Pepper", "Garlic", "Olive Oil"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 6,
         ],
         [
             "name" => "Rice Balls",
@@ -229,7 +384,7 @@ return [
             "ingredients" => ["Rice", "Meat Sauce", "Peas", "Cheese", "Breadcrumbs"],
             "price" => 7.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Fried Calamari",
@@ -238,7 +393,7 @@ return [
             "ingredients" => ["Calamari", "Flour", "Oil", "Lemon", "Salt"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 11,
         ],
         [
             "name" => "Pasta and Beans",
@@ -247,7 +402,7 @@ return [
             "ingredients" => ["Pasta", "Beans", "Pancetta", "Tomato", "Rosemary"],
             "price" => 8.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 6,
         ],
         // Additional dishes
         [
@@ -257,7 +412,7 @@ return [
             "ingredients" => ["Linguine", "Shrimp", "Clams", "Tomato", "Garlic"],
             "price" => 16.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 11,
         ],
         [
             "name" => "Vegetarian Pizza",
@@ -266,7 +421,7 @@ return [
             "ingredients" => ["Dough", "Tomato", "Mozzarella", "Bell Peppers", "Olives"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Chicken Parmesan",
@@ -275,7 +430,7 @@ return [
             "ingredients" => ["Chicken", "Breadcrumbs", "Parmesan", "Tomato Sauce", "Mozzarella"],
             "price" => 14.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Grilled Salmon",
@@ -284,7 +439,7 @@ return [
             "ingredients" => ["Salmon", "Olive Oil", "Lemon", "Garlic", "Dill"],
             "price" => 18.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 1,
         ],
         [
             "name" => "Chocolate Cake",
@@ -293,7 +448,7 @@ return [
             "ingredients" => ["Chocolate", "Flour", "Sugar", "Eggs", "Butter"],
             "price" => 7.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 5,
         ],
         [
             "name" => "Minestrone Soup",
@@ -302,7 +457,7 @@ return [
             "ingredients" => ["Tomato", "Carrot", "Celery", "Beans", "Pasta"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Eggplant Parmesan",
@@ -311,7 +466,7 @@ return [
             "ingredients" => ["Eggplant", "Breadcrumbs", "Parmesan", "Tomato Sauce", "Mozzarella"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Garlic Bread",
@@ -320,7 +475,7 @@ return [
             "ingredients" => ["Bread", "Butter", "Garlic", "Parsley", "Salt"],
             "price" => 4.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Lamb Chops",
@@ -329,7 +484,7 @@ return [
             "ingredients" => ["Lamb", "Rosemary", "Garlic", "Olive Oil", "Salt"],
             "price" => 20.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 1,
         ],
         [
             "name" => "Cheeseburger",
@@ -338,7 +493,7 @@ return [
             "ingredients" => ["Beef", "Cheese", "Lettuce", "Tomato", "Bun"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 6,
         ],
         [
             "name" => "Pasta Primavera",
@@ -347,7 +502,7 @@ return [
             "ingredients" => ["Pasta", "Bell Peppers", "Zucchini", "Tomato", "Garlic"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Shrimp Scampi",
@@ -356,7 +511,7 @@ return [
             "ingredients" => ["Shrimp", "Garlic", "Butter", "Lemon", "Parsley"],
             "price" => 17.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 11,
         ],
         [
             "name" => "Caesar Salad",
@@ -365,7 +520,7 @@ return [
             "ingredients" => ["Lettuce", "Croutons", "Parmesan", "Caesar Dressing", "Chicken"],
             "price" => 8.50,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Clam Chowder",
@@ -374,7 +529,7 @@ return [
             "ingredients" => ["Clams", "Potato", "Cream", "Onion", "Bacon"],
             "price" => 12.50,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "BBQ Ribs",
@@ -383,7 +538,7 @@ return [
             "ingredients" => ["Ribs", "BBQ Sauce", "Garlic", "Brown Sugar", "Paprika"],
             "price" => 18.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Veggie Burger",
@@ -392,7 +547,7 @@ return [
             "ingredients" => ["Veggie Patty", "Lettuce", "Tomato", "Cheese", "Bun"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Stuffed Peppers",
@@ -401,7 +556,7 @@ return [
             "ingredients" => ["Bell Peppers", "Rice", "Ground Beef", "Tomato Sauce", "Cheese"],
             "price" => 11.50,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Fish Tacos",
@@ -410,7 +565,7 @@ return [
             "ingredients" => ["Fish", "Tortilla", "Cabbage", "Lime", "Sour Cream"],
             "price" => 13.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 1,
         ],
         [
             "name" => "French Onion Soup",
@@ -419,7 +574,7 @@ return [
             "ingredients" => ["Onions", "Beef Broth", "Bread", "Cheese", "Thyme"],
             "price" => 7.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 13,
         ],
         [
             "name" => "Pulled Pork Sandwich",
@@ -428,7 +583,7 @@ return [
             "ingredients" => ["Pulled Pork", "BBQ Sauce", "Bun", "Pickles", "Onion"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 6,
         ],
 
         [
@@ -438,7 +593,7 @@ return [
             "ingredients" => ["Chicken", "Olive Oil", "Lemon", "Garlic", "Rosemary"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 13,
         ],
         [
             "name" => "Spaghetti Bolognese",
@@ -447,7 +602,7 @@ return [
             "ingredients" => ["Spaghetti", "Ground Beef", "Tomato", "Onion", "Garlic"],
             "price" => 11.50,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 14,
         ],
         [
             "name" => "Chicken Alfredo",
@@ -456,7 +611,7 @@ return [
             "ingredients" => ["Pasta", "Chicken", "Cream", "Parmesan", "Garlic"],
             "price" => 13.50,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 5,
         ],
         [
             "name" => "Beef Stroganoff",
@@ -465,7 +620,7 @@ return [
             "ingredients" => ["Beef", "Mushrooms", "Sour Cream", "Onion", "Garlic"],
             "price" => 14.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Vegetable Stir Fry",
@@ -474,7 +629,7 @@ return [
             "ingredients" => ["Bell Peppers", "Broccoli", "Carrots", "Soy Sauce", "Garlic"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Roast Beef",
@@ -483,7 +638,7 @@ return [
             "ingredients" => ["Beef", "Garlic", "Rosemary", "Olive Oil", "Salt"],
             "price" => 15.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Shrimp Alfredo",
@@ -492,7 +647,7 @@ return [
             "ingredients" => ["Pasta", "Shrimp", "Cream", "Parmesan", "Garlic"],
             "price" => 16.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Chicken Caesar Salad",
@@ -501,7 +656,7 @@ return [
             "ingredients" => ["Lettuce", "Chicken", "Croutons", "Parmesan", "Caesar Dressing"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Garlic Shrimp",
@@ -510,7 +665,7 @@ return [
             "ingredients" => ["Shrimp", "Garlic", "Butter", "Lemon", "Parsley"],
             "price" => 15.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 11,
         ],
         [
             "name" => "Beef Tacos",
@@ -519,7 +674,7 @@ return [
             "ingredients" => ["Beef", "Tortilla", "Lettuce", "Tomato", "Cheese"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Chicken Tacos",
@@ -528,7 +683,7 @@ return [
             "ingredients" => ["Chicken", "Tortilla", "Lettuce", "Tomato", "Cheese"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Fish Tacos",
@@ -537,7 +692,7 @@ return [
             "ingredients" => ["Fish", "Tortilla", "Cabbage", "Lime", "Sour Cream"],
             "price" => 13.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Vegetarian Tacos",
@@ -546,7 +701,7 @@ return [
             "ingredients" => ["Tortilla", "Bell Peppers", "Onion", "Corn", "Cheese"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "BBQ Chicken Pizza",
@@ -555,7 +710,7 @@ return [
             "ingredients" => ["Dough", "BBQ Sauce", "Chicken", "Onion", "Mozzarella"],
             "price" => 12.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Pepperoni Pizza",
@@ -573,7 +728,7 @@ return [
             "ingredients" => ["Dough", "Tomato Sauce", "Mozzarella", "Parmesan", "Gorgonzola", "Ricotta"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Hawaiian Pizza",
@@ -582,7 +737,7 @@ return [
             "ingredients" => ["Dough", "Tomato Sauce", "Ham", "Pineapple", "Mozzarella"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 3,
         ],
         [
             "name" => "Buffalo Wings",
@@ -591,7 +746,7 @@ return [
             "ingredients" => ["Chicken Wings", "Buffalo Sauce", "Butter", "Garlic", "Celery"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Mozzarella Sticks",
@@ -600,7 +755,7 @@ return [
             "ingredients" => ["Mozzarella", "Breadcrumbs", "Eggs", "Flour", "Marinara Sauce"],
             "price" => 7.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Chicken Nuggets",
@@ -609,7 +764,7 @@ return [
             "ingredients" => ["Chicken", "Breadcrumbs", "Eggs", "Flour", "Ketchup"],
             "price" => 8.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Pork Chops",
@@ -618,7 +773,7 @@ return [
             "ingredients" => ["Pork Chops", "Olive Oil", "Garlic", "Rosemary", "Salt"],
             "price" => 15.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Lamb Curry",
@@ -627,7 +782,7 @@ return [
             "ingredients" => ["Lamb", "Curry Powder", "Coconut Milk", "Onion", "Garlic"],
             "price" => 18.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Chicken Curry",
@@ -636,7 +791,7 @@ return [
             "ingredients" => ["Chicken", "Curry Powder", "Coconut Milk", "Onion", "Garlic"],
             "price" => 16.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Beef Curry",
@@ -645,7 +800,7 @@ return [
             "ingredients" => ["Beef", "Curry Powder", "Coconut Milk", "Onion", "Garlic"],
             "price" => 17.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Vegetable Curry",
@@ -654,7 +809,7 @@ return [
             "ingredients" => ["Bell Peppers", "Carrots", "Coconut Milk", "Onion", "Garlic"],
             "price" => 14.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Salmon Sashimi",
@@ -663,7 +818,7 @@ return [
             "ingredients" => ["Salmon", "Soy Sauce", "Wasabi", "Ginger", "Lemon"],
             "price" => 20.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 6,
         ],
 
         [
@@ -673,7 +828,7 @@ return [
             "ingredients" => ["Tuna", "Soy Sauce", "Wasabi", "Ginger", "Lemon"],
             "price" => 20.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Beef Stir Fry",
@@ -700,7 +855,7 @@ return [
             "ingredients" => ["Pork", "Bell Peppers", "Broccoli", "Soy Sauce", "Garlic"],
             "price" => 14.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 5,
         ],
         [
             "name" => "Vegetable Stir Fry",
@@ -709,7 +864,7 @@ return [
             "ingredients" => ["Bell Peppers", "Broccoli", "Carrots", "Soy Sauce", "Garlic"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Fish and Chips",
@@ -718,7 +873,7 @@ return [
             "ingredients" => ["Fish", "Potatoes", "Flour", "Oil", "Salt"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Chicken and Chips",
@@ -727,7 +882,7 @@ return [
             "ingredients" => ["Chicken", "Potatoes", "Flour", "Oil", "Salt"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Prawn Cocktail",
@@ -736,7 +891,7 @@ return [
             "ingredients" => ["Prawns", "Mayonnaise", "Ketchup", "Lemon", "Lettuce"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 11,
         ],
 
 
@@ -753,7 +908,7 @@ return [
             "ingredients" => ["Mushrooms", "Cheese", "Breadcrumbs", "Garlic", "Parsley"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Egg Salad",
@@ -762,7 +917,7 @@ return [
             "ingredients" => ["Eggs", "Lettuce", "Tomato", "Mayonnaise", "Onion"],
             "price" => 8.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Tuna Salad",
@@ -771,7 +926,7 @@ return [
             "ingredients" => ["Tuna", "Lettuce", "Tomato", "Onion", "Olive Oil"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 11,
         ],
         [
             "name" => "Salmon Salad",
@@ -780,7 +935,7 @@ return [
             "ingredients" => ["Salmon", "Lettuce", "Tomato", "Onion", "Olive Oil"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 11,
         ],
         [
             "name" => "Chicken Salad",
@@ -789,7 +944,7 @@ return [
             "ingredients" => ["Chicken", "Lettuce", "Tomato", "Onion", "Olive Oil"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 13,
         ],
         [
             "name" => "Grilled Cheese Sandwich",
@@ -798,7 +953,7 @@ return [
             "ingredients" => ["Bread", "Cheese", "Butter", "Garlic", "Parsley"],
             "price" => 7.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 14,
         ],
         [
             "name" => "Ham and Cheese Sandwich",
@@ -807,7 +962,7 @@ return [
             "ingredients" => ["Bread", "Ham", "Cheese", "Butter", "Garlic"],
             "price" => 8.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 13,
         ],
         [
             "name" => "Turkey Sandwich",
@@ -816,7 +971,7 @@ return [
             "ingredients" => ["Bread", "Turkey", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 14,
         ],
 
 
@@ -831,7 +986,7 @@ return [
             "ingredients" => ["Bread", "Bacon", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 8.50,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 14,
         ],
         [
             "name" => "Veggie Sandwich",
@@ -840,7 +995,7 @@ return [
             "ingredients" => ["Bread", "Lettuce", "Tomato", "Cucumber", "Avocado"],
             "price" => 8.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Pastrami Sandwich",
@@ -849,7 +1004,7 @@ return [
             "ingredients" => ["Bread", "Pastrami", "Mustard", "Pickles", "Cheese"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Reuben Sandwich",
@@ -858,7 +1013,7 @@ return [
             "ingredients" => ["Bread", "Corned Beef", "Sauerkraut", "Swiss Cheese", "Thousand Island Dressing"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Pulled Pork Sandwich",
@@ -867,7 +1022,7 @@ return [
             "ingredients" => ["Bread", "Pulled Pork", "BBQ Sauce", "Coleslaw", "Pickles"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Meatball Sandwich",
@@ -885,7 +1040,7 @@ return [
             "ingredients" => ["Bread", "Chicken Parmesan", "Marinara Sauce", "Mozzarella", "Parmesan"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 6,
         ],
         [
             "name" => "Philly Cheesesteak",
@@ -894,7 +1049,7 @@ return [
             "ingredients" => ["Bread", "Steak", "Cheese", "Onions", "Peppers"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Cubano Sandwich",
@@ -903,7 +1058,7 @@ return [
             "ingredients" => ["Bread", "Ham", "Pork", "Pickles", "Mustard"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Egg Salad Sandwich",
@@ -912,7 +1067,7 @@ return [
             "ingredients" => ["Bread", "Egg Salad", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 8.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Shrimp Po' Boy",
@@ -921,7 +1076,7 @@ return [
             "ingredients" => ["Bread", "Fried Shrimp", "Lettuce", "Tomato", "Remoulade Sauce"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 9,
         ],
         [
             "name" => "Turkey Club Sandwich",
@@ -930,7 +1085,7 @@ return [
             "ingredients" => ["Bread", "Turkey", "Bacon", "Lettuce", "Tomato"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Italian Sub",
@@ -939,7 +1094,7 @@ return [
             "ingredients" => ["Bread", "Salami", "Ham", "Provolone", "Olive Oil"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "BBQ Pulled Chicken Sandwich",
@@ -948,7 +1103,7 @@ return [
             "ingredients" => ["Bread", "Pulled Chicken", "BBQ Sauce", "Coleslaw", "Pickles"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 6,
         ],
         [
             "name" => "French Dip Sandwich",
@@ -957,7 +1112,7 @@ return [
             "ingredients" => ["Bread", "Roast Beef", "Swiss Cheese", "Au Jus", "Onions"],
             "price" => 10.50,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 14,
         ],
         [
             "name" => "Buffalo Chicken Sandwich",
@@ -966,7 +1121,7 @@ return [
             "ingredients" => ["Bread", "Buffalo Chicken", "Lettuce", "Tomato", "Blue Cheese Dressing"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 13,
         ],
         [
             "name" => "BBQ Brisket Sandwich",
@@ -975,7 +1130,7 @@ return [
             "ingredients" => ["Bread", "BBQ Brisket", "Coleslaw", "Pickles", "Onions"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 10,
         ],
         [
             "name" => "Tuna Melt",
@@ -984,7 +1139,7 @@ return [
             "ingredients" => ["Bread", "Tuna Salad", "Cheese", "Butter", "Tomato"],
             "price" => 8.50,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 14,
         ],
         [
             "name" => "Avocado Toast",
@@ -993,7 +1148,7 @@ return [
             "ingredients" => ["Bread", "Avocado", "Lemon", "Salt", "Pepper"],
             "price" => 7.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 11,
         ],
         [
             "name" => "Chicken Salad Wrap",
@@ -1002,7 +1157,7 @@ return [
             "ingredients" => ["Tortilla", "Chicken Salad", "Lettuce", "Tomato", "Mayonnaise"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 7,
         ],
         [
             "name" => "Beef Burrito",
@@ -1011,7 +1166,7 @@ return [
             "ingredients" => ["Tortilla", "Beef", "Beans", "Rice", "Cheese"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 6,
         ],
 
 
@@ -1023,7 +1178,7 @@ return [
             "ingredients" => ["Tortilla", "Chicken", "Cheese", "Onion", "Peppers"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 5,
         ],
         [
             "name" => "Veggie Wrap",
@@ -1032,7 +1187,7 @@ return [
             "ingredients" => ["Tortilla", "Bell Peppers", "Cucumber", "Lettuce", "Hummus"],
             "price" => 8.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Pulled Pork Wrap",
@@ -1041,7 +1196,7 @@ return [
             "ingredients" => ["Tortilla", "Pulled Pork", "BBQ Sauce", "Coleslaw", "Pickles"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 8,
         ],
         [
             "name" => "Shrimp Tacos",
@@ -1059,7 +1214,7 @@ return [
             "ingredients" => ["Tortilla", "Chicken", "Beans", "Rice", "Cheese"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Fish Burrito",
@@ -1068,7 +1223,7 @@ return [
             "ingredients" => ["Tortilla", "Fish", "Rice", "Cabbage", "Salsa"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Steak Fajitas",
@@ -1077,7 +1232,7 @@ return [
             "ingredients" => ["Steak", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Chicken Fajitas",
@@ -1086,7 +1241,7 @@ return [
             "ingredients" => ["Chicken", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Veggie Fajitas",
@@ -1095,7 +1250,7 @@ return [
             "ingredients" => ["Bell Peppers", "Onion", "Mushrooms", "Tortilla", "Cheese"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Beef Enchiladas",
@@ -1104,7 +1259,7 @@ return [
             "ingredients" => ["Tortilla", "Beef", "Cheese", "Onion", "Tomato Sauce"],
             "price" => 10.50,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Chicken Enchiladas",
@@ -1113,7 +1268,7 @@ return [
             "ingredients" => ["Tortilla", "Chicken", "Cheese", "Onion", "Tomato Sauce"],
             "price" => 10.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Shrimp Enchiladas",
@@ -1122,7 +1277,7 @@ return [
             "ingredients" => ["Tortilla", "Shrimp", "Cheese", "Onion", "Tomato Sauce"],
             "price" => 11.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Vegetable Enchiladas",
@@ -1149,7 +1304,7 @@ return [
             "ingredients" => ["Tostada", "Chicken", "Lettuce", "Cheese", "Salsa"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Shrimp Tostadas",
@@ -1158,7 +1313,7 @@ return [
             "ingredients" => ["Tostada", "Shrimp", "Lettuce", "Cheese", "Salsa"],
             "price" => 10.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Vegetable Tostadas",
@@ -1167,7 +1322,7 @@ return [
             "ingredients" => ["Tostada", "Bell Peppers", "Onion", "Lettuce", "Cheese"],
             "price" => 9.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Beef Nachos",
@@ -1176,7 +1331,7 @@ return [
             "ingredients" => ["Tortilla Chips", "Beef", "Cheese", "Jalapenos", "Sour Cream"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 1,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Chicken Nachos",
@@ -1185,7 +1340,7 @@ return [
             "ingredients" => ["Tortilla Chips", "Chicken", "Cheese", "Jalapenos", "Sour Cream"],
             "price" => 10.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Shrimp Nachos",
@@ -1194,7 +1349,7 @@ return [
             "ingredients" => ["Tortilla Chips", "Shrimp", "Cheese", "Jalapenos", "Sour Cream"],
             "price" => 11.00,
             "visible" => true,
-            "restaurant_id" => 2,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Vegetable Nachos",
@@ -1203,7 +1358,7 @@ return [
             "ingredients" => ["Tortilla Chips", "Bell Peppers", "Onion", "Cheese", "Sour Cream"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 15,
         ],
         [
             "name" => "Beef Quesadilla",
@@ -1212,7 +1367,7 @@ return [
             "ingredients" => ["Tortilla", "Beef", "Cheese", "Onion", "Peppers"],
             "price" => 9.50,
             "visible" => true,
-            "restaurant_id" => 3,
+            "restaurant_id" => 4,
         ],
         [
             "name" => "Chicken Fajitas",
@@ -1221,7 +1376,7 @@ return [
             "ingredients" => ["Chicken", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 12.00,
             "visible" => true,
-            "restaurant_id" => 4,
+            "restaurant_id" => 6,
         ],
         [
             "name" => "Beef Fajitas",
@@ -1239,7 +1394,7 @@ return [
             "ingredients" => ["Shrimp", "Bell Peppers", "Onion", "Tortilla", "Cheese"],
             "price" => 13.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 13,
         ],
         [
             "name" => "Vegetable Fajitas",
@@ -1248,7 +1403,7 @@ return [
             "ingredients" => ["Bell Peppers", "Onion", "Zucchini", "Tortilla", "Cheese"],
             "price" => 10.50,
             "visible" => true,
-            "restaurant_id" => 5,
+            "restaurant_id" => 15,
         ],
     ]
 
