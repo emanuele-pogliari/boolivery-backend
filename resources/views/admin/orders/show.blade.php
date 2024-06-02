@@ -8,7 +8,6 @@
         <thead>
             <tr>
                 <th scope="col">Dish Name</th>
-                <th scope="col">Quantity</th>
                 <th scope="col">Price</th>
             </tr>
         </thead>
