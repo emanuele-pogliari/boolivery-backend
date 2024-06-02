@@ -6,16 +6,16 @@
     @foreach($restaurants as $restaurant)
     <h1 class="text-center mb-4">Welcome in "{{$restaurant->name}}" Home! </h1>
 
-    <img class="restaurant-img" src="{{asset('storage/' . $restaurant->image)}}" alt="">
+    <img class="restaurant-img mb-3" src="{{asset('storage/' . $restaurant->image)}}" alt="">
 
     <div class="row justify-content-center mb-5">
 
         <div class="section-one-container mb-5">
-            
+            <h3>Restaurant Categories:</h3>
             <div class="d-flex justify-content-center gap-2">
 
                 @foreach($restaurant->types as $type)
-                        <p class="badge rounded-pill custom_badge mt-5">{{$type->type}}</p>
+                        <p class="badge rounded-pill custom_badge mt-3">{{$type->type}}</p>
                 @endforeach
             </div>
 

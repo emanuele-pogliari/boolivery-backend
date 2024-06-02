@@ -14,10 +14,10 @@
     color: #fefefe;
     background-color: #37373b;
     text-decoration: none;
-    padding: .6rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 25px;
 
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 
     font-weight: 500;
 }
@@ -42,10 +42,9 @@
     align-items: center;
 
     background-color: #37373b;
-    font-size: larger;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
 
-    padding: .5rem 1.4rem;
     cursor: default;
 }
 

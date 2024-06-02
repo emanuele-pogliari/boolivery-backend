@@ -8,7 +8,8 @@
                             @csrf
                             <div class="text-center fs-4 mb-3">{{ __('Register to Boolivery') }}</div>
 
-                            <div class="mb-3 fs-5">
+                            <div class="user-reg m-4">
+                            <div class="mb-3 fs-5 fw-bold">
                                 User registration
                             </div>
                             <div class="mb-4 row">
@@ -86,8 +87,10 @@
                                         name="password_confirmation" autocomplete="new-password" required pattern="{8,}">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mb-3 fs-5">Restaurant Registration</div>
+                        <div class="user-reg m-4">
+                            <div class="mb-3 fs-5 fw-bold">Restaurant Registration</div>
                             <div class="mb-4 row">
                                 <label for="restaurant_name"
                                     class="col-md-4 col-form-label text-md-right">{{ __('Restaurant Name') }}</label>
@@ -106,14 +109,18 @@
                                 </div>
                             </div>
 
-                            <div class="type-container">
-                                @foreach ($types as $type)
-                                    <input class="checkbox-type {{ $errors->has('types') ? 'is-invalid' : '' }}" type="checkbox" value="{{$type->id}}" id="{{ $type->type }}" name="types[]"
-                                    {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
-                                    <label class="label-type" for="{{ $type->type }}">
-                                        {{ $type->type }}
-                                    </label>
-                                @endforeach
+                            <div class="col">
+                                <!-- Bottone per aprire il modale -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryModal">
+                                    Scegli Categorie
+                                </button>
+                            
+                                <!-- Output per le categorie selezionate -->
+                                <div id="selectedCategories" class="mt-3">
+                                    <strong>Categorie scelte:</strong>
+                                    <span id="selectedCategoriesList"></span>
+                                </div>
+                            
                                 @if ($errors->has('types'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('types') }}</strong>
@@ -186,11 +193,12 @@
                                     @enderror
                                 </div>
                             </div>
+                        </div>
 
 
                             <div class="mb-4 row mb-0">
-                                <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                <div class="col text-center">
+                                    <button type="submit" class="btn reg-button">
                                         {{ __('Register') }}
                                     </button>
                                 </div>
@@ -199,6 +207,36 @@
                     </div>
                 </div>
     </div>
+
+    <!-- modal for types -->
+    <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="categoryModalLabel">Scegli Categorie</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="checkbox-container">
+                        @foreach ($types as $type)
+                            <div class="checkbox-item">
+                                <input class="checkbox" type="checkbox" value="{{$type->id}}" id="{{ $type->type }}" name="types[]"
+                                {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
+                                <label class="label-type" for="{{ $type->type }}">
+                                    {{ $type->type }}
+                                </label>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="updateSelectedCategories()">Salva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 @endsection
 
 <style>
@@ -218,27 +256,27 @@
     }
   }
 }
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Adjust the gap value as needed */
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
 </style>
 
 
 <script>
-//     const passwordInput = document.getElementById('password');
-// const confirmPasswordInput = document.getElementById('confirmPassword');
-// const submitButton = document.getElementById('submitButton');
-
-// passwordInput.addEventListener('input', checkPasswords);
-// confirmPasswordInput.addEventListener('input', checkPasswords);
-
-// function checkPasswords() {
-//   const password = passwordInput.value;
-//   const confirmPassword = confirmPasswordInput.value;
-
-//   if (password === confirmPassword) {
-//     submitButton.disabled = false;
-//     submitButton.classList.remove('error');
-//   } else {
-//     submitButton.disabled = true;
-//     submitButton.classList.add('error');
-//   }
-// }
+    function updateSelectedCategories() {
+        let selectedCategories = [];
+        document.querySelectorAll('.checkbox:checked').forEach(function(checkbox) {
+            selectedCategories.push(checkbox.nextElementSibling.textContent);
+        });
+        document.getElementById('selectedCategoriesList').textContent = selectedCategories.join(', ');
+    }
 </script>
