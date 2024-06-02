@@ -24,14 +24,14 @@
         </tbody>
     </table>
 
-    <h2>Dettagli Cliente</h2>
-    <p><strong>Nome:</strong> {{ $order->customer_name }}</p>
-    <p><strong>Cognome:</strong> {{ $order->customer_last_name }}</p>
-    <p><strong>Indirizzo:</strong> {{ $order->customer_address }}</p>
+    <h2>Client Details</h2>
+    <p><strong>Name:</strong> {{ $order->customer_name }}</p>
+    <p><strong>Name:</strong> {{ $order->customer_last_name }}</p>
+    <p><strong>Address:</strong> {{ $order->customer_address }}</p>
     <p><strong>Email:</strong> {{ $order->customer_email }}</p>
-    <p><strong>Telefono:</strong> {{ $order->customer_phone }}</p>
+    <p><strong>Phone:</strong> {{ $order->customer_phone }}</p>
     
-    <h2>Totale Ordine</h2>
+    <h2>Order Total</h2>
     <p>€ {{ $order->total_price }}</p>
 
     <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Back to Orders</a>
