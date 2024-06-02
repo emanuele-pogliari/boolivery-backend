@@ -43,4 +43,5 @@ Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(
     Route::get('orders/{order}', [OrderController::class, 'show'])->name('orders.show');
     Route::get('statistics', [StatsController::class, 'index'])->name('statistics.index');
     Route::get('usermail', [OrderController::class, 'usermail'])->name('usermail');
+    Route::get('restaurantmail', [OrderController::class, 'restaurantmail'])->name('restaurantmail');
 });
