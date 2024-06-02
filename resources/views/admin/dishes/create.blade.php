@@ -6,7 +6,7 @@
 
     <h1>Add a dish</h1>
 
-    <form action="{{route('admin.dishes.store')}}" method="POST" enctype="multipart/form-data" class="my_form">
+    <form class="form_data pt-3" action="{{route('admin.dishes.store')}}" method="POST" enctype="multipart/form-data" class="my_form">
         @csrf
           
         <div class="mb-3 form-floating">

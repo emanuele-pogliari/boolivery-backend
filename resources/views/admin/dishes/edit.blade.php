@@ -4,7 +4,7 @@
 
 <div class="container py-5">
     
-    <form action="{{route('admin.dishes.update', $dish->id)}}" method="POST" enctype="multipart/form-data" class="my_form">
+    <form class="form_data pt-3" action="{{route('admin.dishes.update', $dish->id)}}" method="POST" enctype="multipart/form-data" class="my_form">
         @csrf
         @method('PUT')
 
