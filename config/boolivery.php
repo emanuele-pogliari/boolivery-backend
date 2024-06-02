@@ -263,7 +263,7 @@ return [
             'type' => 'Vegan',
         ],
         [
-            'type' => 'Middle Eastern',
+            'type' => 'Ethnic',
         ],
     ],
 

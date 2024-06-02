@@ -54,22 +54,22 @@ class RegisteredUserController extends Controller
             //USER VALIDATION MESSAGES
 
             [
-                'name.required' => 'Devi inserire un nome',
-                'name.string' => 'Il nome deve essere composto da lettere oppure lettere e numeri',
-                'name.max' => 'Il nome deve essere meno di 255 caratteri',
+                'name.required' => 'You must enter a name',
+                'name.string' => 'The name must consist of letters or letters and numbers',
+                'name.max' => 'The name must be less than 255 characters',
 
                 // Surname messages
-                'surname.required' => 'Devi inserire un cognome',
-                'surname.string' => 'Il cognome deve essere composto da lettere',
-                'surname.max' => 'Il cognome deve essere meno di 255 caratteri',
+                'surname.required' => 'You must enter a surname',
+                'surname.string' => 'The surname must consist of letters',
+                'surname.max' => 'The surname must be less than 255 characters',
 
                 // Email messages
-                'email.required' => 'Devi inserire una mail',
-                'email.string' => 'La mail deve essere composta da lettere oppure lettere e numeri',
-                'email.lowercase' => 'La mail deve essere scritta in minuscolo',
-                'email.email' => 'La mail deve essere valida',
-                'email.max' => 'La mail deve essere meno di 255 caratteri',
-                'email.unique' => 'La mail deve essere unica',
+                'email.required' => 'You must enter an email',
+                'email.string' => 'The email must consist of letters or letters and numbers',
+                'email.lowercase' => 'The email must be in lowercase',
+                'email.email' => 'The email must be valid',
+                'email.max' => 'The email must be less than 255 characters',
+                'email.unique' => 'The email must be unique',
 
                 // Password messages
                 'password.required' => 'Devi inserire una password',
@@ -83,30 +83,30 @@ class RegisteredUserController extends Controller
                 // RESTAURANT VALIDATION RULES
 
                 // Name messages
-                'restaurant_name.required' => 'Devi inserire un nome',
-                'restaurant_name.string' => 'Il nome deve essere composto da lettere oppure lettere e numeri',
-                'restaurant_name.max' => 'Il nome deve essere meno di 255 caratteri',
-
+                'restaurant_name.required' => 'You must enter a name',
+                'restaurant_name.string' => 'The name must consist of letters or letters and numbers',
+                'restaurant_name.max' => 'The name must be less than 255 characters',
 
                 // Address messages
-                'address.required' => 'Devi inserire un indirizzo',
-                'address.string' => 'L indirizzo deve essere composto da lettere oppure lettere e numeri',
-                'address.max' => 'L indirizzo deve essere meno di 255 caratteri',
+                'address.required' => 'You must enter an address',
+                'address.string' => 'The address must consist of letters or letters and numbers',
+                'address.max' => 'The address must be less than 255 characters',
 
-                'phone.string' => 'Il numero di telefono deve essere composto da numeri',
-                'phone.min' => 'Il numero di telefono deve avere minimo 10 caratteri',
-                'phone.max' => 'Il numero di telefono deve avere massimo 10 caratteri',
+                // Phone messages
+                'phone.string' => 'The phone number must consist of digits',
+                'phone.min' => 'The phone number must be at least 10 characters long',
+                'phone.max' => 'The phone number must be at most 10 characters long',
 
 
                 // VAT messages
-                'vat.required' => 'Devi inserire la P.IVA',
-                'vat.number' => 'La P. IVA deve essere composta da numeri',
-                'vat.max' => 'La P. IVA deve essere di 11 caratteri',
-                'vat.min' => 'La P. IVA deve essere di 11 caratteri',
+                'vat.required' => 'VAT is required',
+                'vat.number' => 'The VAT number must consist of digits',
+                'vat.max' => 'VAT must be 11 characters long',
+                'vat.min' => 'VAT must be 11 characters long',
 
 
                 // Types messages
-                'types.required' => 'Devi inserire una tipologia',
+                'types.required' => 'You must choose a typology for your restaurant',
             ]
 
 
