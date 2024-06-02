@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Dish;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -130,5 +131,10 @@ class DishOrderSeeder extends Seeder
                 'quantity' => '1',
             ],
         ];
+
+        foreach ($dishOrder as $dishOrderBond) {
+            $dish = Dish::find($dishOrderBond['dish_id']);
+            $dish->orders()->attach($dishOrderBond['order_id'], ['quantity' => $dishOrderBond['quantity']]);
+        }
     }
 }
