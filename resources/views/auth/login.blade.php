@@ -4,11 +4,8 @@
 <div class="container mt-55">
     <div class="row justify-content-center mt-5">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+            <form class="form_data pt-3" method="POST" action="{{ route('login') }}">
+                <div class="text-center fs-4 mb-3">{{ __('Login') }}</div>
                         @csrf
 
                         <div class="mb-4 row">
@@ -53,12 +50,12 @@
 
                         <div class="mb-4 row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn reg-button">
                                     {{ __('Login') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn- text-black" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                                 @endif
@@ -71,3 +68,23 @@
     </div>
 </div>
 @endsection
+
+
+<style>
+      .form_data {
+  background-color: #f8f8f6;;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+
+  padding: 0 1rem 1rem;
+  width: 100%;
+
+  .checkout_field {
+    padding-top: 1rem;
+
+    label {
+      font-weight: 500;
+    }
+  }
+}
+</style>

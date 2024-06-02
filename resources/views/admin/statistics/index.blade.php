@@ -3,16 +3,22 @@
 @section('content')
 
 <div class="container">
+
+    <div class="chart-container">
     
-    <div>
+    <div class="container chart-order-container">
+        <h2>Orders</h2>
         <canvas id="ordersChart"></canvas>
     </div>
 
-    <div>
+    <div class="container chart-revenue-container">
+        <h2>Revenue</h2>
         <canvas id="revenueChart"></canvas>
     </div>
 
-    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Torna agli Ordini</a>
+    </div>
+
+    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary my_form_btn return-order">Return to Orders</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

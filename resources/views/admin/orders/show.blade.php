@@ -2,21 +2,21 @@
 
 @section('content')
 <div class="container my-4">
-    <h1>Dettaglio Ordine #{{ $order->id }}</h1>
+    <h1>Order Details #{{ $order->id }}</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Nome Piatto</th>
-                <th scope="col">Quantità</th>
-                <th scope="col">Prezzo</th>
+                <th scope="col">Dish Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
             </tr>
         </thead>
         <tbody>
             @foreach($order->dishes as $dish)
                 <tr>
                     <td>{{ $dish->name }}</td>
-                    <td>{{ $dish->quantity }}</td> 
+                    {{-- <td>{{ $dish->quantity }}</td>  --}}
                     {{-- QUANTITY MANCA --}}
                     <td>€ {{ $dish->price }}</td>
                 </tr>
@@ -34,6 +34,8 @@
     <h2>Order Total</h2>
     <p>€ {{ $order->total_price }}</p>
 
-    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Back to Orders</a>
+    </div>
+
+    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary back-orders">Back to Orders</a>
 </div>
 @endsection

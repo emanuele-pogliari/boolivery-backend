@@ -33,6 +33,16 @@ h1 {
     background-color: #f8f8f6;
 }
 
+.sub-btn {
+    background-color: #f2ca39;
+    color: black;
+}
+
+.sub-btn:hover {
+    background-color: #37373b;
+    color: #f8f8f6;
+}
+
 .back-button {
     color: #f8f8f6;
     background-color: black;
@@ -75,14 +85,14 @@ h1 {
 }
 .show_p {
     display: inline;
-    padding: .5rem .5rem .5rem 0;
-    margin: .5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    margin: 0.5rem;
 
     background-color: #f8f8f6;
     border-radius: 5px;
 }
 .show_titles {
-    padding: .6rem;
+    padding: 0.6rem;
 
     background-color: #f2ca39;
     color: #36373b;
