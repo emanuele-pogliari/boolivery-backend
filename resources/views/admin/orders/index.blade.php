@@ -6,6 +6,16 @@
 @endphp
 
 <div class="container">
+
+@if(count($orders) == 0)
+<div class="position absolute no-order-msg text-center">
+<div class="mb-3">No orders yet</div>
+<a href="{{route('admin.index')}}" class="add-dish-button">Back to Home</a> 
+</div>
+@else
+<div class="mt-5">
+  <a href="{{route('admin.index')}}" class="add-dish-button">Back to Home</a> 
+<a href="{{route('admin.statistics.index')}}" class="add-dish-button">Show Chart</a> 
 <table class="table table-hover mt-5" style="border-radius: 5px; overflow:hidden">
     <thead>
       <tr style="vertical-align: middle">
@@ -37,8 +47,41 @@
     </tbody>
   </table>
 
-  <a href="{{route('admin.statistics.index')}}" class="add-dish-button">Show Chart</a> 
+@endif
 
+</div>
 </div>
 
 @endsection
+
+
+<style lang="scss" scoped>
+   .no-order-msg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        .add-dish-button{
+          margin-top: 1rem;
+          font-size: 1rem;
+          font-weight: bold;
+
+        }
+      }
+   .phone-none {
+        display: none;
+    }
+   .table_address {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+   .table_mail {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
