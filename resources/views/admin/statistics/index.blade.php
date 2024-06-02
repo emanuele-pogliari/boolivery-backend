@@ -3,22 +3,25 @@
 @section('content')
 
 <div class="container">
-
-    <div class="chart-container">
+  <h2 class="my-5 text-center">Statistics</h2>
+  <div class="d-flex justify-content-end">
+  <a href="{{ route('admin.orders.index') }}" class="btn add-dish-button return-order">Return to Orders</a>
+</div>
+    <div class="chart-container ">
+      <h2 class="mb-3">Number of Orders</h2>
     
-    <div class="container chart-order-container">
-        <h2>Orders</h2>
+      <div class="container rounded-5 mb-5 p-4 chart-order-container">
         <canvas id="ordersChart"></canvas>
     </div>
 
-    <div class="container chart-revenue-container">
-        <h2>Revenue</h2>
+    <h2 class="mb-3">Revenue</h2>
+    
+    <div class="container rounded-5 mb-5 p-4 chart-revenue-container">
         <canvas id="revenueChart"></canvas>
     </div>
 
     </div>
 
-    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary my_form_btn return-order">Return to Orders</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -73,3 +76,14 @@
     });
 </script>
 @endsection
+
+
+<style lang="scss" scoped>
+
+  .chart-order-container, .chart-revenue-container{
+    background-color: #f0f0eb;
+  }
+
+
+
+</style>
