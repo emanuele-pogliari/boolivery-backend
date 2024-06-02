@@ -24,6 +24,11 @@
         
 {{-- ---------- --}}
 
+        @if (count($dishes) === 0)
+        <div class="alldishes_container">
+        <h3>You don't have any dish yet.</h3>
+        </div>
+        @else
         <div class="alldishes_container">
             @foreach ($dishes as $dish)
 
@@ -33,18 +38,18 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">{{$dish->name}}</h5>
                         <p class="card-text">{{$dish->price}} €</p>
-                        <a class="show-button" href="{{route('admin.dishes.show', $dish->id)}}">Visualizza</a>
+                        <a class="show-button" href="{{route('admin.dishes.show', $dish->id)}}">View</a>
                     </div>
                 </div>
             @endforeach
         </div>
-
+@endif
 {{-- ---------- --}}
 
 </div>
         <div class="d-flex justify-content-center gap-3">
-            <a href="{{route('admin.dishes.create')}}" class="add-dish-button">Aggiungi Piatto</a>
-            <a href="{{route('admin.orders.index')}}" class="add-dish-button">Riepilogo Ordini</a>                          
+            <a href="{{route('admin.dishes.create')}}" class="add-dish-button">Add a dish</a>
+            <a href="{{route('admin.orders.index')}}" class="add-dish-button">Orders review</a>                          
         </div>
 </div>
 
