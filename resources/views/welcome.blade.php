@@ -7,7 +7,7 @@
             <img src="{{Vite::asset('resources/img/Logo2.png')}}" alt="Boolivery-logo">
         </div>
         <h1 class="display-5 fw-bold mt-3">
-            Welcome in Boolivery, Restaurateur!
+            Welcome in Boolivery, Restaurant Owner!
         </h1>
 
         <p class="col-md-8 fs-4">Welcome to your dedicated administrative portal. Here, you have full control over your restaurant, menus, and orders. Take charge of your culinary journey with ease and efficiency.</p>
