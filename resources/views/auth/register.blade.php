@@ -108,25 +108,31 @@
                                     @enderror
                                 </div>
                             </div>
-
-                            <div class="col">
-                                <!-- Bottone per aprire il modale -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryModal">
-                                    Scegli Categorie
-                                </button>
+                            <div class="mb-4 row">
                             
-                                <!-- Output per le categorie selezionate -->
-                                <div id="selectedCategories" class="mt-3">
-                                    <strong>Categorie scelte:</strong>
-                                    <span id="selectedCategoriesList"></span>
+                                <!-- Bottone per aprire il modale -->
+                                <label for="restaurant_name "
+                                    class="col-md-4 col-form-label text-md-right">{{ __('Categories') }}</label>
+                                    <div class="col-md-6">
+                                <button type="button" class="btn reg-button" data-bs-toggle="modal" data-bs-target="#categoryModal">
+                                    Choose Categories
+                                </button>
+                            </div>
+
+                            <!-- Output per le categorie selezionate -->
+                            <div class="row mt-4 align-items-center" id="selectedCategories">
+                                <label class="col-md-4 col-form-label text-md-right" for="selectedCategories">Categories selected:</label>
+                                <div class="col-md-6">
+                                    <div id="selectedCategoriesList"></div>
                                 </div>
+                            </div>
                             
                                 @if ($errors->has('types'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('types') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
+                <span class="invalid-feedback d-block" role="alert">
+                    <strong>{{ $errors->first('types') }}</strong>
+                </span>
+            @endif
+                        </div>
 
                             <div class="mb-4 row">
                                 <label for="image"
@@ -213,7 +219,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="categoryModalLabel">Scegli Categorie</h5>
+                    <h5 class="modal-title" id="categoryModalLabel">Choose categories for you restaurant</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -230,8 +236,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="updateSelectedCategories()">Salva</button>
+                    <button type="button" class="btn reg-button" data-bs-dismiss="modal" onclick="updateSelectedCategories()">Save</button>
                 </div>
             </div>
         </div>
@@ -260,12 +265,17 @@
 .checkbox-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px; /* Adjust the gap value as needed */
+    gap: 25px;
 }
 
 .checkbox-item {
     display: flex;
     align-items: center;
+    width: 200px;
+
+    .checkbox{
+        margin-right: 10px;
+    }
 }
 
 </style>
