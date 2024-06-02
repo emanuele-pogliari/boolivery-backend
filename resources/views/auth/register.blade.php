@@ -10,7 +10,7 @@
 
                             <div class="user-reg m-4">
                             <div class="mb-3 fs-5 fw-bold">
-                                User registration
+                                User Registration
                             </div>
                             <div class="mb-4 row">
                                 <label for="name"
