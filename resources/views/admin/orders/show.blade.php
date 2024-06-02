@@ -31,10 +31,10 @@
     <p><strong>Phone:</strong> {{ $order->customer_phone }}</p>
     
     <h2>Order Total</h2>
-    <p>€ {{ $order->total_price }}</p>
-
+    <h3>€ {{ $order->total_price }}</h3>
+    
+    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary back-orders">Back to Orders</a>
     </div>
 
-    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary back-orders">Back to Orders</a>
 </div>
 @endsection
