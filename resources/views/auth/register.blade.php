@@ -126,6 +126,32 @@
                                     <div id="selectedCategoriesList"></div>
                                 </div>
                             </div>
+                            <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="categoryModalLabel">Choose categories for you restaurant</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="checkbox-container">
+                                                @foreach ($types as $type)
+                                                    <div class="checkbox-item">
+                                                        <input class="checkbox" type="checkbox" value="{{$type->id}}" id="{{ $type->type }}" name="types[]"
+                                                        {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
+                                                        <label class="label-type" for="{{ $type->type }}">
+                                                            {{ $type->type }}
+                                                        </label>
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn reg-button" data-bs-dismiss="modal" onclick="updateSelectedCategories()">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             
                                 @if ($errors->has('types'))
                 <span class="invalid-feedback d-block" role="alert">
@@ -215,32 +241,7 @@
     </div>
 
     <!-- modal for types -->
-    <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="categoryModalLabel">Choose categories for you restaurant</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="checkbox-container">
-                        @foreach ($types as $type)
-                            <div class="checkbox-item">
-                                <input class="checkbox" type="checkbox" value="{{$type->id}}" id="{{ $type->type }}" name="types[]"
-                                {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
-                                <label class="label-type" for="{{ $type->type }}">
-                                    {{ $type->type }}
-                                </label>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn reg-button" data-bs-dismiss="modal" onclick="updateSelectedCategories()">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     
 @endsection
 

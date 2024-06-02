@@ -10,7 +10,7 @@
           <div class="d-flex flex-column py-5">
             <img class="pb-3" src="/img/logo/Logo.png" alt="" />
             <div class="customer_content">
-              <h1>Hey {{$orders[0]->customer_name}}, your order has been confirmed, enjoy!</h1>
+              <h1>Hey {{$lead->customer_name}}, your order has been confirmed, enjoy!</h1>
               <p>Find below the recipt from "restaurant name"</p>
             </div>
           </div>
@@ -22,14 +22,14 @@
       <div class="invoice container mb-5">
         <h2>Your Order</h2>
         <ul>
-            @foreach ($orders[0]->dishes as $dish)
+            @foreach ($lead->dishes as $dish)
           <li>
             <p>{{$dish->name}}</p>
             <p>Product price: € {{$dish->price}}</p>
           </li>
             @endforeach
         </ul>
-        <h2>Total: € {{$orders[0]->total_price}}</h2>
+        <h2>Total: € {{$lead->total_price}}</h2>
       </div>
 
 </body>
