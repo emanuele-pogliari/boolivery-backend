@@ -24,6 +24,8 @@
         </tbody>
     </table>
 
+    <div class="container order-container">
+
     <h2>Dettagli Cliente</h2>
     <p><strong>Nome:</strong> {{ $order->customer_name }}</p>
     <p><strong>Cognome:</strong> {{ $order->customer_last_name }}</p>
@@ -34,6 +36,8 @@
     <h2>Totale Ordine</h2>
     <p>€ {{ $order->total_price }}</p>
 
-    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Back to Orders</a>
+    </div>
+
+    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary back-orders">Back to Orders</a>
 </div>
 @endsection
